@@ -29,6 +29,12 @@ h1 {
   padding: 50px;
 }
 
+@media (max-width: 800px) {
+   .group {
+     -webkit-column-count: 1;
+   }
+}
+
 p {
   font-size: 16pt;
 }
