@@ -29,6 +29,12 @@ img {
   float: left;
 }
 
+@media (max-width: 800px) {
+  #text  {
+    width: 100%;
+  }
+}
+
 #illustration {
   margin-top: 100px;
   margin-right: 5%;
@@ -36,22 +42,28 @@ img {
   float: right;
 }
 
-.group {
-  padding: 5%;
-  font-size: 1.5em;
+@media (max-width: 800px) {
+  #illustration  {
+    width: 100%;
+  }
 }
 
-@media (max-width: 600px){
+.group {
+  padding: 5%;
+  font-size: 13pt;
+}
+
+/*@media (max-width: 600px) {
    .group {
      font-size: 0.8em;
    }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
    .group {
      font-size: 1em;
    }
-}
+}*/
 
 @media (min-width: 1024px) {
    .group {
