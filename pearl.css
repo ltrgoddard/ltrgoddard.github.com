@@ -1,7 +1,6 @@
 body {
   background-color: #F3F781;
   font-family: 'EB Garamond', serif;
-  font-size: 11pt;
 }
 
 h1 {
@@ -25,25 +24,26 @@ img {
 }
 
 #text {
-  padding-top: 50px;
+  margin-top: 100px;
   width: 65%;
   float: left;
-}
-
-@media (max-width: 799px){
-   .group {
-     -webkit-column-count: 1;
-   }
-}
-
-.group {
-  padding: 5%;
 }
 
 #illustration {
   margin-top: 100px;
   width: 35%;
   float: right;
+}
+
+.group {
+  padding: 5%;
+  font-size: 11pt;
+}
+
+@media (max-width: 799px){
+   .group {
+     -webkit-column-count: 1;
+   }
 }
 
 @media (min-width: 800px) and (max-width: 1023px){
