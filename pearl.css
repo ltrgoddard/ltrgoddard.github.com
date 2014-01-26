@@ -30,11 +30,11 @@ img {
   float: left;
 }
 
-/*@media (max-width: 799px){
+@media (max-width: 799px){
    #text {
-     width: 100%;
+     -webkit-column-count: 1;
    }
-}*/
+}
 
 .group {
   padding: 5%;
@@ -58,7 +58,6 @@ img {
    .group {
      -webkit-column-count: 2;
      font-size: 75%;
-     
    }
 }
 
