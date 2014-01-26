@@ -29,11 +29,11 @@ img {
   float: left;
 }
 
-@media (max-width: 799px){
+/*@media (max-width: 799px){
    #text {
      width: 100%;
    }
-}
+}*/
 
 .group {
   padding: 5%;
