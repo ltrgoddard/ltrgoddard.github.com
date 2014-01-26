@@ -24,6 +24,12 @@ h1 {
 }
 
 @media (max-width: 799px){
+   #text {
+     width: 100%;
+   }
+}
+
+@media (max-width: 799px){
    .group {
      padding: 10px;
    }
