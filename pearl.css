@@ -25,9 +25,8 @@ img {
 
 #text {
   padding-top: 50px;
-  width: 60%;
+  width: 75%;
   float: left;
-  border: 1px solid #000;
 }
 
 @media (max-width: 799px){
@@ -42,9 +41,8 @@ img {
 }
 
 #illustration {
-  width: 15%;
+  width: 75%;
   float: right;
-  border: 1px solid #000;
 }
 
 @media (min-width: 800px) and (max-width: 1023px){
