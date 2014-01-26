@@ -6,12 +6,14 @@
 		<link rel="stylesheet" type="text/css" href="pearl.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
+		$("#text").on("click", function() {
 			$(document).ready(function(){
 				var id='TEST';
 				$('#details').fadeOut(function(){
 					$(this).text(id).fadeIn();
 				})	
-			});
+			})
+		});
 		</script>
 	</head>
 	<body>
