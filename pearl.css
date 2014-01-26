@@ -37,7 +37,7 @@ img {
 
 .group {
   padding: 5%;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 #illustration {
@@ -50,12 +50,14 @@ img {
    .group {
      -webkit-column-count: 2;
      -webkit-column-gap: 2%;
+     font-size: 0.5em;
    }
 }
 
 @media (min-width: 1024px) {
    .group {
      -webkit-column-count: 2;
+     font-size: 0.75em;
    }
 }
 
