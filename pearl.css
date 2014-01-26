@@ -1,13 +1,13 @@
 body {
   background-color: #F3F781;
-  font: sans-serif;
+  font: sans serif;
 }
 
 .group {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 40px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
 }
 
 p {
-  font-size: 14pt;
+  font-size: 16pt;
 }
