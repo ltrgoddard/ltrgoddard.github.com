@@ -24,12 +24,9 @@ h1 {
   float: left;
 }
 
-img.resize {
-  width: 200px;
-  height: auto;
-}
-
 .illustration {
+  max-width: 15%;
+  height: auto;
   float: right;
   padding: 5%;
 }
