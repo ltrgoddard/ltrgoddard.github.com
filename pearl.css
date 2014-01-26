@@ -27,6 +27,7 @@ img {
   padding-top: 50px;
   width: 60%;
   float: left;
+  border: 1px solid #000;
 }
 
 @media (max-width: 799px){
