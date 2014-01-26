@@ -1,6 +1,7 @@
 body {
   background-color: #F3F781;
   font-family: 'EB Garamond', serif;
+  font-size: 11pt;
 }
 
 h1 {
@@ -37,7 +38,6 @@ img {
 
 .group {
   padding: 5%;
-  font-size: 1em;
 }
 
 #illustration {
