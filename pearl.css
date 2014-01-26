@@ -41,9 +41,8 @@ img {
 }
 
 #illustration {
-  width: 15%;
+  width: 200px;
   float: right;
-  padding: 5%;
 }
 
 @media (min-width: 800px) and (max-width: 1023px){
