@@ -23,9 +23,14 @@ h1 {
   width: 75%;
 }
 
-img.illustration {
+#image {
   width: 15%;
   float: right;
+}
+
+.illustration.resize {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 799px){
