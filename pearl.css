@@ -36,14 +36,14 @@ h1 {
 @media (min-width: 800px) and (max-width: 1023px){
    .group {
      -webkit-column-count: 2;
-     -webkit-column-gap: 15px;
+     -webkit-column-gap: 5%;
    }
 }
 
 @media (min-width: 1024px) {
    .group {
      -webkit-column-count: 2;
-     -webkit-column-gap: 20px;
+     -webkit-column-gap: 5%;
    }
 }
 
