@@ -15,12 +15,16 @@ img {
 #header {
   background-color: #3A2F0B;
   color: #eee;
-  height: 60px;
+  width: 30%;
+  float: right;
+  margin-top: 5%;
+  margin-right: 5%;
+  /*height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  padding-bottom: 20px;
+  padding-bottom: 20px;*/
 }
 
 #text {
