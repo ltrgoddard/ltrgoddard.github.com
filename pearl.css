@@ -44,6 +44,7 @@ img {
 #illustration {
   width: 15%;
   float: right;
+  border: 1px solid #000;
 }
 
 @media (min-width: 800px) and (max-width: 1023px){
