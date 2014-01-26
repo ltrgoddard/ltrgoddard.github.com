@@ -24,15 +24,14 @@ h1 {
   float: left;
 }
 
-#image {
+img.resize {
   width: 15%;
   height: auto;
-  float: right;
 }
 
-img.resize {
-  width: 100%;
-  height: auto;
+.illustration {
+  float: right;
+  padding: 5%;
 }
 
 @media (max-width: 799px){
