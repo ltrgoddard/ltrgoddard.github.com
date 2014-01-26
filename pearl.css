@@ -12,6 +12,10 @@ body {
   top: 0;
 }
 
+#container {
+  padding-top: 60px;
+}
+
 .group {
   -webkit-column-count: 3;
   -webkit-column-gap: 20px;
