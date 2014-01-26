@@ -7,11 +7,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
 		$(document).ready(function(){
-			$("#header").on("click", function() {
-				var id='\x3Cdiv class=\"group\" id=\"group1\"\x3E\n\t\t\t\x3Ch2 class=\"numeral\"\x3EI\x3C\x2Fh2\x3E\n\t\t\t\x3Cp\x3EPearl, testing to princes\' pay,\x3Cbr \x2F\x3E\nand cleanly clasped in gold so clear,\x3Cbr \x2F\x3E\nOut of the orient; I say\x3Cbr \x2F\x3E\nI never proved her precious peer.\x3Cbr \x2F\x3E\nSo round, so rich in each array,\x3Cbr \x2F\x3E\nSo small, so smooth her sides were.\x3Cbr \x2F\x3E\nWherever I judged that gems were gay\x3Cbr \x2F\x3E\nI set her single and singular.\x3Cbr \x2F\x3E\nAlas! I lost it in an arbour,\x3Cbr \x2F\x3E\nThrough the grass to ground it got.\x3Cbr \x2F\x3E\nAnd I pine, dying of love-danger\x3Cbr \x2F\x3E\nFor that precious pearl without a spot.\x3C\x2Fp\x3E\n\n\x3Cp\x3ESince in that spot it from me sprang\x3Cbr \x2F\x3E\nOften I waited, wishing for Pearl,\x3Cbr \x2F\x3E\nThat once was what could heal my wrong\x3Cbr \x2F\x3E\nAnd heighten my health and make me whole.\x3Cbr \x2F\x3E\nThat watch just weights my heart. I wrung\x3Cbr \x2F\x3E\nand drenched my breast with dearth and dole.\x3Cbr \x2F\x3E\nBut I never heard as sweet a song\x3Cbr \x2F\x3E\nAs I thought on that still hour stole.\x3Cbr \x2F\x3E\nAnd others came into that dell\x3Cbr \x2F\x3E\nTo sing of sweetness clad in clot.\x3Cbr \x2F\x3E\nO earth, you mar a merry jewel,\x3Cbr \x2F\x3E\nMy precious pearl without a spot.\x3C\x2Fp\x3E\n\n\x3Cp\x3EThat spot where spices seed and spread,\x3Cbr \x2F\x3E\nThere such richness to rot is run.\x3Cbr \x2F\x3E\nBlooms are bright, of blue and red,\x3Cbr \x2F\x3E\nThat shine so sheer against the sun.\x3Cbr \x2F\x3E\nThere the flowers and fruit don\'t fade\x3Cbr \x2F\x3E\nAnd there it drowned in dust and dung,\x3Cbr \x2F\x3E\nFor all grass grows from the grains of the dead\x3Cbr \x2F\x3E\nOr else no wheat is brought to barn,\x3Cbr \x2F\x3E\nAnd every good from good begun -\x3Cbr \x2F\x3E\nSo seemly a seed brings forth no blot.\x3Cbr \x2F\x3E\nSo springing spices have upwards spun\x3Cbr \x2F\x3E\nFrom my precious pearl without a spot.\x3C\x2Fp\x3E\n\n\x3Cp\x3EAt the spot of which I tell\x3Cbr \x2F\x3E\nI entered in the garden green\x3Cbr \x2F\x3E\nIn August, at the festival,\x3Cbr \x2F\x3E\nWhen corn is cut with sickles keen.\x3Cbr \x2F\x3E\nOn the hill where the pearl fell\x3Cbr \x2F\x3E\nShadows of shimmering flowers that shone:\x3Cbr \x2F\x3E\nGillyflower, ginger and gromwell\x3Cbr \x2F\x3E\nAnd peonies powdered in between,\x3Cbr \x2F\x3E\nSo seemly to be smelled and seen,\x3Cbr \x2F\x3E\nWith floating fragrances. I thought\x3Cbr \x2F\x3E\nThat this is where my dear has gone,\x3Cbr \x2F\x3E\nMy precious pearl without a spot.\x3C\x2Fp\x3E\n\n\x3Cp\x3EBefore that spot I stretched my hand\x3Cbr \x2F\x3E\nFor a cold care that in me caught:\x3Cbr \x2F\x3E\nA deeper dole in my heart dinned,\x3Cbr \x2F\x3E\nThough reason reckoned in my thought,\x3Cbr \x2F\x3E\nAnd I complained that Pearl was penned,\x3Cbr \x2F\x3E\nwith fierce debates in me that fought.\x3Cbr \x2F\x3E\nThough I of Christ the comfort kenned\x3Cbr \x2F\x3E\nMy wretched will in woe was wrought,\x3Cbr \x2F\x3E\nI fell onto that flowery ground.\x3Cbr \x2F\x3E\nSuch odours to my senses shot\x3Cbr \x2F\x3E\nThat I slipped into sleeping sound\x3Cbr \x2F\x3E\nAbove my pearl without a spot.\x3C\x2Fp\x3E\n\t\t\t\x3C\x2Fdiv\x3E';
-				$('#text').fadeOut(function(){
-					$(this).text(id).fadeIn();
-				})	
+			
+			$.ajax({
+    				type: "GET",
+    				url: "books.xml",
+				dataType: "xml",
+    				success: xmlParser
+   			});
+
+			function xmlParser(xml) {
+			
+				$("#header").on("click", function() {
+
+					$('#text').fadeOut();
+
+					$('#text').append($(this).find("group").text()).fadeIn();
+					
+					$("#text").fadeIn(1000);
+
+				 });
 			})
 		});
 		</script>
