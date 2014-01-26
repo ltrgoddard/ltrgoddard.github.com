@@ -23,6 +23,10 @@ h1 {
   width: 75%;
 }
 
+#image {
+  width: 20%;
+}
+
 @media (max-width: 799px){
    #text {
      width: 100%;
