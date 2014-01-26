@@ -1,8 +1,13 @@
 body {
   background-color: #F3F781;
+  font: helvetica;
 }
 
 .group {
   -webkit-column-count: 2;
   -webkit-column-gap: 40px;
+}
+
+p {
+  font-size: 14px;
 }
