@@ -24,7 +24,7 @@ img {
 }
 
 #text {
-  margin-top: 50px;
+  margin-top: 75px;
   width: 65%;
   float: left;
 }
@@ -42,13 +42,13 @@ img {
 
 @media (max-width: 600px){
    .group {
-     font-size: 50%;
+     font-size: 8pt;
    }
 }
 
 @media (max-width: 800px){
    .group {
-     font-size: 75%;
+     font-size: 10pt;
    }
 }
 
