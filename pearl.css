@@ -23,7 +23,7 @@ h1 {
   width: 75%;
 }
 
-#image {
+img.illustration {
   width: 15%;
   float: right;
 }
