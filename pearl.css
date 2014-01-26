@@ -23,15 +23,25 @@ h1 {
   width: 75%;
 }
 
-.group {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-  padding: 50px;
+@media (max-width: 799px){
+   .group {
+     padding: 10px;
+   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 1023px){
    .group {
-     -webkit-column-count: 1;
+     -webkit-column-count: 2;
+     -webkit-column-gap: 15px;
+     padding: 20px;
+   }
+}
+
+@media (min-width: 1024px) {
+   .group {
+     -webkit-column-count: 3;
+     -webkit-column-gap: 20px;
+     padding: 50px;
    }
 }
 
