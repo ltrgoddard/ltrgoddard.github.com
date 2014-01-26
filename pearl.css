@@ -1,3 +1,7 @@
 body {
-  background-color: #ddd;
+  background-color: #F3F781;
+}
+
+.group {
+  column-count: 3;
 }
