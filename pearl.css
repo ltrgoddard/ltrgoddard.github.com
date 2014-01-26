@@ -4,4 +4,5 @@ body {
 
 .group {
   -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
 }
