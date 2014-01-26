@@ -21,6 +21,7 @@ h1 {
 #text {
   padding-top: 50px;
   width: 75%;
+  float: left;
 }
 
 #image {
