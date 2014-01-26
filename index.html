@@ -6,26 +6,17 @@
 		<link rel="stylesheet" type="text/css" href="pearl.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
+		
 		$(document).ready(function(){
-			
-			$.ajax({
-    				type: "GET",
-    				url: "2.xml",
-				dataType: "xml",
-    				success: xmlParser
-   			});
-
-			function xmlParser(xml) {
-			
-				$("#header").on("click", function() {
-
-					$('#text').fadeOut();
-
-					$('#text').append($(this).find("group").text()).fadeIn();
-
-				 });
-			})
+			$("#header").on("click", function() {
+				$.get('2.xml', function(d){  
+					$(d).find('group').each(function(){  
+  					var stanza = $(this);   
+					$('#text').append($(stanza));
+				 });  
+			 });  
 		});
+		
 		</script>
 	</head>
 	<body>
