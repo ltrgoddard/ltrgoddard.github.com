@@ -11,8 +11,9 @@
 			$("#header").on("click", function() {
 				$.get('2.xml', function(d){  
 					$(d).find('group').each(function(){  
-  					var stanza = $(this);   
-					$('#text').append($(stanza));
+  						var stanza = $(this);   
+						$('#text').append($(stanza));
+					});
 				 });  
 			 });  
 		});
