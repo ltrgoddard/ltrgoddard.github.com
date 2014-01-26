@@ -58,6 +58,7 @@ img {
    .group {
      -webkit-column-count: 2;
      font-size: 75%;
+     
    }
 }
 
