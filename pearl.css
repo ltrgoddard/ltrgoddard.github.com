@@ -20,10 +20,11 @@ h1 {
 
 #container {
   padding-top: 60px;
+  width: 75%;
 }
 
 .group {
-  -webkit-column-count: 3;
+  -webkit-column-count: 2;
   -webkit-column-gap: 20px;
   padding: 50px;
 }
