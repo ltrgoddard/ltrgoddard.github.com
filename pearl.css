@@ -45,6 +45,8 @@ h1 {
 
 @media (min-width: 1024px) {
    .group {
+     -webkit-column-count: 2;
+     -webkit-column-gap: 20px;
      padding: 50px;
    }
 }
