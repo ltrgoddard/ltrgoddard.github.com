@@ -40,24 +40,21 @@ img {
   font-size: 11pt;
 }
 
-@media (max-width: 799px){
+@media (max-width: 600px){
    .group {
-     -webkit-column-count: 1;
+     font-size: 50%;
    }
 }
 
-@media (min-width: 800px) and (max-width: 1023px){
+@media (max-width: 800px){
    .group {
-     -webkit-column-count: 2;
-     -webkit-column-gap: 2%;
-     font-size: 50%;
+     font-size: 75%;
    }
 }
 
 @media (min-width: 1024px) {
    .group {
      -webkit-column-count: 2;
-     font-size: 75%;
    }
 }
 
