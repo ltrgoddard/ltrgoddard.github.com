@@ -3,6 +3,10 @@ body {
   font-family: 'EB Garamond', serif;
 }
 
+#header {
+  background-color: ;
+}
+
 .group {
   -webkit-column-count: 3;
   -webkit-column-gap: 20px;
