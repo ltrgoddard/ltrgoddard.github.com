@@ -41,7 +41,8 @@ img {
 }
 
 #illustration {
-  width: 10%;
+  padding-top: 50px;
+  width: 30%;
   float: right;
 }
 
