@@ -26,10 +26,11 @@ h1 {
 
 #image {
   width: 15%;
+  height: auto;
   float: right;
 }
 
-.illustration.resize {
+img.resize {
   width: 100%;
   height: auto;
 }
