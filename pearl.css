@@ -38,9 +38,10 @@ img {
 .group {
   padding: 5%;
   font-size: 1em;
+  float: left;
 }
 
-.illustration {
+#illustration {
   width: 15%;
   float: right;
   padding: 5%;
