@@ -28,7 +28,7 @@
 
 				 		case 39: // right
 				 		
-				 		if (caret<130) {
+				 		if (caret < 130 && caret != 91) {
 				 			caret = caret+7;
 							$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
@@ -37,12 +37,22 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 				 		}
+				 		else {
+				 			caret = caret+8;
+				 			$('#numeral').html(group[caret] + '(' + caret + ')');
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
+							$('#stanza5').html(group[caret+6]);
+				 		}
 						
 						break;
 						
 						case 37: //left
 						
-						if (caret>0) {
+						if (caret > 0  && caret != 99) {
 							caret = caret-7;
 							$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
@@ -50,6 +60,16 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
+				 		}
+				 		else {
+				 			caret = caret-8;
+				 			$('#numeral').html(group[caret] + '(' + caret + ')');
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
+							$('#stanza5').html(group[caret+6]);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
