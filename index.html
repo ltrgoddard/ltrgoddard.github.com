@@ -8,11 +8,12 @@
 		<script>
 		
 		$(document).ready(function(){
-			$("#header").on("click", function() {
-				$.get('pearl.txt', function(data){  
-					$('.group').replaceWith($(this));
-				'text'
-				 });  
+			$('#header').on('click', function() {
+				
+				var data = $.get('pearl.txt','text');
+				
+				$('#text').html(data);
+				
 			 });  
 		});
 		
