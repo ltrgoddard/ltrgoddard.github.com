@@ -11,7 +11,7 @@
 			
 			$.get('pearl.txt', function(data) {
 				
-				var processed = data.replace('\n', '<br />')	
+				var processed = data.replace('\n', '<br />');	
 				line = data.split('<br /><br /><br /><br />');
 				var caret = 0;
 				$('#text').html(line[caret]);
