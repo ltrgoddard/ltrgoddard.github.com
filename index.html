@@ -8,11 +8,14 @@
 		<script>
 		
 		$(document).ready(function(){
+			
 			$('#header').on('click', function() {
 				
-				var data = $.get('pearl.txt','text');
+				$.get('pearl.txt', function(data) {
 				
-				$('#text').html(data);
+					$('#text').append(data);
+					
+				});
 				
 			 });  
 		});
