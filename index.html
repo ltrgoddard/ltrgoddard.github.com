@@ -21,7 +21,7 @@
 				 		case 39: // right
 				 		
 				 		if (caret<19) {
-							$('#text').html(line[caret]);
+							$('#text').hide().html(line[caret]).fadeIn(fast);
 							caret++;
 				 		}
 						
@@ -31,7 +31,7 @@
 						
 						if (caret>0) {
 							caret--;
-							$('#text').html(line[caret]);
+							$('#text').hide().html(line[caret]).fadeIn(fast);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
