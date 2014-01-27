@@ -19,16 +19,22 @@
 					switch(e.which) {
 
 				 		case 39: // right
-				 			
-						$('#text').html(line[caret]);
-						caret++;
+				 		
+				 		if (caret<19) {
+							$('#text').html(line[caret]);
+							caret++;
+				 		}
+				 		else {return};
 						
 						break;
 						
 						case 37: //left
 						
-						caret--;	
-						$('#text').html(line[caret]);	
+						if (caret>0) {
+							$('#text').html(line[caret]);
+							caret--;
+				 		}
+				 		else {return};
 
 						default: return; // exit this handler for other keys
     					}
