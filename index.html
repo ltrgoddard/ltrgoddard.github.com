@@ -24,18 +24,16 @@
 							$('#text').html(line[caret]);
 							caret++;
 				 		}
-				 		else {return};
 						
 						break;
 						
 						case 37: //left
 						
 						if (caret>0) {
-							$('#text').html(line[caret]);
 							caret--;
+							$('#text').html(line[caret]);
 				 		}
-				 		else {return};
-
+				 		
 						default: return; // exit this handler for other keys
     					}
     					e.preventDefault(); // prevent the default action (scroll / move caret)
