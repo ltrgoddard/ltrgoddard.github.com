@@ -12,8 +12,10 @@
 			$('#header').on('click', function() {
 				
 				$.get('pearl.txt', function(data) {
-				
-					$('#text').append(data);
+					
+					line = data.split('\n');
+					$('#text').append(line[1]);
+					$('#text').append(line[83]);
 					
 				});
 				
