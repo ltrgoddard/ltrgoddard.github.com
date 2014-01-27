@@ -12,7 +12,7 @@
 			$.get('pearl.txt', function(raw) {
 				
 				data = raw.replace('\n', '<br />');	
-				group = data.split('<br /><br /><br /><br />');
+				//group = data.split('<br /><br /><br /><br />');
 				caret = 0;
 				$('#text').html(group[caret]);
 					
