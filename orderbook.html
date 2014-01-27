@@ -8,7 +8,7 @@
 		
 		$(document).ready(function() {
 
-			$.getJSON("https://www.bitstamp.net/api/order_book/"), function(book) {
+			$.getJSON("https://www.bitstamp.net/api/order_book/?callback=?"), function(book) {
 				console.log(book);
 			}
 			
