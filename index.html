@@ -55,6 +55,9 @@
 							caret = caret+1;
 							$('#header').html(caret);
 				 		}
+				 		else {
+				 			return;
+				 		}
 						
 						break;
 						
@@ -85,6 +88,9 @@
 							$('#stanza6').html(group[caret+6]);
 							// $('#text').delay(500).fadeIn(200);
 							$('#header').html(caret);
+				 		}
+				 		else {
+				 			return;
 				 		}
 				 		
 						default: return; // exit this handler for other keys
