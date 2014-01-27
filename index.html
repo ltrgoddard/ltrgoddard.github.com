@@ -11,10 +11,10 @@
 			
 			$.get('pearl.txt', function(raw) {
 				
-				var data = raw.replace('\n', '<br />');	
-				line = data.split('<br /><br /><br /><br />');
-				var caret = 0;
-				$('#text').html(line[caret]);
+				data = raw.replace('\n', '<br />');	
+				group = data.split('<br /><br /><br /><br />');
+				caret = 0;
+				$('#text').html(group[caret]);
 					
 				$(document).keydown(function(e) {
     
@@ -24,7 +24,7 @@
 				 		
 				 		if (caret<19) {
 				 			caret++;
-							$('#text').html(line[caret]);
+							$('#text').html(group[caret]);
 				 		}
 						
 						break;
@@ -33,7 +33,7 @@
 						
 						if (caret>0) {
 							caret--;
-							$('#text').html(line[caret]);
+							$('#text').html(group[caret]);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
