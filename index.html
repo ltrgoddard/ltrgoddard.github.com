@@ -13,9 +13,14 @@
 				
 				stripped = raw.replace(/\n/g, '<br />');
 				data = stripped.replace(/\<br \/\>\<br \/\>\<br \/\>/g, '<br /><br />');
-				group = data.split('<br /><br /><br />');
+				group = data.split('<br /><br />');
 				caret = 0;
-				$('#text').html(group[caret]);
+				$('#numeral').html(group[caret]);
+				$('#stanza1').html(group[caret+1]);
+				$('#stanza2').html(group[caret+2]);
+				$('#stanza3').html(group[caret+3]);
+				$('#stanza4').html(group[caret+4]);
+				$('#stanza5').html(group[caret+5]);
 					
 				$(document).keydown(function(e) {
     
@@ -23,9 +28,14 @@
 
 				 		case 39: // right
 				 		
-				 		if (caret<19) {
-				 			caret++;
-							$('#text').html(group[caret]);
+				 		if (caret<13) {
+				 			caret+6;
+							$('#numeral').html(group[caret]);
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
 				 		}
 						
 						break;
@@ -33,8 +43,13 @@
 						case 37: //left
 						
 						if (caret>0) {
-							caret--;
-							$('#text').html(group[caret]);
+							caret-6;
+							$('#numeral').html(group[caret]);
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
@@ -51,7 +66,14 @@
 	</head>
 	<body>
 		<div id="header"><h1>Pearl in Modern English</h1></div>
-		<div id="text"></div>
+		<div id="text">
+			<div id="numeral"></div>
+			<div id="stanza1"></div>
+			<div id="stanza2"></div>
+			<div id="stanza3"></div>
+			<div id="stanza4"></div>
+			<div id="stanza5"></div>
+		</div>
 		<div id="illustration"><img src="http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg" /></div>
 	</body>
 </html>
