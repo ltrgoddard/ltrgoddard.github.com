@@ -13,8 +13,8 @@
 				
 				$.get('pearl.txt', function(data) {
 					
-					line = data.split('II');
-					$('#text').html(line[1]);
+					line = data.split('\n\n');
+					$('#text').html(line[0]);
 					
 				});
 				
