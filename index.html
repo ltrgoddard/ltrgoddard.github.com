@@ -22,36 +22,38 @@
 				$('#stanza4').html(group[4]);
 				$('#stanza5').html(group[5]);
 					
-				$(document).keydown(function(e) {
+				$(document).keydown(function(key) {
     
-					switch(e.which) {
+					switch(key.which) {
 
 				 		case 39: // right
 				 		
 				 		if (caret < 135 && caret != 91) {
 				 			caret = caret+7;
-				 			$('#text').fadeOut(200);
-							$('#numeral').html(group[caret] + '(' + caret + ')');
+				 			// $('#text').fadeOut(200);
+							$('#numeral').html(group[caret];
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(500).fadeIn(200);
+							// $('#text').delay(500).fadeIn(200);
+							$('#header').html(caret);
 				 		}
 				 		else if (caret = 91) {
 				 			caret = caret+7;
-				 			$('#text').fadeOut(100);
-				 			$('#numeral').html(group[caret] + '(' + caret + ')');
+				 			// $('#text').fadeOut(100);
+				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							$('#text').delay(500).fadeIn(200);
+							// $('#text').delay(500).fadeIn(200);
 							caret = caret+1;
+							$('#header').html(caret);
 				 		}
 						
 						break;
@@ -60,28 +62,30 @@
 						
 						if (caret > 0  && caret != 106) {
 							caret = caret-7;
-							$('#text').fadeOut(200);
-							$('#numeral').html(group[caret] + '(' + caret + ')');
+							// $('#text').fadeOut(200);
+							$('#numeral').html(group[caret];
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(500).fadeIn(200);
+							// $('#text').delay(500).fadeIn(200);
+							$('#header').html(caret);
 				 		}
 				 		else if (caret = 106) {
 				 			caret = caret-8;
-				 			$('#text').fadeOut(200);
-				 			$('#numeral').html(group[caret] + '(' + caret + ')');
+				 			// $('#text').fadeOut(200);
+				 			$('#numeral').html(group[caret];
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							$('#text').delay(500).fadeIn(200);
+							// $('#text').delay(500).fadeIn(200);
 							caret = caret+1;
+							$('#header').html(caret);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
