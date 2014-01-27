@@ -13,13 +13,24 @@
 					
 				line = data.split('\n\n\n\n');
 					
-				$(document).keydown(function(e){
-   
-					if (e.keyCode == 39) { 
-					alert( "right pressed" );
-					$('#text').html(line[0]);
-      					return false;
-    				});
+					$(document).keydown(function(e) {
+    
+						switch(e.which) {
+
+				 			case 39: // right
+				 			
+				 			alert( "right pressed" );
+							$('#text').html(line[0]);
+						
+							break;
+
+							default: return; // exit this handler for other keys
+    						}
+    						e.preventDefault(); // prevent the default action (scroll / move caret)
+  
+    					});
+    				
+				});
 					
 			});
 			
