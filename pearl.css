@@ -30,12 +30,20 @@ img {
 #text {
   width: 68%;
   float: left;
+  padding: 5%;
+  font-size: 13pt;
 }
 
 @media (max-width: 800px) {
   #text  {
     width: 100%;
   }
+}
+
+@media (min-width: 1024px) {
+   #text {
+     -webkit-column-count: 2;
+   }
 }
 
 #illustration {
@@ -51,11 +59,6 @@ img {
   }
 }
 
-.group {
-  padding: 5%;
-  font-size: 13pt;
-}
-
 /*@media (max-width: 600px) {
    .group {
      font-size: 0.8em;
@@ -67,9 +70,3 @@ img {
      font-size: 1em;
    }
 }*/
-
-@media (min-width: 1024px) {
-   .group {
-     -webkit-column-count: 2;
-   }
-}
