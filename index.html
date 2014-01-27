@@ -15,12 +15,12 @@
 				data = stripped.replace(/\n/g, '<br />');
 				group = data.split('<br /><br />');
 				caret = 0;
-				$('#numeral').html(group[caret]);
-				$('#stanza1').html(group[caret+1]);
-				$('#stanza2').html(group[caret+2]);
-				$('#stanza3').html(group[caret+3]);
-				$('#stanza4').html(group[caret+4]);
-				$('#stanza5').html(group[caret+5]);
+				$('#numeral').html(group[0]);
+				$('#stanza1').html(group[1]);
+				$('#stanza2').html(group[2]);
+				$('#stanza3').html(group[3]);
+				$('#stanza4').html(group[4]);
+				$('#stanza5').html(group[5]);
 					
 				$(document).keydown(function(e) {
     
@@ -28,8 +28,8 @@
 
 				 		case 39: // right
 				 		
-				 		if (caret<13) {
-				 			caret = caret+6;
+				 		if (caret<19) {
+				 			caret = caret+7;
 							$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -43,7 +43,7 @@
 						case 37: //left
 						
 						if (caret>0) {
-							caret = caret-6;
+							caret = caret-7;
 							$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
