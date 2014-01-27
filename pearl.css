@@ -30,7 +30,7 @@ img {
 #text {
   width: 68%;
   float: left;
-  padding: 1%;
+  margin-left: 20px;
   font-size: 13pt;
 }
 
