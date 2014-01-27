@@ -13,22 +13,20 @@
 					
 				line = data.split('\n\n\n\n');
 					
-					$(document).keydown(function(e) {
+				$(document).keydown(function(e) {
     
-						switch(e.which) {
+					switch(e.which) {
 
-				 			case 39: // right
+				 		case 39: // right
 				 			
-				 			alert( "right pressed" );
-							$('#text').html(line[0]);
+				 		alert( "right pressed" );
+						$('#text').html(line[0]);
 						
-							break;
+						break;
 
-							default: return; // exit this handler for other keys
-    						}
-    						e.preventDefault(); // prevent the default action (scroll / move caret)
-  
-    					});
+						default: return; // exit this handler for other keys
+    					}
+    					e.preventDefault(); // prevent the default action (scroll / move caret)
     				
 				});
 					
