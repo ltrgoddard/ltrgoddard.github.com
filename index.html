@@ -65,7 +65,7 @@
 							$('#stanza6').html('');
 				 		}
 				 		else if (caret = 106) {
-				 			caret = caret-7;
+				 			caret = caret-8;
 				 			$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -73,7 +73,6 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							caret = caret-1;
 				 		}
 				 		
 						default: return; // exit this handler for other keys
