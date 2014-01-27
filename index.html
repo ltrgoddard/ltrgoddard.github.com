@@ -30,7 +30,7 @@
 				 		
 				 		if (caret < 135 && caret != 91) {
 				 			caret = caret+7;
-				 			$('#text').fadeOut(100);
+				 			$('#text').fadeOut(200);
 							$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -38,7 +38,7 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(100).fadeIn(100);
+							$('#text').delay(500).fadeIn(200);
 				 		}
 				 		else if (caret = 91) {
 				 			caret = caret+7;
@@ -50,7 +50,7 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							$('#text').delay(100).fadeIn(100);
+							$('#text').delay(500).fadeIn(200);
 							caret = caret+1;
 				 		}
 						
@@ -60,7 +60,7 @@
 						
 						if (caret > 0  && caret != 106) {
 							caret = caret-7;
-							$('#text').fadeOut(100);
+							$('#text').fadeOut(200);
 							$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -68,11 +68,11 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(100).fadeIn(100);
+							$('#text').delay(500).fadeIn(200);
 				 		}
 				 		else if (caret = 106) {
-				 			caret = caret-7;
-				 			$('#text').fadeOut(100);
+				 			caret = caret-8;
+				 			$('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -80,8 +80,8 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							$('#text').delay(100).fadeIn(100);
-							caret = caret-1;
+							$('#text').delay(500).fadeIn(200);
+							caret = caret+1;
 				 		}
 				 		
 						default: return; // exit this handler for other keys
