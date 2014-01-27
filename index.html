@@ -30,7 +30,7 @@
 				 		
 				 		if (caret<120) {
 				 			caret = caret+7;
-							$('#numeral').html(group[caret]);
+							$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
 							$('#stanza3').html(group[caret+3]);
@@ -44,7 +44,7 @@
 						
 						if (caret>0) {
 							caret = caret-7;
-							$('#numeral').html(group[caret]);
+							$('#numeral').html(group[caret] + '(' + caret + ')');
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
 							$('#stanza3').html(group[caret+3]);
