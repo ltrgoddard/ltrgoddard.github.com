@@ -2,19 +2,16 @@
 <html> 
 	<head> 
 		<title>Bitcoin Order Book Visualisation</title>
-		<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css' />
-		<link rel="stylesheet" type="text/css" href="pearl.css" />
+		<link rel="stylesheet" type="text/css" href="orderbook.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
 		
-		$(document).ready(function(){
-			$("#header").on("click", function() {
-				$.get('2.xml', function(d){  
-					$(d).find('group').each(function(){
-						$('.group').replaceWith($(this));
-					});
-				 });  
-			 });  
+		$(document).ready(function() {
+
+			$.getJSON("https://www.bitstamp.net/api/order_book/"), function(book) {
+				console.log(book);
+			}
+			
 		});
 		
 		</script>
