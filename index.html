@@ -9,9 +9,9 @@
 		
 		$(document).ready(function(){
 			
-			$.get('pearl.txt', function(data) {
+			$.get('pearl.txt', function(raw) {
 				
-				var processed = data.replace('\n', '<br />');	
+				var data = raw.replace('\n', '<br />');	
 				line = data.split('<br /><br /><br /><br />');
 				var caret = 0;
 				$('#text').html(line[caret]);
