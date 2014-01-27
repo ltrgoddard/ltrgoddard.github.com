@@ -10,9 +10,7 @@
 		$(document).ready(function(){
 			$("#header").on("click", function() {
 				$.get('pearl.txt', function(data){  
-					$(data).find('group').each(function(){
-						$('.group').replaceWith($(this));
-					});
+					$('.group').replaceWith($(this));
 				'text'
 				 });  
 			 });  
