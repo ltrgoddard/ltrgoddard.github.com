@@ -11,8 +11,8 @@
 			
 			$.get('pearl.txt', function(raw) {
 				
-				stripped = raw.replace(/\n/g, '<br />');
-				data = stripped.replace(/\<br \/\>\<br \/\>\<br \/\>/g, '<br /><br />');
+				stripped = raw.replace(/\n\n\n/g, '\n\n');
+				data = stripped.replace(/\n/g, '<br />');
 				group = data.split('<br /><br />');
 				caret = 0;
 				$('#numeral').html(group[caret]);
@@ -21,7 +21,6 @@
 				$('#stanza3').html(group[caret+3]);
 				$('#stanza4').html(group[caret+4]);
 				$('#stanza5').html(group[caret+5]);
-				$('#stanza5').html(group[caret+6]);
 					
 				$(document).keydown(function(e) {
     
