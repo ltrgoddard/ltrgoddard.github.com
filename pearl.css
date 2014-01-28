@@ -23,39 +23,53 @@ a:active {
   background-color: #3A2F0B;
   color: #eee;
   font-size: 12pt;
-  width: 240px;
-  height: 270px;
   padding: 20px;
-  position: absolute;
-  top: 40px;
-  left: 640px;
-}
-
-#illustration {
-  width: 280px;
-  height: 310px;
-  background-image: url('http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg');
-  background-size: 280px;
-  position: absolute;
-  top: 40px;
-  left: 960px;
 }
 
 #message {
-  width: 240px;
-  height: 220px;
   padding: 20px;
   text-align: center;
   vertical-align: middle;
   border: 1px dotted #000;
 }
 
-#numeral {
+.stanza {
+  float: left;
+  clear: left;
+  width: auto;
+}
+
+
+@media (min-width: 640px) {
+  #header {
+    width: 240px;
+    height: 270px;
+    position: absolute;
+    top: 40px;
+    left: 640px;
+  }
+  
+  #illustration {
+    width: 280px;
+    height: 310px;
+    background-image: url('http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg');
+    background-size: 280px;
+    position: absolute;
+    top: 40px;
+    left: 960px;
+  }
+  
+  #message {
+    width: 240px;
+    height: 220px;
+  }
+  
+  #numeral {
   position: absolute;
   width: 280px;
   top: 20px;
   left: 20px;
-}
+  }
 
 #column1 {
   width: 280px;
@@ -84,11 +98,6 @@ a:active {
   top: 366px;
   left: 960px;
 }
-
-.stanza {
-  float: left;
-  clear: left;
-  width: auto;
 }
 
 @media (max-width: 640px) {
