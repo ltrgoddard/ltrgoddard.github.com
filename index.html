@@ -32,7 +32,7 @@
 				 		
 				 		if (caret != 134 && caret != 98 && caret != 91) {
 				 			caret = caret+7;
-				 			// $('#text').fadeOut(200);
+				 			$('#text').fadeOut(200);
 							$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -40,11 +40,11 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(message);
-							// $('#text').delay(200).fadeIn(200);
+							$('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 91) {
 				 			caret = caret+7;
-				 			// $('#text').fadeOut(200);
+				 			$('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -52,11 +52,11 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							// $('#text').delay(200).fadeIn(200);
+							$('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 98) {
 				 			caret = caret+8;
-				 			// $('#text').fadeOut(200);
+				 			$('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -64,10 +64,10 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(message);
-							// $('#text').delay(200).fadeIn(200);
+							$('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 134) {
-				 			// $('#text').fadeOut(200);
+				 			$('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -75,7 +75,7 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(message);
-							// $('#text').delay(200).fadeIn(200);
+							$('#text').delay(200).fadeIn(200);
 				 		}
 						
 						break;
@@ -136,6 +136,7 @@
 			<p>Use your arrow keys (&larr; <em>and</em> &rarr;) or swipe to navigate this Modern English edition of the 14th century dream vision <em>Pearl</em>. <a href="http://en.wikipedia.org/wiki/Pearl_(poem)">Click here</a> to learn more about the poem or to find a different version.</p>
 		</div>
 		<div id="illustration"></div>
+		<div id="text">
 		<h2 id="numeral"></h2>
 		<div class="column" id="column1">
 			<p class="stanza" id="stanza1"></p>
@@ -150,6 +151,7 @@
 		</div>
 		<div class="column" id="column4">
 			<p class="stanza" id="stanza6"></p>
+		</div>
 		</div>
 	</body>
 </html>
