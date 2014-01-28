@@ -56,9 +56,7 @@ a:active {
 
 #numeral {
   float: left;
-  clear: left;
-  clear: right;
-  width: auto;
+  width: 600px;
   padding: 10px;
 }
 
