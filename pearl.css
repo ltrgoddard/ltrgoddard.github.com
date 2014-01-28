@@ -34,6 +34,10 @@ a:active {
   border: 1px solid #fff;
 }
 
+#header.p {
+  margin-top: 20px;
+}
+
 #message {
   padding: 20px;
   text-align: center;
