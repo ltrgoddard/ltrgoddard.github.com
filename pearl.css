@@ -90,3 +90,21 @@ a:active {
   clear: left;
   width: auto;
 }
+
+@media (max-width: 640px) {
+  #header {
+    float: left;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+  } 
+  #illustration {
+    visibility: hidden;
+  }
+  #numeral {
+    float: left;
+  }
+  .column {
+    float: left;
+  }
+}
