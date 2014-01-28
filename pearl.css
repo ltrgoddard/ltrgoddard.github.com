@@ -32,7 +32,7 @@ a:active {
   padding: 20px;
   text-align: center;
   vertical-align: middle;
-  border: 1px dotted #000;
+  border: 1px dotted #fff;
 }
 
 .stanza {
@@ -113,11 +113,10 @@ a:active {
   }
   #numeral {
     float: left;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    border: none;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
   .column {
     float: left;
