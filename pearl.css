@@ -27,7 +27,7 @@ img {
   padding-bottom: 20px;*/
 }
 
-#text {
+#container {
   width: 60%;
   float: left;
   margin-left: 20px;
@@ -36,13 +36,13 @@ img {
 }
 
 @media (max-width: 800px) {
-  #text  {
+  #container  {
     width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-   #text {
+   #container {
      -webkit-column-count: 2;
      -webkit-column-gap: 0px;
    }
