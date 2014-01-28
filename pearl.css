@@ -44,14 +44,14 @@ a:active {
   padding-bottom: 20px;*/
 }
 
-#container {
+/* #container {
   width: 100%;
   height: auto;
   float: left;
   margin-left: 20px;
   margin-top: 20px;
   font-size: 13pt;
-}
+} */
 
 @media (max-width: 800px) {
   #container  {
