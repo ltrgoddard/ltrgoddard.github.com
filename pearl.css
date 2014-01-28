@@ -100,7 +100,7 @@ a:active {
 }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   #header {
     float: left;
     width: 80%;
@@ -112,6 +112,7 @@ a:active {
   }
   #numeral {
     float: left;
+    width: 280px;
   }
   .column {
     float: left;
