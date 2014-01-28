@@ -33,6 +33,7 @@ a:active {
   color: #eee;
   width: 400px;
   float: left;
+  clear: left;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
