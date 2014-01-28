@@ -33,6 +33,8 @@
 				 		if (caret != 134 && caret != 98 && caret != 91) {
 				 			caret = caret+7;
 				 			$('#text').fadeOut(200);
+				 			setTimeout {function(
+				 				
 							$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -40,7 +42,9 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(message);
-							$('#text').delay(200).fadeIn(200);
+							$('#text').fadeIn(200);
+							
+				 			), 200};
 				 		}
 				 		else if (caret == 91) {
 				 			caret = caret+7;
