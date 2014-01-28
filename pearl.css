@@ -105,8 +105,8 @@ a:active {
   #header {
     float: left;
     width: 80%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
   } 
   #illustration {
     visibility: hidden;
