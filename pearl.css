@@ -32,10 +32,11 @@ a:active {
   background-color: #3A2F0B;
   color: #eee;
   width: 400px;
-  float: right;
+  float: left;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 
