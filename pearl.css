@@ -67,10 +67,14 @@ a:active {
 
 #numeral {
   float: left;
+  width: 20%;
+  padding: 10px;
 }
 
 .stanza {
   float: left;
+  width: 20%;
+  padding: 10px;
 }
 
 #illustration {
