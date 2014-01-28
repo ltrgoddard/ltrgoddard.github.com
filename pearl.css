@@ -39,11 +39,6 @@ a:active {
   left: 660px;
 }
 
-@media (max-width: 1200px) {
-  #header {
-    width: 250px;
-  }
-}
 
 @media (max-width: 600px) {
   #header {
@@ -52,13 +47,13 @@ a:active {
   }
 }
 
-/* .column {
+@media (max-width: 600px) {
+  .column {
   float: left;
   width: 300px;
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid #000;
-} */
+}
 
 #numeral {
   position: fixed;
@@ -84,6 +79,12 @@ a:active {
   position: fixed;
   top: 340px;
   left: 660px;
+}
+
+#column4 {
+  position: fixed;
+  top: 340px;
+  left: 980px;
 }
 
 .stanza {
