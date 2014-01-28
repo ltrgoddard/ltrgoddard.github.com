@@ -27,8 +27,9 @@ a:active {
 #header {
   background-color: #3A2F0B;
   color: #eee;
-  width: 280px;
-  height 280px;
+  font-size: 10pt;
+  width: 260px;
+  height 260px;
   padding: 20px;
   position: fixed;
   top: 20px;
@@ -62,13 +63,13 @@ a:active {
 
 #column1 {
   position: fixed;
-  top: 60px;
+  top: 80px;
   left: 20px;
 }
 
 #column2 {
   position: fixed;
-  top: 60px;
+  top: 80px;
   left: 340px;
 }
 
