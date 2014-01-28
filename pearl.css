@@ -31,13 +31,21 @@ a:active {
   width: 240px;
   height 240px;
   padding: 20px;
-  position: fixed;
+  position: absolute;
   top: 40px;
   left: 640px;
 }
 
+#illustration {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 40px;
+  left: 950px;
+}
+
 #numeral {
-  position: fixed;
+  position: absolute;
   width: 280px;
   top: 20px;
   left: 20px;
@@ -50,29 +58,29 @@ a:active {
 
 #column1 {
   width: 280px;
-  position: fixed;
+  position: absolute;
   top: 80px;
   left: 20px;
 }
 
 #column2 {
   width: 280px;
-  position: fixed;
+  position: absolute;
   top: 80px;
   left: 320px;
 }
 
 #column3 {
   width: 280px;
-  position: fixed;
-  top: 365px;
+  position: absolute;
+  top: 366px;
   left: 640px;
 }
 
 #column4 {
   width: 280px;
-  position: fixed;
-  top: 365px;
+  position: absolute;
+  top: 366px;
   left: 960px;
 }
 
