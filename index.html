@@ -30,7 +30,7 @@
 				 		
 				 		if (caret != 134 && caret != 98 && caret != 91) {
 				 			caret = caret+7;
-				 			$('#text').fadeOut(200);
+				 			// $('#text').fadeOut(200);
 							$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -38,11 +38,11 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 91) {
 				 			caret = caret+7;
-				 			$('#text').fadeOut(200);
+				 			// $('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -50,11 +50,11 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 98) {
 				 			caret = caret+8;
-				 			$('#text').fadeOut(200);
+				 			// $('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -62,10 +62,10 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 134) {
-				 			$('#text').fadeOut(200);
+				 			// $('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -73,7 +73,7 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 						
 						break;
@@ -82,7 +82,7 @@
 						
 						if (caret != 0  && caret != 106) {
 							caret = caret-7;
-							$('#text').fadeOut(200);
+							// $('#text').fadeOut(200);
 							$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -90,11 +90,11 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 106) {
 				 			caret = caret-8;
-				 			$('#text').fadeOut(200);
+				 			// $('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -102,10 +102,10 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 0) {
-				 			$('#text').fadeOut(200);
+				 			// $('#text').fadeOut(200);
 				 			$('#numeral').html(group[caret]);
 							$('#stanza1').html(group[caret+1]);
 							$('#stanza2').html(group[caret+2]);
@@ -113,7 +113,7 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
-							$('#text').delay(200).fadeIn(200);
+							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
@@ -129,7 +129,10 @@
 		</script>
 	</head>
 	<body>
-		<div id="header"><h1>Pearl in Modern English</h1></div>
+		<div id="header">
+			<h1>Pearl in Modern English</h1>
+			<p>Use your arrow keys (&larr; and &rarr;) or swipe to navigate this Modern English edition of the 14th century dream vision <em>Pearl</em>, or <a href="">click here</a> to learn more about the poem or download a full copy.</p>
+		</div>
 		<div id="container">
 			<div id="text">
 				<h2 id="numeral"></h2>
