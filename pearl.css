@@ -9,6 +9,10 @@ h1 {
   font-size: 20pt;
 }
 
+hr {
+  height: 1px;
+}
+
 a:link {
   color: #aaa;
 }
