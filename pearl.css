@@ -3,6 +3,10 @@ body {
   font-family: 'EB Garamond', serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 a:link {
   color: #aaa;
 }
