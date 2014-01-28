@@ -68,6 +68,6 @@ a:active {
 @media (max-width: 800px) {
   #illustration  {
     width: 90%;
-    float: right;
+    float: left;
   }
 }
