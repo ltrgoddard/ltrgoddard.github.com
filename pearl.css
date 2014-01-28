@@ -45,7 +45,8 @@ a:active {
 }
 
 #container {
-  width: 60%;
+  width: 100%;
+  height: auto;
   float: left;
   margin-left: 20px;
   margin-top: 20px;
