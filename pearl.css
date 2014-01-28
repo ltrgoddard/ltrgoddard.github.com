@@ -47,6 +47,11 @@ a:active {
   }
 }
 
+.column {
+  float: left;
+  width: auto;
+}
+
 #numeral {
   float: left;
   clear: left;
