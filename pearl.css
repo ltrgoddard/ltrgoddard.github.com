@@ -120,4 +120,7 @@ a:active {
     width: 400px;
     margin-left: 20px;
   }
+  #message {
+    visibility: hidden;
+  }
 }
