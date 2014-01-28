@@ -3,11 +3,6 @@ body {
   font-family: 'EB Garamond', serif;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 a:link {
   color: #aaa;
 }
@@ -44,6 +39,10 @@ a:active {
   position: absolute;
   top: 40px;
   left: 960px;
+}
+
+#message {
+  color: #ddd;
 }
 
 #numeral {
