@@ -112,9 +112,12 @@ a:active {
   }
   #numeral {
     float: left;
-    width: 280px;
+    width: 400px;
+    margin-left: 20px;
   }
   .column {
     float: left;
+    width: 400px;
+    margin-left: 20px;
   }
 }
