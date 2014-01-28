@@ -11,6 +11,7 @@ h1 {
 
 hr {
   height: 1px;
+  border: 0;
 }
 
 a:link {
