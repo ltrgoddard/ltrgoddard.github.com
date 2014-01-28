@@ -66,24 +66,28 @@ a:active {
 }
 
 #column1 {
+  width: 300px;
   position: fixed;
   top: 80px;
   left: 20px;
 }
 
 #column2 {
+  width: 300px;
   position: fixed;
   top: 80px;
   left: 340px;
 }
 
 #column3 {
+  width: 300px;
   position: fixed;
   top: 360px;
   left: 660px;
 }
 
 #column4 {
+  width: 300px;
   position: fixed;
   top: 360px;
   left: 980px;
@@ -94,18 +98,4 @@ a:active {
   clear: left;
   width: auto;
   border: 1px solid #000;
-}
-
-#illustration {
-  margin-top: 20px;
-  margin-right: 20px;
-  width: 30%;
-  float: right;
-}
-
-@media (max-width: 800px) {
-  #illustration  {
-    width: 90%;
-    float: left;
-  }
 }
