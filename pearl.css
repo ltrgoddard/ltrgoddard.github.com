@@ -24,7 +24,7 @@ a:active {
   color: #eee;
   font-size: 12pt;
   width: 240px;
-  height 270px;
+  height 280px;
   padding: 20px;
   position: absolute;
   top: 40px;
@@ -43,7 +43,7 @@ a:active {
 
 #message {
   width: 240px;
-  height: 240px;
+  height: 220px;
   padding: 20px;
   text-align: center;
   vertical-align: middle;
