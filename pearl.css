@@ -40,7 +40,7 @@ a:active {
   margin-right: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 100px) {
   #header {
     width: 30%;
   }
