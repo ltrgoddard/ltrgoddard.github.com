@@ -42,9 +42,12 @@ a:active {
 }
 
 #message {
-  width: 280px;
-  height: 310px;
-  background-color: #ddd;
+  width: 260px;
+  height: 260px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px dotted #000;
 }
 
 #numeral {
