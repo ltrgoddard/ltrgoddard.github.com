@@ -31,7 +31,7 @@ a:active {
 #header {
   background-color: #3A2F0B;
   color: #eee;
-  width: 300px;
+  width: 400px;
   float: right;
   padding: 20px;
   margin-top: 20px;
@@ -47,14 +47,14 @@ a:active {
 
 #numeral {
   float: left;
-  width: 20%;
+  width: auto;
   padding: 10px;
   border: 1px solid #000;
 }
 
 .stanza {
   float: left;
-  width: 20%;
+  width: auto;
   padding: 10px;
   border: 1px solid #000;
 }
