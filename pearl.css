@@ -31,13 +31,12 @@ a:active {
 #header {
   background-color: #3A2F0B;
   color: #eee;
-  width: 400px;
-  float: right;
+  width: 280px;
+  height 280px;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  position: fixed;
+  top: 20px;
+  left: 660px;
 }
 
 @media (max-width: 1200px) {
@@ -53,19 +52,38 @@ a:active {
   }
 }
 
-.column {
+/* .column {
   float: left;
-  width: 290px;
+  width: 300px;
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid #000;
-}
+} */
 
 #numeral {
-  float: left;
-  width: 45%;
-  margin-left: 10px;
+  position: fixed;
+  width: 300px;
+  top: 20px;
+  left: 20px;
   border: 1px solid #000;
+}
+
+#column1 {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+}
+
+#column2 {
+  position: fixed;
+  top: 60px;
+  left: 340px;
+}
+
+#column3 {
+  position: fixed;
+  top: 340px;
+  left: 660px;
 }
 
 .stanza {
