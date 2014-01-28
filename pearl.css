@@ -31,16 +31,17 @@ a:active {
 #header {
   background-color: #3A2F0B;
   color: #eee;
-  width: auto;
+  width: 300px;
   float: right;
   padding: 20px;
   margin-top: 20px;
   margin-right: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   #header {
     float: left;
+    width: 90%;
   }
 }
 
