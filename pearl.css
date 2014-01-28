@@ -49,15 +49,15 @@ a:active {
 
 .column {
   float: left;
-  width: 300px;
+  width: 280px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 #numeral {
   float: left;
-  width: 600px;
-  padding: 10px;
+  width: 50%;
+  margin-left: 20px;
 }
 
 .stanza {
