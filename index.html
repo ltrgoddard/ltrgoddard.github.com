@@ -28,7 +28,7 @@
 
 				 		case 39: // right
 				 		
-				 		if (caret != 134 && caret != 98) {
+				 		if (caret != 134 && caret != 98 && != 91) {
 				 			caret = caret+7;
 				 			// $('#text').fadeOut(200);
 							$('#numeral').html(group[caret]);
@@ -41,6 +41,22 @@
 							// $('#text').delay(500).fadeIn(200);
 							$('#header').html(caret);
 				 		}
+				 		else if (caret == 91) {
+				 			caret = caret+7;
+				 			// $('#text').fadeOut(100);
+				 			$('#numeral').html(group[caret]);
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
+							$('#stanza6').html(group[caret+6]);
+							
+							// STANZA 6 DOESN'T DISPLAY
+							$('#header').html(caret);
+							
+							// $('#text').delay(500).fadeIn(200);
+				 		}
 				 		else if (caret == 98) {
 				 			caret = caret+8;
 				 			// $('#text').fadeOut(100);
@@ -50,7 +66,7 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html(group[caret+6]);
+							//$('#stanza6').html(group[caret+6]);
 							
 							// STANZA 6 DOESN'T DISPLAY
 							$('#header').html(caret);
