@@ -39,6 +39,7 @@
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
 							// $('#text').delay(500).fadeIn(200);
+							$('#header').html(caret);
 				 		}
 				 		else if (caret == 98) {
 				 			caret = caret+8;
@@ -52,6 +53,7 @@
 							$('#stanza6').html(group[caret+6]);
 							
 							// STANZA 6 DOESN'T DISPLAY
+							$('#header').html(caret);
 							
 							// $('#text').delay(500).fadeIn(200);
 				 		}
@@ -63,6 +65,8 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
+							
+							$('#header').html(caret);
 				 		}
 						
 						break;
@@ -80,6 +84,7 @@
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
 							// $('#text').delay(500).fadeIn(200);
+							$('#header').html(caret);
 				 		}
 				 		else if (caret == 106) {
 				 			caret = caret-8;
@@ -92,6 +97,7 @@
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html(group[caret+6]);
 							// $('#text').delay(500).fadeIn(200);
+							$('#header').html(caret);
 				 		}
 				 		else if (caret == 0) {
 				 			$('#numeral').html(group[caret]);
@@ -101,6 +107,8 @@
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
 							$('#stanza6').html('');
+							
+							$('#header').html(caret);
 				 		}
 				 		
 						default: return; // exit this handler for other keys
