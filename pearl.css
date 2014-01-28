@@ -61,6 +61,10 @@ a:active {
   border: 1px solid #000;
 }
 
+.column {
+  border: 1px solid #000;
+}
+
 #column1 {
   position: fixed;
   top: 80px;
