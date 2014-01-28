@@ -31,40 +31,18 @@ a:active {
 #header {
   background-color: #3A2F0B;
   color: #eee;
-  width: 30%;
+  width: auto;
   float: right;
   padding: 20px;
   margin-top: 20px;
   margin-right: 20px;
-  /*height: 60px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-bottom: 20px;*/
 }
-
-/* #container {
-  width: 100%;
-  height: auto;
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 13pt;
-} */
 
 @media (max-width: 800px) {
-  #container  {
-    width: 100%;
+  #header {
+    float: left;
   }
 }
-
-/* @media (min-width: 1024px) {
-   #container {
-     -webkit-column-count: 2;
-     -webkit-column-gap: 0px;
-   }
-} */
 
 #numeral {
   float: left;
@@ -89,18 +67,7 @@ a:active {
 
 @media (max-width: 800px) {
   #illustration  {
-    width: 100%;
+    width: 90%;
+    float: right;
   }
 }
-
-/*@media (max-width: 600px) {
-   .group {
-     font-size: 0.8em;
-   }
-}
-
-@media (max-width: 800px) {
-   .group {
-     font-size: 1em;
-   }
-}*/
