@@ -39,9 +39,9 @@ a:active {
   margin-right: 20px;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   #header {
-    width: 30%;
+    width: 300px;
   }
 }
 
