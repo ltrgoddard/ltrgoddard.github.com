@@ -58,11 +58,19 @@ a:active {
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
    #container {
      -webkit-column-count: 2;
      -webkit-column-gap: 0px;
    }
+} */
+
+#numeral {
+  float: left;
+}
+
+.stanza {
+  float: left;
 }
 
 #illustration {
