@@ -32,7 +32,7 @@ a:active {
   background-color: #3A2F0B;
   color: #eee;
   width: 400px;
-  float: right;
+  float: left;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -57,8 +57,8 @@ a:active {
 
 #numeral {
   float: left;
-  width: 500px;
-  margin-left: 20px;
+  width: 610px;
+  margin-left: 10px;
   border: 1px solid #000;
 }
 
