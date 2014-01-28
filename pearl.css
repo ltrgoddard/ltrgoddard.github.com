@@ -25,7 +25,7 @@ a:active {
   color: #eee;
   font-size: 12pt;
   padding: 20px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
 }
 
 #message {
@@ -113,10 +113,11 @@ a:active {
   }
   #numeral {
     float: left;
-    width: 80%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    border: none;
   }
   .column {
     float: left;
