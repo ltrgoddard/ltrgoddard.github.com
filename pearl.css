@@ -47,7 +47,7 @@ a:active {
 
 #numeral {
   float: left;
-  clear: right;
+  clear: left;
   width: auto;
   padding: 10px;
   border: 1px solid #000;
@@ -55,7 +55,7 @@ a:active {
 
 .stanza {
   float: left;
-  clear: right;
+  clear: left;
   width: auto;
   padding: 10px;
   border: 1px solid #000;
