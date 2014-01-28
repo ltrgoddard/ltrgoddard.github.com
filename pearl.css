@@ -40,6 +40,12 @@ a:active {
   margin-right: 20px;
 }
 
+@media (max-width: 900px) {
+  #header {
+    width: 30%;
+  }
+}
+
 @media (max-width: 600px) {
   #header {
     float: left;
