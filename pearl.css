@@ -105,8 +105,7 @@ a:active {
   #header {
     float: left;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
   } 
   #illustration {
     visibility: hidden;
@@ -114,14 +113,13 @@ a:active {
   #numeral {
     float: left;
     width: 80%;
-    margin-top: auto;
-    margin-left: auto;
+    margin-left: 20px;
+    margin-top: 30px;
   }
   .column {
     float: left;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
   }
   #message {
     visibility: hidden;
