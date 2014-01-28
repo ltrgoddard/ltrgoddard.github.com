@@ -112,12 +112,12 @@ a:active {
   }
   #numeral {
     float: left;
-    width: 400px;
+    width: 100%;
     margin-left: 20px;
   }
   .column {
     float: left;
-    width: 400px;
+    width: 100%;
     margin-left: 20px;
   }
   #message {
