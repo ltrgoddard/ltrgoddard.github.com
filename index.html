@@ -15,13 +15,14 @@
 				data = stripped.replace(/\n/g, '<br />');
 				group = data.split('<br /><br />');
 				caret = 0;
+				message = '<em id="message">This space is reserved for the mysterious sixth stanza in Section XV.</em>';
 				$('#numeral').html(group[0]);
 				$('#stanza1').html(group[1]);
 				$('#stanza2').html(group[2]);
 				$('#stanza3').html(group[3]);
 				$('#stanza4').html(group[4]);
 				$('#stanza5').html(group[5]);
-				$('#stanza6').html('');
+				$('#stanza6').html(message);
 					
 				$(document).keydown(function(e) {
     
@@ -38,7 +39,7 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html('');
+							$('#stanza6').html(message);
 							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 91) {
@@ -62,7 +63,7 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html('');
+							$('#stanza6').html(message);
 							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 134) {
@@ -73,7 +74,7 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html('');
+							$('#stanza6').html(message);
 							// $('#text').delay(200).fadeIn(200);
 				 		}
 						
@@ -90,7 +91,7 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html('');
+							$('#stanza6').html(message);
 							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		else if (caret == 106) {
@@ -113,7 +114,7 @@
 							$('#stanza3').html(group[caret+3]);
 							$('#stanza4').html(group[caret+4]);
 							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html('');
+							$('#stanza6').html(message);
 							// $('#text').delay(200).fadeIn(200);
 				 		}
 				 		
