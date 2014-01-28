@@ -5,6 +5,7 @@ body {
 
 h1 {
   text-align: center;
+  font-style: normal;
 }
 
 a:link {
@@ -27,7 +28,7 @@ a:active {
 #header {
   background-color: #3D3300;
   color: #eee;
-  font-size: 12pt;
+  font-size: 10pt;
   padding: 20px;
   border: 1px solid #fff;
   outline: 1px solid #000;
