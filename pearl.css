@@ -38,7 +38,7 @@ a:active {
 
 #illustration {
   width: 280px;
-  height: 280px;
+  height: 400px;
   background-image: http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg;
   position: absolute;
   top: 40px;
@@ -50,11 +50,9 @@ a:active {
   width: 280px;
   top: 20px;
   left: 20px;
-  border: 1px solid #000;
 }
 
 .column {
-  border: 1px solid #000;
 }
 
 #column1 {
@@ -89,5 +87,4 @@ a:active {
   float: left;
   clear: left;
   width: auto;
-  border: 1px solid #000;
 }
