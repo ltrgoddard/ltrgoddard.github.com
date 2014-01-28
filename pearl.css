@@ -42,8 +42,8 @@ a:active {
 }
 
 #message {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
   padding: 20px;
   text-align: center;
   vertical-align: middle;
@@ -55,9 +55,6 @@ a:active {
   width: 280px;
   top: 20px;
   left: 20px;
-}
-
-.column {
 }
 
 #column1 {
