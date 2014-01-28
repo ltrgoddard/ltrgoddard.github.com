@@ -42,7 +42,9 @@ a:active {
 }
 
 #message {
-  color: #ddd;
+  width: 280px;
+  height: 310px;
+  background-color: #ddd;
 }
 
 #numeral {
