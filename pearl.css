@@ -120,7 +120,7 @@ a:active {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #illustration {
     display: none;
   }
