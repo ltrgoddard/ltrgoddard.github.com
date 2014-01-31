@@ -49,13 +49,22 @@ a:active {
 }
 
 #numeral {
-    width: 280px;
+  width: 280px;
 }
 
 .stanza {
   float: left;
   clear: left;
   width: auto;
+}
+
+@media (min-width: 800px) {
+  #illustration {
+    display: none;
+  }
+  #message {
+    display: none;
+  }
 }
 
 
