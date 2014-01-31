@@ -48,6 +48,10 @@ a:active {
   border: 1px dotted #000;
 }
 
+#numeral {
+    width: 280px;
+}
+
 .stanza {
   float: left;
   clear: left;
@@ -82,7 +86,6 @@ a:active {
   
   #numeral {
   position: absolute;
-  width: 280px;
   top: 20px;
   left: 20px;
   }
@@ -124,7 +127,7 @@ a:active {
     margin-right: 20px;
   } 
   #illustration {
-    visibility: hidden;
+    display: none;
   }
   #text {
     width: 80%;
@@ -145,6 +148,6 @@ a:active {
     margin-left: 20px;
   }
   #message {
-    visibility: hidden;
+    display: none;
   }
 }
