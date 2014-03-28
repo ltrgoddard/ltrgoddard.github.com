@@ -24,6 +24,123 @@
 				$('#stanza4').html(group[4]);
 				$('#stanza5').html(group[5]);
 				$('#stanza6').html(message);
+				
+				$('#container').swipe( {
+					
+					swipeLeft:function(event, direction, distance, duration, fingerCount) {
+						
+						 	if (caret != 134 && caret != 98 && caret != 91) {
+				 			caret = caret+7;
+				 			$('#text').fadeOut(50);
+				 			setTimeout(function() {
+				 				
+								$('#numeral').html(group[caret]);
+								$('#stanza1').html(group[caret+1]);
+								$('#stanza2').html(group[caret+2]);
+								$('#stanza3').html(group[caret+3]);
+								$('#stanza4').html(group[caret+4]);
+								$('#stanza5').html(group[caret+5]);
+								$('#stanza6').html(message);
+								$('#text').fadeIn(50);
+							
+				 			}, 50);
+				 		}
+				 		else if (caret == 91) {
+				 			caret = caret+7;
+				 			$('#text').fadeOut(50);
+				 			setTimeout(function() {
+				 				
+				 				$('#numeral').html(group[caret]);
+								$('#stanza1').html(group[caret+1]);
+								$('#stanza2').html(group[caret+2]);
+								$('#stanza3').html(group[caret+3]);
+								$('#stanza4').html(group[caret+4]);
+								$('#stanza5').html(group[caret+5]);
+								$('#stanza6').html(group[caret+6]);
+								$('#text').fadeIn(50);
+								
+				 			}, 50);
+				 		}
+				 		else if (caret == 98) {
+				 			caret = caret+8;
+				 			$('#text').fadeOut(50);
+				 			setTimeout(function() {
+				 				
+				 				$('#numeral').html(group[caret]);
+								$('#stanza1').html(group[caret+1]);
+								$('#stanza2').html(group[caret+2]);
+								$('#stanza3').html(group[caret+3]);
+								$('#stanza4').html(group[caret+4]);
+								$('#stanza5').html(group[caret+5]);
+								$('#stanza6').html(message);
+								$('#text').fadeIn(50);
+								
+				 			}, 50);
+				 		}
+				 		else if (caret == 134) {
+				 				
+				 			$('#numeral').html(group[caret]);
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
+							$('#stanza6').html(message);
+				 		}
+						 
+  					}
+  					
+  					swipeRight:function(event, direction, distance, duration, fingerCount) {
+  					
+  					
+  						if (caret != 0  && caret != 106) {
+							caret = caret-7;
+							$('#text').fadeOut(50);
+							setTimeout(function() {
+								
+								$('#numeral').html(group[caret]);
+								$('#stanza1').html(group[caret+1]);
+								$('#stanza2').html(group[caret+2]);
+								$('#stanza3').html(group[caret+3]);
+								$('#stanza4').html(group[caret+4]);
+								$('#stanza5').html(group[caret+5]);
+								$('#stanza6').html(message);
+								$('#text').fadeIn(50);
+							
+							}, 50);
+				 		}
+				 		else if (caret == 106) {
+				 			caret = caret-8;
+				 			$('#text').fadeOut(50);
+				 			setTimeout(function() {
+				 				
+				 				$('#numeral').html(group[caret]);
+								$('#stanza1').html(group[caret+1]);
+								$('#stanza2').html(group[caret+2]);
+								$('#stanza3').html(group[caret+3]);
+								$('#stanza4').html(group[caret+4]);
+								$('#stanza5').html(group[caret+5]);
+								$('#stanza6').html(group[caret+6]);
+								$('#text').fadeIn(50);
+								
+				 			}, 50);
+				 		}
+				 		else if (caret == 0) {
+				 			
+				 			$('#numeral').html(group[caret]);
+							$('#stanza1').html(group[caret+1]);
+							$('#stanza2').html(group[caret+2]);
+							$('#stanza3').html(group[caret+3]);
+							$('#stanza4').html(group[caret+4]);
+							$('#stanza5').html(group[caret+5]);
+							$('#stanza6').html(message);
+							
+				 		}
+  						
+  					}
+				});
+				
+				
 					
 				$(document).keydown(function(e) {
     
@@ -151,27 +268,29 @@
 		</script>
 	</head>
 	<body>
-		<div id="header">
-			<h1><em>Pearl</em> in<br />Modern<br />English<br /><hr /></h1>
-			<p>Use your arrow keys (&larr; <em>and</em> &rarr;) or swipe to navigate this Modern English edition of the 14th century dream vision <em>Pearl</em>. <a href="pearl.txt">Click here</a> to download a plain text version.</p>
-		</div>
-		<div id="illustration"></div>
-		<div id="text">
-		<h2 id="numeral"></h2>
-		<div class="column" id="column1">
-			<p class="stanza" id="stanza1"></p>
-			<p class="stanza" id="stanza2"></p>
-		</div>
-		<div class="column" id="column2">
-			<p class="stanza" id="stanza3"></p>
-			<p class="stanza" id="stanza4"></p>
-		</div>
-		<div class="column" id="column3">
-			<p class="stanza" id="stanza5"></p>
-		</div>
-		</div>
-		<div class="column" id="column4">
-			<p class="stanza" id="stanza6"></p>
+		<div id="container">
+			<div id="header">
+				<h1><em>Pearl</em> in<br />Modern<br />English<br /><hr /></h1>
+				<p>Use your arrow keys (&larr; <em>and</em> &rarr;) or swipe to navigate this Modern English edition of the 14th century dream vision <em>Pearl</em>. <a href="pearl.txt">Click here</a> to download a plain text version.</p>
+			</div>
+			<div id="illustration"></div>
+			<div id="text">
+			<h2 id="numeral"></h2>
+			<div class="column" id="column1">
+				<p class="stanza" id="stanza1"></p>
+				<p class="stanza" id="stanza2"></p>
+			</div>
+			<div class="column" id="column2">
+				<p class="stanza" id="stanza3"></p>
+				<p class="stanza" id="stanza4"></p>
+			</div>
+			<div class="column" id="column3">
+				<p class="stanza" id="stanza5"></p>
+			</div>
+			</div>
+			<div class="column" id="column4">
+				<p class="stanza" id="stanza6"></p>
+			</div>
 		</div>
 	</body>
 </html>
