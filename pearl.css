@@ -70,6 +70,10 @@ a:active {
   font-weight: 300;
 }
 
+#credits {
+    color: #aaa;
+}
+
 
 @media (min-width: 640px) {
   #header {
@@ -131,7 +135,6 @@ a:active {
 }
 
 #credits {
-  color: #aaa;
   position: absolute;
   top: 690px;
   left: 740px;
