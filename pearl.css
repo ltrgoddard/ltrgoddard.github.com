@@ -151,7 +151,7 @@ a:active {
 
 @media handheld, (max-width: 639px) {
   #header {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 30px;
     margin-left: auto;
@@ -180,5 +180,8 @@ a:active {
   }
   #message {
     display: none;
+  }
+  #credits {
+    clear: left;
   }
 }
