@@ -132,7 +132,9 @@ a:active {
 
 #credits {
   color: #aaa;
-  float: right;
+  position: absolute;
+  top: 750px;
+  left: 900px;
   padding: 15px;
 }
 }
