@@ -142,6 +142,7 @@ a:active {
   }
   #text {
     width: 90%;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -149,7 +150,6 @@ a:active {
     float: left;
     clear: left;
     clear: right;
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
