@@ -129,6 +129,12 @@ a:active {
   top: 372px;
   left: 970px;
 }
+
+#credits {
+  position: absolute;
+  top: 700px;
+  left: 970px;
+}
 }
 
 
