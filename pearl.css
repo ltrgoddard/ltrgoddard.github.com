@@ -1,6 +1,6 @@
 body {
-  background-color: #ccc;
-  font-family: 'Gilda Display', serif;
+  background-color: #eee;
+  font-family: 'Buenard', serif;
 }
 
 h1 {
@@ -34,7 +34,7 @@ a:active {
 }
 
 #header {
-  background-color: #4A0000;
+  background-color: #001033;
   color: #eee;
   font-size: 11pt;
   padding: 20px;
