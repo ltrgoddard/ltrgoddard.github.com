@@ -13,7 +13,7 @@ h1 {
 h2 {
   text-align: center;
   font-weight: normal;
-  line-height: 10px;
+  line-height: 15px;
   font-size: 20pt;
 }
 
@@ -44,7 +44,7 @@ a:active {
 #header {
   background-color: #001033;
   color: #eee;
-  font-size: 12pt;
+  font-size: 13pt;
   padding: 20px;
   border: 1px solid #fff;
 }
