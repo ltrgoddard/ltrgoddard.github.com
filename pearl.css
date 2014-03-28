@@ -151,12 +151,11 @@ a:active {
 
 @media handheld, (max-width: 639px) {
   #header {
-    float: left;
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
   } 
   #illustration {
     display: none;
