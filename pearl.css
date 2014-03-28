@@ -129,7 +129,7 @@ a:active {
   }
 }
 
-@media handheld and (max-width: 639px) {
+@media handheld, (max-width: 639px) {
   #header {
     float: left;
     width: 80%;
