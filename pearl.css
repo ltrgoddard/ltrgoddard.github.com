@@ -133,8 +133,8 @@ a:active {
 #credits {
   color: #aaa;
   position: absolute;
-  top: 680px;
-  left: 720px;
+  top: 670px;
+  left: 730px;
 }
 }
 
@@ -146,6 +146,11 @@ a:active {
   #message {
     display: none;
   }
+  #credits {
+  position: absolute;
+  top: 670px;
+  left: 630px;
+}
 }
 
 @media handheld, (max-width: 639px) {
