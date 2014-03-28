@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: #ccc;
   font-family: 'Gilda Display', serif;
 }
 
@@ -34,7 +34,7 @@ a:active {
 }
 
 #header {
-  background-color: #036;
+  background-color: #4A0000;
   color: #eee;
   font-size: 11pt;
   padding: 20px;
