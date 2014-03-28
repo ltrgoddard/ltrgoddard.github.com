@@ -65,7 +65,7 @@ a:active {
     height: 270px;
     position: absolute;
     top: 40px;
-    left: 640px;
+    left: 650px;
   }
   
   #illustration {
@@ -75,7 +75,7 @@ a:active {
     background-size: 280px;
     position: absolute;
     top: 40px;
-    left: 960px;
+    left: 970px;
     border: 1px solid #000;
   }
   
@@ -87,35 +87,35 @@ a:active {
   #numeral {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 30px;
   }
 
 #column1 {
   width: 280px;
   position: absolute;
   top: 80px;
-  left: 20px;
+  left: 30px;
 }
 
 #column2 {
   width: 280px;
   position: absolute;
   top: 80px;
-  left: 320px;
+  left: 330px;
 }
 
 #column3 {
   width: 280px;
   position: absolute;
   top: 366px;
-  left: 640px;
+  left: 650px;
 }
 
 #column4 {
   width: 280px;
   position: absolute;
   top: 366px;
-  left: 960px;
+  left: 970px;
 }
 }
 
