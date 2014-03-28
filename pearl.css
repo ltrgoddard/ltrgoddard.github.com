@@ -133,6 +133,7 @@ a:active {
   #header {
     float: left;
     width: 80%;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
   } 
@@ -148,6 +149,7 @@ a:active {
     float: left;
     clear: left;
     clear: right;
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
