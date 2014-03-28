@@ -95,28 +95,28 @@ a:active {
 #column1 {
   width: 280px;
   position: absolute;
-  top: 80px;
+  top: 75px;
   left: 30px;
 }
 
 #column2 {
   width: 280px;
   position: absolute;
-  top: 80px;
+  top: 75px;
   left: 330px;
 }
 
 #column3 {
   width: 280px;
   position: absolute;
-  top: 377px;
+  top: 372px;
   left: 650px;
 }
 
 #column4 {
   width: 280px;
   position: absolute;
-  top: 377px;
+  top: 372px;
   left: 970px;
 }
 }
