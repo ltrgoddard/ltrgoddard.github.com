@@ -193,6 +193,12 @@ a:active {
     margin-right: auto;
     clear: left;
   }
+  .stanza {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    clear: left;
+  }
   #message {
     display: none;
   }
