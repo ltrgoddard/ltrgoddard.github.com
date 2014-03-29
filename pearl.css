@@ -145,15 +145,6 @@ a:active {
 }
 
 
-@media (max-width: 900px) {
-  #illustration {
-    display: none;
-  }
-  #message {
-    display: none;
-  }
-}
-
 @media handheld, (max-width: 639px) {
   #header {
     width: 90%;
