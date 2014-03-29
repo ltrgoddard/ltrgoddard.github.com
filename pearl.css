@@ -78,9 +78,9 @@ a:active {
 @media (min-width: 640px) {
   #header {
     width: 240px;
-    height: 270px;
+    height: 250px;
     position: absolute;
-    top: 40px;
+    top: 70px;
     left: 650px;
   }
   
