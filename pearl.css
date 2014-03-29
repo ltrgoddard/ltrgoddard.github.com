@@ -196,5 +196,6 @@ a:active {
   #credits {
     float: left;
     clear: left;
+    padding: 20px;
   }
 }
