@@ -135,9 +135,9 @@ a:active {
 }
 
 #credits {
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute;
+  left: 30px;
+  top: 750px;
 }
 }
 
