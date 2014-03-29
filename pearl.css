@@ -167,7 +167,7 @@ a:active {
     margin-right: auto;
   }
   #text {
-    width: 100%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -179,7 +179,7 @@ a:active {
     clear: left;
   }
   .column {
-    width: auto;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
     clear: left;
