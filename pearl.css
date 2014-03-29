@@ -133,6 +133,10 @@ a:active {
   left: 960px;
 }
 
+#column4.stanza {
+  margin-left: 10px;
+}
+
 #credits {
   position: absolute;
   left: 30px;
