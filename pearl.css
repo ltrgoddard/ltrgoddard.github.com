@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: #001033;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -42,11 +42,15 @@ a:active {
 }
 
 #header {
-  background-color: #001033;
-  color: #fff;
+  background-color: #D2F0FF;
+  color: #000;
   font-size: 12pt;
   padding: 15px;
   border: 1px solid #fff;
+}
+
+#text {
+  color: #ddd;
 }
 
 #message {
