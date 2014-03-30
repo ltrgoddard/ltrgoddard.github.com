@@ -54,10 +54,11 @@ a:active {
 }
 
 #message {
-  padding: 20px;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px dotted #000;
+  background-color: #001033;
+  color: #fff;
+  font-size: 12pt;
+  padding: 15px;
+  border: 1px solid #000;
 }
 
 #numeral {
