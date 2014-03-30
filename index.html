@@ -21,6 +21,27 @@
 		
 		$(document).ready(function(){
 			
+			function post() {
+				
+				$('#numeral').html(group[caret]);
+				$('#stanza1').html(group[caret+1]);
+				$('#stanza2').html(group[caret+2]);
+				$('#stanza3').html(group[caret+3]);
+				$('#stanza4').html(group[caret+4]);
+				$('#stanza5').html(group[caret+5]);
+				
+			}
+			
+			function postBox() {
+				
+				$('#stanza6').html(message);
+
+			}
+			
+			function postXV6() {
+				$('#stanza6').html('<div id="xv6">' + group[caret+6] + '</div>');
+			}
+			
 			$.get('pearl.txt', function(raw) {
 				
 				stripped = raw.replace(/\n\n\n/g, '\n\n');
@@ -45,13 +66,8 @@
 				 			$('#text').fadeOut(50);
 				 			setTimeout(function() {
 				 				
-								$('#numeral').html(group[caret]);
-								$('#stanza1').html(group[caret+1]);
-								$('#stanza2').html(group[caret+2]);
-								$('#stanza3').html(group[caret+3]);
-								$('#stanza4').html(group[caret+4]);
-								$('#stanza5').html(group[caret+5]);
-								$('#stanza6').html(message);
+								post();
+								postBox();
 								$('#text').fadeIn(50);
 							
 				 			}, 50);
@@ -61,13 +77,8 @@
 				 			$('#text').fadeOut(50);
 				 			setTimeout(function() {
 				 				
-				 				$('#numeral').html(group[caret]);
-								$('#stanza1').html(group[caret+1]);
-								$('#stanza2').html(group[caret+2]);
-								$('#stanza3').html(group[caret+3]);
-								$('#stanza4').html(group[caret+4]);
-								$('#stanza5').html(group[caret+5]);
-								$('#stanza6').html('<div id="xv6">' + group[caret+6] + '</div>');
+				 				post();
+				 				postXV6();
 								$('#text').fadeIn(50);
 								
 				 			}, 50);
@@ -77,26 +88,17 @@
 				 			$('#text').fadeOut(50);
 				 			setTimeout(function() {
 				 				
-				 				$('#numeral').html(group[caret]);
-								$('#stanza1').html(group[caret+1]);
-								$('#stanza2').html(group[caret+2]);
-								$('#stanza3').html(group[caret+3]);
-								$('#stanza4').html(group[caret+4]);
-								$('#stanza5').html(group[caret+5]);
-								$('#stanza6').html(message);
+								post();
+								postBox();
 								$('#text').fadeIn(50);
 								
 				 			}, 50);
 				 		}
 				 		else if (caret == 134) {
 				 				
-				 			$('#numeral').html(group[caret]);
-							$('#stanza1').html(group[caret+1]);
-							$('#stanza2').html(group[caret+2]);
-							$('#stanza3').html(group[caret+3]);
-							$('#stanza4').html(group[caret+4]);
-							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html(message);
+				 			post();
+				 			postBox();
+				 			
 				 		}
 						 
   					},
@@ -109,13 +111,8 @@
 							$('#text').fadeOut(50);
 							setTimeout(function() {
 								
-								$('#numeral').html(group[caret]);
-								$('#stanza1').html(group[caret+1]);
-								$('#stanza2').html(group[caret+2]);
-								$('#stanza3').html(group[caret+3]);
-								$('#stanza4').html(group[caret+4]);
-								$('#stanza5').html(group[caret+5]);
-								$('#stanza6').html(message);
+								post();
+								postBox();
 								$('#text').fadeIn(50);
 							
 							}, 50);
@@ -125,26 +122,16 @@
 				 			$('#text').fadeOut(50);
 				 			setTimeout(function() {
 				 				
-				 				$('#numeral').html(group[caret]);
-								$('#stanza1').html(group[caret+1]);
-								$('#stanza2').html(group[caret+2]);
-								$('#stanza3').html(group[caret+3]);
-								$('#stanza4').html(group[caret+4]);
-								$('#stanza5').html(group[caret+5]);
-								$('#stanza6').html('<div id="xv6">' + group[caret+6] + '</div>');
+				 				post();
+				 				postXV6();
 								$('#text').fadeIn(50);
 								
 				 			}, 50);
 				 		}
 				 		else if (caret == 0) {
 				 			
-				 			$('#numeral').html(group[caret]);
-							$('#stanza1').html(group[caret+1]);
-							$('#stanza2').html(group[caret+2]);
-							$('#stanza3').html(group[caret+3]);
-							$('#stanza4').html(group[caret+4]);
-							$('#stanza5').html(group[caret+5]);
-							$('#stanza6').html(message);
+				 			post();
+							postBox();
 							
 				 		}
   						
