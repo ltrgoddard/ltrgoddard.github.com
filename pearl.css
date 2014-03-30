@@ -86,7 +86,7 @@ a:active {
   #illustration {
     width: 280px;
     height: 280px;
-    background-image: url('http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg');
+    /*background-image: url('http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg');*/
     background-size: 280px;
     position: absolute;
     top: 70px;
