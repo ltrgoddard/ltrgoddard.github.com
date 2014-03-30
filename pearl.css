@@ -1,5 +1,5 @@
 body {
-  background-color: #001033;
+  background-color: #ddd;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -42,22 +42,22 @@ a:active {
 }
 
 #header {
-  background-color: #FFFFB8;
-  color: #000;
+  background-color: #001033;
+  color: #ddd;
   font-size: 12pt;
   padding: 15px;
   border: 1px solid #000;
 }
 
 #text {
-  color: #ccc;
+  color: #000;
 }
 
 #message {
   padding: 20px;
   text-align: center;
   vertical-align: middle;
-  border: 1px dotted #ccc;
+  border: 1px dotted #000;
 }
 
 #numeral {
