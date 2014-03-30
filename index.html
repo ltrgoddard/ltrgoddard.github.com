@@ -42,6 +42,22 @@
 				$('#stanza6').html('<div id="xv6">' + group[caret+6] + '</div>');
 			}
 			
+			function postPic1() {
+				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg" />');
+			}
+			
+			function postPic2() {
+				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/b/b3/StGilesWormshill.JPG" />');
+			}
+			
+			function postPic3() {
+				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/8/81/Jens_Stoltenberg.jpg" />');
+			}
+			
+			function postPic4() {
+				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/8/81/Jens_Stoltenberg.jpg" />');
+			}
+			
 			$.get('pearl.txt', function(raw) {
 				
 				stripped = raw.replace(/\n\n\n/g, '\n\n');
@@ -62,7 +78,7 @@
 					
 					swipeLeft:function(event, direction, distance, duration, fingerCount) {
 						
-						 	if (caret != 134 && caret != 98 && caret != 91) {
+						 if (caret != 134 && caret != 98 && caret != 91) {
 				 			caret = caret+7;
 				 			$('#text').fadeOut(50);
 				 			setTimeout(function() {
@@ -100,6 +116,21 @@
 				 			post();
 				 			postBox();
 				 			
+				 		}
+				 		
+				 		if (caret <= 34) {
+				 			
+				 			postPic1();
+				 			
+				 		}
+				 		else if (caret > 34 && <= 69) {
+				 			postPic2();
+				 		}
+				 		else if (caret > 69 && <= 105) {
+				 			postPic3();
+				 		}
+				 		else if (caret > 105) {
+				 			postPic4;
 				 		}
 						 
   					},
