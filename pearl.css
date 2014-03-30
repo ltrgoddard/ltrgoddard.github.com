@@ -42,7 +42,7 @@ a:active {
 }
 
 #header {
-  background-color: #E06666;
+  background-color: #001033;
   color: #fff;
   font-size: 12pt;
   padding: 15px;
@@ -54,8 +54,8 @@ a:active {
 }
 
 #message {
-  background-color: #001033;
-  color: #fff;
+  background-color: #E06666;
+  color: #333;
   font-size: 12pt;
   padding: 15px;
   border: 1px solid #000;
