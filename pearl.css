@@ -42,22 +42,22 @@ a:active {
 }
 
 #header {
-  background-color: #D2F0FF;
+  background-color: #FFFFB8;
   color: #000;
   font-size: 12pt;
   padding: 15px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
 }
 
 #text {
-  color: #ddd;
+  color: #ccc;
 }
 
 #message {
   padding: 20px;
   text-align: center;
   vertical-align: middle;
-  border: 1px dotted #000;
+  border: 1px dotted #ccc;
 }
 
 #numeral {
