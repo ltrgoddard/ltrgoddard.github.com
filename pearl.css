@@ -92,6 +92,7 @@ a:active {
     top: 70px;
     left: 960px;
     border: 1px solid #000;
+    overflow: hidden;
   }
   
   #message {
