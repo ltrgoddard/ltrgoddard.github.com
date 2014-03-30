@@ -23,122 +23,77 @@
 			
 			function post() {
 				
-				$('#numeral').html(group[caret]);
-				$('#stanza1').html(group[caret+1]);
-				$('#stanza2').html(group[caret+2]);
-				$('#stanza3').html(group[caret+3]);
-				$('#stanza4').html(group[caret+4]);
-				$('#stanza5').html(group[caret+5]);
+					$('#numeral').html(group[caret]);
+					$('#stanza1').html(group[caret+1]);
+					$('#stanza2').html(group[caret+2]);
+					$('#stanza3').html(group[caret+3]);
+					$('#stanza4').html(group[caret+4]);
+					$('#stanza5').html(group[caret+5]);
 				
-			}
+				}
 			
-			function postBox() {
+				function postBox() {
 				
-				$('#stanza6').html(message);
+					$('#stanza6').html(message);
 
-			}
+				}
 			
-			function postXV6() {
-				$('#stanza6').html('<div id="xv6">' + group[caret+6] + '</div>');
-			}
+				function postXV6() {
+					$('#stanza6').html('<div id="xv6">' + group[caret+6] + '</div>');
+				}
+
 			
-			function postPic1() {
-				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg" />');
-			}
-			
-			function postPic2() {
-				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/b/b3/StGilesWormshill.JPG" />');
-			}
-			
-			function postPic3() {
-				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/8/81/Jens_Stoltenberg.jpg" />');
-			}
-			
-			function postPic4() {
-				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/8/81/Jens_Stoltenberg.jpg" />');
-			}
-			
-			$.get('pearl.txt', function(raw) {
+			function go(direction) {
 				
-				stripped = raw.replace(/\n\n\n/g, '\n\n');
-				data = stripped.replace(/\n/g, '<br />');
-				group = data.split('<br /><br />');
-				caret = 0;
-				message = '<div id="message"></div>';
-				$('#numeral').html(group[0]);
-				$('#stanza1').html(group[1]);
-				$('#stanza2').html(group[2]);
-				$('#stanza3').html(group[3]);
-				$('#stanza4').html(group[4]);
-				$('#stanza5').html(group[5]);
-				$('#stanza6').html(message);
-				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg" />');
-				
-				$(document).swipe( {
+				if (direction == 1) {
+			
+				if (caret != 134 && caret != 98 && caret != 91) {
+				 	
+				 	caret = caret+7;
+				 	$('#text').fadeOut(50);
+					setTimeout(function() {
+				 				
+						post();
+						postBox();
+						$('#text').fadeIn(50);
 					
-					swipeLeft:function(event, direction, distance, duration, fingerCount) {
-						
-						 if (caret != 134 && caret != 98 && caret != 91) {
-				 			caret = caret+7;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
+			 		}, 50);
+			 	}
+				else if (caret == 91) {
+					
+		 			caret = caret+7;
+					$('#text').fadeOut(50);
+		 			setTimeout(function() {
 				 				
-								post();
-								postBox();
-								$('#text').fadeIn(50);
-							
-				 			}, 50);
-				 		}
-				 		else if (caret == 91) {
-				 			caret = caret+7;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
-				 				
-				 				post();
-				 				postXV6();
-								$('#text').fadeIn(50);
+						post();
+			 			postXV6();
+						$('#text').fadeIn(50);
 								
-				 			}, 50);
-				 		}
-				 		else if (caret == 98) {
-				 			caret = caret+8;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
+		 			}, 50);
+		 		}
+				else if (caret == 98) {
+					
+					caret = caret+8;
+				 	$('#text').fadeOut(50);
+				 	setTimeout(function() {
 				 				
-								post();
-								postBox();
-								$('#text').fadeIn(50);
+						post();
+						postBox();
+						$('#text').fadeIn(50);
 								
-				 			}, 50);
-				 		}
-				 		else if (caret == 134) {
+				 	}, 50);
+				}
+				else if (caret == 134) {
 				 				
-				 			post();
-				 			postBox();
+				 	post();
+					postBox();
 				 			
-				 		}
+		 		}
+				}
+		 		
+		 		else if (direction == 0) {
 				 		
-				 		if (caret <= 34) {
-				 			
-				 			postPic1();
-				 			
-				 		}
-				 		else if (caret > 34 && <= 69) {
-				 			postPic2();
-				 		}
-				 		else if (caret > 69 && <= 105) {
-				 			postPic3();
-				 		}
-				 		else if (caret > 105) {
-				 			postPic4;
-				 		}
-						 
-  					},
-  					
-  					swipeRight:function(event, direction, distance, duration, fingerCount) {
-  					
-  					
-  						if (caret != 0  && caret != 106) {
+				if (caret != 0  && caret != 106) {
 							caret = caret-7;
 							$('#text').fadeOut(50);
 							setTimeout(function() {
@@ -166,6 +121,55 @@
 							postBox();
 							
 				 		}
+		 		}
+		 		
+		 		if (caret <= 34) {
+				 			
+					$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg" />');
+				}
+				else if (caret > 34 && <= 69) {
+				 	
+				 	$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/b/b3/StGilesWormshill.JPG" />');
+				}
+				else if (caret > 69 && <= 105) {
+				 	
+				 	$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/8/81/Jens_Stoltenberg.jpg" />');
+				}
+				else if (caret > 105) {
+				 
+				 	$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/en/8/81/Jens_Stoltenberg.jpg" />');
+				}
+
+			}
+			
+			
+			$.get('pearl.txt', function(raw) {
+				
+				stripped = raw.replace(/\n\n\n/g, '\n\n');
+				data = stripped.replace(/\n/g, '<br />');
+				group = data.split('<br /><br />');
+				caret = 0;
+				message = '<div id="message"></div>';
+				$('#numeral').html(group[0]);
+				$('#stanza1').html(group[1]);
+				$('#stanza2').html(group[2]);
+				$('#stanza3').html(group[3]);
+				$('#stanza4').html(group[4]);
+				$('#stanza5').html(group[5]);
+				$('#stanza6').html(message);
+				$('#illustration').html('<img src="http://upload.wikimedia.org/wikipedia/commons/2/2e/Pearl_Poet.jpg" />');
+				
+				$(document).swipe( {
+					
+					swipeLeft:function(event, direction, distance, duration, fingerCount) {
+						
+						 go(1);
+						 
+  					},
+  					
+  					swipeRight:function(event, direction, distance, duration, fingerCount) {
+  					
+  						go(0);
   						
   					}
 				});
@@ -178,78 +182,13 @@
 
 				 		case 39: // right
 				 		
-				 		if (caret != 134 && caret != 98 && caret != 91) {
-				 			caret = caret+7;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
-				 				
-								post();
-								postBox();
-								$('#text').fadeIn(50);
-							
-				 			}, 50);
-				 		}
-				 		else if (caret == 91) {
-				 			caret = caret+7;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
-				 				
-								post();
-								postXV6();
-								$('#text').fadeIn(50);
-								
-				 			}, 50);
-				 		}
-				 		else if (caret == 98) {
-				 			caret = caret+8;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
-				 				
-								post();
-								postBox();
-								$('#text').fadeIn(50);
-								
-				 			}, 50);
-				 		}
-				 		else if (caret == 134) {
-				 				
-								post();
-								postBox();
-
-				 		}
+				 		go(1);
 						
 						break;
 						
 						case 37: //left
 						
-						if (caret != 0  && caret != 106) {
-							caret = caret-7;
-							$('#text').fadeOut(50);
-							setTimeout(function() {
-								
-								post();
-								postBox();
-								$('#text').fadeIn(50);
-							
-							}, 50);
-				 		}
-				 		else if (caret == 106) {
-				 			caret = caret-8;
-				 			$('#text').fadeOut(50);
-				 			setTimeout(function() {
-				 				
-								post();
-								postXV6();
-								$('#text').fadeIn(50);
-								
-				 			}, 50);
-				 		}
-				 		else if (caret == 0) {
-				 			
-								post();
-								postBox();
-							
-				 		}
+						go(0);
 				 		
 						default: return; // exit this handler for other keys
     					}
