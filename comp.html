@@ -39,7 +39,7 @@ function search() {
 			return gapi.client.books.volumes.list({"q": term});
 		};
 		
-		var searches[counter] = request(searchTerm);
+		searches[counter] = request(searchTerm);
 		batch.add(searches[counter]);
 		
 		counter++;
