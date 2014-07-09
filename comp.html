@@ -33,7 +33,7 @@ function search() {
 	while (counter + chunkSize <= 5) { //source.length) {
 
 		var chunk = source.slice(counter,counter+chunkSize);
-		var searchTerm = chunk.join(" ");
+		var searchTerm = "\"" + chunk.join(" "); + "\""
 		var searchTermEncoded = "%22" + encodeURIComponent(chunk.join(" ")) + "%22";
 		
 		var request = gapi.client.books.volumes.list({"q": searchTerm});
