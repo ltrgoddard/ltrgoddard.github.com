@@ -41,7 +41,7 @@ function search() {
 		counter++;
 	}
 	
-	batch.execute(function(response) {
+	batch.execute(function(response, rawResponse) {
 		
 		console.log(response, rawResponse);
 		document.getElementById("output").innerHTML = rawResponse;
