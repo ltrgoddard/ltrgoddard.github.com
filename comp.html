@@ -45,11 +45,16 @@ function search() {
 		
 		console.log(response);
 		
-		var resultNumber = 0;
+		var searchNumber = 0;
+		
+		while (searchNumber <= response.length)
+		{
+			var resultNumber = 0;
 	
-		while (resultNumber <= response.search0.result.items.length) {
-			document.getElementById("output").innerHTML += response.search0.result.items[resultNumber].volumeInfo.title + "<br>";
-			resultNumber++;
+			while (resultNumber <= response[searchNumber].result.items.length) {
+				document.getElementById("output").innerHTML += response.search0.result.items[resultNumber].volumeInfo.title + "<br>";
+				resultNumber++;
+			}
 		}
 	});
 }
