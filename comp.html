@@ -35,6 +35,7 @@ function search() {
 		var chunk = source.slice(counter,counter+chunkSize);
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
 		console.log(searchTerm);
+		var request = ["Instantiate", "this", "array"];
 		var request[counter] = gapi.client.books.volumes.list({"q": searchTerm});
 		batch.add(request[counter]);
 		
