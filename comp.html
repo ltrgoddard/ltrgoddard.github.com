@@ -48,7 +48,8 @@ function search() {
 		var resultNumber = 0;
 	
 		while (resultNumber <= response.search0.result.items.length) {
-			document.getElementById("output").innerHTML += response.search0.result.items[resultNumber].volumeInfo.title + "<br>";	
+			document.getElementById("output").innerHTML += response.search0.result.items[resultNumber].volumeInfo.title + "<br>";
+			resultNumber++;
 		}
 	});
 }
