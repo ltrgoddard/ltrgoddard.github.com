@@ -35,7 +35,7 @@ function search() {
 		console.log(searchTerm);
 		
 		var request = gapi.client.request( {
-			"path": "/books/v1/volumes"
+			"path": "/books/v1/volumes",
 			"params": {"q": searchTerm}
 		});
 		
