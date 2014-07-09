@@ -28,17 +28,15 @@ function search() {
 	var chunkSize = 5
 	var counter = 0
 	var source = document.getElementById("source").value.split(" ");
+	var batch = gapi.client.newHttpBatch();
 
-
-	while (counter + chunkSize <= 5) { //source.length) {
+	while (counter + chunkSize <= source.length) {
 
 		var chunk = source.slice(counter,counter+chunkSize);
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
 		console.log(searchTerm);
-		var searchTermEncoded = "%22" + encodeURIComponent(chunk.join(" ")) + "%22";
-		
 		var request = gapi.client.books.volumes.list({"q": searchTerm});
-		request.execute(function(resp) { console.log(resp); });
+		batch.add(request);
 		
 		//var URL = URLStart + searchTerm + URLEnd; 
 		//document.getElementById("results").innerHTML = "<script src=\"" + URL + "\ \" />";	
@@ -53,6 +51,8 @@ function search() {
 
 		counter++;
 	}
+	
+	batch.execute(function(resp) { console.log(resp); });
 }
 		</script>
 </html>
