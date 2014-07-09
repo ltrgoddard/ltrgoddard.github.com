@@ -15,10 +15,10 @@
 	</body>
 	    		<script>
 
-function search() {
+gapi.client.setApiKey("AIzaSyBWi6rHM4-tUAIuL3oXckjJN9V8yMXdtU8");
+gapi.client.load("books", "v1", function() { console.log("Loaded!"); });
 
-	gapi.client.setApiKey("AIzaSyBWi6rHM4-tUAIuL3oXckjJN9V8yMXdtU8");
-	gapi.client.load("books", "v1", function() { console.log("Loaded!"); });
+function search() {
 
 	//var URLStart = "https://www.googleapis.com/books/v1/volumes?q=";
 	//var URLEnd = "&callback=handleResponse";
