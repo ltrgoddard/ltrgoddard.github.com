@@ -41,10 +41,10 @@ function search() {
 		counter++;
 	}
 	
-	batch.execute(function(response, rawResponse) {
+	batch.execute(function(response) {
 		
-		console.log(response, rawResponse);
-		document.getElementById("output").innerHTML = rawResponse;
+		console.log(response);
+		document.getElementById("output").innerHTML = 0.result.items;
 	});
 }
 		</script>
