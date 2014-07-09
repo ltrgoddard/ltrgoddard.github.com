@@ -10,8 +10,6 @@
 		</div>
 		<div id="output">
 		</div>
-		<div id="results">
-		</div>
 	</body>
 	    		<script>
 
@@ -44,7 +42,10 @@ function search() {
 		counter++;
 	}
 	
-	batch.execute(function(resp) { console.log(resp); });
+	batch.execute(function(response) {
+		
+		document.getElementById("output").innerHTML = response;
+	});
 }
 		</script>
 </html>
