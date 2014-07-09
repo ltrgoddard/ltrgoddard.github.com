@@ -51,14 +51,11 @@ function search() {
 		while (searchNumber <= counter) {
 			
 			var search = "search" + searchNumber;		
-				
-			var resultNumber = 0;
 			
-			for (key in response[search].result.items) {
+			for (var key in response[search].result.items) {
 
-				document.getElementById("output").innerHTML += response[search][result][items][resultNumber][volumeInfo][title] + "<br>";
-	
-				resultNumber++;
+				document.getElementById("output").innerHTML += response[search][result][items][key][volumeInfo][title] + "<br>";
+
 			}
 			searchNumber++;
 		}
