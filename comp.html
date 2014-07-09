@@ -23,8 +23,6 @@ function login() {
 
 function search() {
 
-	//var URLStart = "https://www.googleapis.com/books/v1/volumes?q=";
-	//var URLEnd = "&callback=handleResponse";
 	var chunkSize = 5
 	var counter = 0
 	var source = document.getElementById("source").value.split(" ");
@@ -39,21 +37,12 @@ function search() {
 		request[counter] = gapi.client.books.volumes.list({"q": searchTerm});
 		batch.add(request[counter]);
 		
-		//var URL = URLStart + searchTerm + URLEnd; 
-		//document.getElementById("results").innerHTML = "<script src=\"" + URL + "\ \" />";	
-
-//		function handleResponse(response) {
-//			for (var i = 0; i < response.items.length; i++) {
-//				var item = response.items[i];
-//				// in production code, item.text should have the HTML entities escaped.
-//				document.getElementById("output").innerHTML += "<br>" + item.volumeInfo.title;
-//			}
-//		}
-
 		counter++;
 	}
 	
-	batch.execute(function(resp) { console.log(resp); });
+	console.log(request[6]);
+	
+	//batch.execute(function(resp) { console.log(resp); });
 }
 		</script>
 </html>
