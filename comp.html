@@ -1,7 +1,7 @@
 <html>
 	<head>
  		<title>Computational Prynne</title>
-		<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+		<script src="https://apis.google.com/js/client.js?onload=login"></script>
 	</head>
 	<body>
 		<div id="input">
@@ -15,8 +15,11 @@
 	</body>
 	    		<script>
 
-gapi.client.setApiKey("AIzaSyBWi6rHM4-tUAIuL3oXckjJN9V8yMXdtU8");
-gapi.client.load("books", "v1", function() { console.log("Loaded!"); });
+function login() {
+
+	gapi.client.setApiKey("AIzaSyBWi6rHM4-tUAIuL3oXckjJN9V8yMXdtU8");
+	gapi.client.load("books", "v1", function() { console.log("Loaded!"); });
+}
 
 function search() {
 
