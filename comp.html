@@ -29,14 +29,15 @@ function search() {
 	var counter = 0
 	var source = document.getElementById("source").value.split(" ");
 
+			var request = gapi.client.books.volumes.list({"q": "prynne"});
+		request.execute(function(resp) { console.log(resp); });
+
+
 	while (counter + chunkSize <= source.length) {
 
 		var chunk = source.slice(counter,counter+chunkSize);
 		var searchTerm = "%22" + encodeURIComponent(chunk.join(" ")) + "%22";
 		
-		var request = gapi.client.books.volumes.list({"q": searchTerm});
-		request.execute(function(resp) { console.log(resp); });
-
 		//var URL = URLStart + searchTerm + URLEnd; 
 		//document.getElementById("results").innerHTML = "<script src=\"" + URL + "\ \" />";	
 
