@@ -36,7 +36,7 @@ function search() {
 			"params": {"q": searchTerm}
 		});
 		
-		batch.add(request, {"id": "yo"});
+		batch.add(request, {"id": "search" + counter});
 		
 		counter++;
 	}
