@@ -21,8 +21,8 @@ function login() {
 
 function search() {
 
-	var chunkSize = 6
-	var counter = 0
+	var chunkSize = 6;
+	var counter = 0;
 	var source = document.getElementById("source").value.split(" ");
 	var batch = gapi.client.newHttpBatch();
 
@@ -44,7 +44,12 @@ function search() {
 	batch.execute(function(response) {
 		
 		console.log(response);
-		document.getElementById("output").innerHTML = response.search0.result.items.volumeInfo.title;
+		
+		var resultNumber = 0;
+	
+		while (resultNumber <= response.search0.result.items.length) {
+			document.getElementById("output").innerHTML += response.search0.result.items[resultNumber].volumeInfo.title + <br>;	
+		}
 	});
 }
 		</script>
