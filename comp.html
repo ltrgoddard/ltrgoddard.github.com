@@ -33,7 +33,6 @@ function search() {
 		var chunk = source.slice(counter,counter+chunkSize);
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
 		console.log(searchTerm);
-//		var searches = ["Instantiate", "this", "array"];
 		
 		var request = function(term) {
 			return gapi.client.books.volumes.list({"q": term});
@@ -41,7 +40,7 @@ function search() {
 		
 		var search = request(searchTerm);
 		console.log(search);
-		//batch.add(search);
+		batch.add(search);
 		
 		counter++;
 	}
