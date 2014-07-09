@@ -54,11 +54,11 @@ function search() {
 			
 			console.log(search);
 			
-			for (var key in response[search][result][items]) {
+//			for (var key in response[search][result][items]) {
 
-				document.getElementById("output").innerHTML += response[search][result][items][key][volumeInfo][title] + "<br>";
+				document.getElementById("output").innerHTML += response[search];//[result][items][key][volumeInfo][title] + "<br>";
 
-			}
+//			}
 			searchNumber++;
 		}
 	});
