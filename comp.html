@@ -34,13 +34,11 @@ function search() {
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
 		console.log(searchTerm);
 		
-		var request = function(term) {
-			return gapi.client.books.volumes.list({"q": term});
+		var request = function() {
+			return gapi.client.books.volumes.list({"q": searchTerm});
 		};
 		
-		var search = request(searchTerm);
-		console.log(search);
-		batch.add(search);
+		batch.add(request);
 		
 		counter++;
 	}
