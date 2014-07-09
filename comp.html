@@ -28,7 +28,7 @@ function search() {
 	var source = document.getElementById("source").value.split(" ");
 	var batch = gapi.client.newHttpBatch();
 
-	while (counter + chunkSize <= source.length) {
+	//while (counter + chunkSize <= source.length) {
 
 		var chunk = source.slice(counter,counter+chunkSize);
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
@@ -38,7 +38,7 @@ function search() {
 		batch.add(request[counter]);
 		
 		counter++;
-	}
+	//}
 	
 	console.log(request[6]);
 	
