@@ -34,9 +34,7 @@ function search() {
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
 		console.log(searchTerm);
 		
-		var request = function() {
-			return gapi.client.books.volumes.list({"q": searchTerm});
-		};
+		var request = gapi.client.books.volumes.list({"q": searchTerm});
 		
 		batch.add(request);
 		
