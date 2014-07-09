@@ -43,8 +43,8 @@ function search() {
 	
 	batch.execute(function(response) {
 		
-		console.log(response);
-		document.getElementById("output").innerHTML = response.0.result.items.0.volumeInfo.title;
+		console.log(response, rawResponse);
+		document.getElementById("output").innerHTML = rawResponse;
 	});
 }
 		</script>
