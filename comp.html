@@ -48,17 +48,18 @@ function search() {
 		var searchNumber = 0;
 		console.log(response.length);
 		
-		while (searchNumber <= response.length)
-		{
+		while (searchNumber <= counter) {
+			
+			var search = "search" + searchNumber;		
+				
 			var resultNumber = 0;
-	
+				
 			while (resultNumber <= response[searchNumber].result.items.length) {
 				
-				document.getElementById("output").innerHTML += response[searchNumber].result.items[resultNumber].volumeInfo.title + "<br>";
-				
+				document.getElementById("output").innerHTML += response[search][result][items][resultNumber][volumeInfo][title] + "<br>";
+	
 				resultNumber++;
 			}
-			
 			searchNumber++;
 		}
 	});
