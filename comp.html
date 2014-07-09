@@ -39,13 +39,12 @@ function search() {
 			return gapi.client.books.volumes.list({"q": term});
 		};
 		
-		var searches = request(searchTerm);
-		batch.add(searches);
+		var search = request(searchTerm);
+		console.log(search);
+		//batch.add(search);
 		
 		counter++;
 	}
-	
-	console.log(searches[6]);
 	
 	//batch.execute(function(resp) { console.log(resp); });
 }
