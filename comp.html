@@ -5,6 +5,7 @@
 	</head>
 	<body onload = "login();">
 		<div id="input">
+			<text id="length"></text>
 			<textarea id="source" rows="25" cols="75"></textarea>
 			<button id="submit" onclick="search();">Search</button>
 		</div>
@@ -21,7 +22,7 @@ function login() {
 
 function search() {
 
-	var chunkSize = 3;
+	var chunkSize = parseInt(document.getElementById("length"));
 	var counter = 0;
 	var source = document.getElementById("source").value.replace(/(\r\n|\n|\r)/gm," ").replace(/ +/g," ").replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()\?']/g,"").split(" ");
 	console.log(source);
