@@ -24,7 +24,7 @@ function search() {
 	var chunkSize = 6;
 	var counter = 0;
 	var raw = document.getElementById("source").value.replace(/(\r\n|\n|\r)/gm," ").replace(/ +/g," ").replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()\?']/g,"").split(" ");
-	var source = new string(raw).toLowerCase();
+	var source = new String(raw).toLowerCase();
 	console.log(source);
 //	var batch = gapi.client.newHttpBatch();
 
