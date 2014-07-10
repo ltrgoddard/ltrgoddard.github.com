@@ -32,12 +32,12 @@ function search() {
 		var chunk = source.slice(counter,counter+chunkSize);
 		var searchTerm = "\"" + chunk.join(" ") + "\"";
 		
-		var request = gapi.client.request( {
-			"path": "/books/v1/volumes",
-			"params": {"q": searchTerm}
-		});
+//		var request = gapi.client.request( {
+//			"path": "/books/v1/volumes",
+//			"params": {"q": searchTerm}
+//		});
 		
-		batch.add(request, {"id": "search" + counter});
+//		batch.add(request, {"id": "search" + counter});
 		
 		counter++;
 	}
@@ -46,15 +46,15 @@ function search() {
 		
 		//console.log(response, rawResponse);
 		
-		for (var i in response) {
+//		for (var i in response) {
 			
-			for (var key in response[i].result.items) {
+//			for (var key in response[i].result.items) {
 
-				document.getElementById("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
-				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].infoLink + "\">" + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
-
-			}
-		}
+//				document.getElementById("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
+//				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].infoLink + "\">" + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
+				document.getElementById("output").innerHTML += "<a href=\"" + "test" + "\">" + "test" + "</a>" + "<br><br>";
+//			}
+//		}
 	});
 }
 		</script>
