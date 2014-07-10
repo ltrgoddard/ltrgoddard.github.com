@@ -48,11 +48,11 @@ function search() {
 		
 		for (var i in response) {
 			
-			document.getElementById("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
+			document.getElementById("output").innerHTML += "<b>" + source.slice(i,i+chunkSize); + "</b>" + "<br>";
 			
 			for (var key in response[i].result.items) {
 
-				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].infoLink + "\">" + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
+				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].volumeInfo.infoLink + "\">" + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
 				//document.getElementById("output").innerHTML += "<a href=\"" + "test" + "\">" + "test" + "</a>" + "<br><br>";
 			}
 		}
