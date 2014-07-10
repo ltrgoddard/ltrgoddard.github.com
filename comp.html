@@ -55,7 +55,7 @@ function search() {
 			for (var key in response[search].result.items) {
 
 				document.getElementById("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
-				document.getElementById("output").innerHTML += "<a href=\"" + response[search].result.items.infoLink + "\">" + + response[search].result.items.volumeInfo.title + "</a>" + "<br><br>";
+				document.getElementById("output").innerHTML += "<a href=\"" + response[search].result.items[key].infoLink + "\">" + + response[search].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
 
 			}
 			searchNumber++;
