@@ -24,7 +24,8 @@ function login() {
 
 function search() {
 
-	var chunkSize = 4;
+	var chunkSizeRaw = document.getElementById("length");
+	var chunkSize = parseInt(chunkSizeRaw);
 	var counter = 0;
 	var source = document.getElementById("source").value.replace(/(\r\n|\n|\r)/gm," ").replace(/ +/g," ").replace(/-/g," ").replace(/[\.,\/#!$%\^&\*;:{}=_`~()\?']/g,"").split(" ");
 	console.log(source);
