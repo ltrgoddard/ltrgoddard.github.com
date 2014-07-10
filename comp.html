@@ -42,24 +42,22 @@ function search() {
 		counter++;
 	}
 	
-	batch.execute(function(response) {
+	batch.execute(function(response, rawResponse) {
 		
-		console.log(response);
+		console.log(response, rawResponse);
 		
 		var searchNumber = 0;
-		console.log(response.length);
 		
 		while (searchNumber < counter) {
 			
 			var search = "search" + searchNumber;
 			
-			console.log(search);
-			
-//			for (var key in response[search][result][items]) {
+			for (var key in response[search][result][items]) {
 
-				document.getElementById("output").innerHTML += response[search].result.error.code + "<br>";
+				document.getElementbyId("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
+				document.getElementById("output").innerHTML += "<a href=\"" + response[search].result.items.infoLink + "\">" + + response[search].result.items.volumeInfo.title + "</a>" + "<br><br>";
 
-//			}
+			}
 			searchNumber++;
 		}
 	});
