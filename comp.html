@@ -55,7 +55,7 @@ function search() {
 			
 			document.getElementById("output").innerHTML += "<b>" + source.slice(counter,counter+chunkSize).join(" ") + "</b>" + "<br>";
 			
-			if (parseInt(response[i].result.totalItems) < 100) {
+			if (parseInt(response[i].result.totalItems) < 100 && parseInt(response[i].result.totalItems) > 4) {
 			
 				for (var key in response[i].result.items) {
 
