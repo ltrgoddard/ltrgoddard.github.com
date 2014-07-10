@@ -42,7 +42,7 @@ function search() {
 		counter++;
 	}
 	
-	batch.execute(function(response, rawResponse) {
+	//batch.execute(function(response, rawResponse) {
 		
 		//console.log(response, rawResponse);
 		
@@ -51,7 +51,7 @@ function search() {
 			for (var key in response[i].result.items) {
 
 				document.getElementById("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
-				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].infoLink + "\">" + + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
+				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].infoLink + "\">" + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
 
 			}
 		}
