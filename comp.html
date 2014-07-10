@@ -57,10 +57,11 @@ function search() {
 		for (var i in response) {
 			
 			if (parseInt(response[i].result.totalItems) < 100 && parseInt(response[i].result.totalItems) > 2) {
+
+				document.getElementById("output").innerHTML += "<b>" + source.slice(counter,counter+chunkSize).join(" ") + "</b>" + "<br>";
 			
 				for (var key in response[i].result.items) {
 
-					document.getElementById("output").innerHTML += "<b>" + source.slice(counter,counter+chunkSize).join(" ") + "</b>" + "<br>";
 					document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].volumeInfo.infoLink + "\">" + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
 					//document.getElementById("output").innerHTML += "<a href=\"" + "test" + "\">" + "test" + "</a>" + "<br><br>";
 				}
