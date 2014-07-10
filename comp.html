@@ -23,7 +23,7 @@ function search() {
 
 	var chunkSize = 6;
 	var counter = 0;
-	var source = document.getElementById("source").value.replace(/(\r\n|\n|\r)/gm," ").replace(/ +/g," ").replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" ");
+	var source = document.getElementById("source").value.replace(/(\r\n|\n|\r)/gm," ").replace(/ +/g," ").replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()\?']/g,"").split(" ");
 	console.log(source);
 //	var batch = gapi.client.newHttpBatch();
 
