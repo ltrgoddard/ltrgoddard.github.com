@@ -30,7 +30,7 @@ function search() {
 	while (counter + chunkSize <= source.length) {
 
 		var chunk = source.slice(counter,counter+chunkSize);
-		var searchTerm = "\"" + chunk.join(" ") + "\"";
+		var searchTerm = "\"" + chunk.join("+") + "\"";
 		
 		var request = gapi.client.request( {
 			"path": "/books/v1/volumes",
@@ -50,7 +50,7 @@ function search() {
 		
 		for (var i in response) {
 			
-			document.getElementById("output").innerHTML += "<b>" + source.slice(counter,counter+chunkSize); + "</b>" + "<br>";
+			document.getElementById("output").innerHTML += "<b>" + source.slice(counter,counter+chunkSize).join(" ") + "</b>" + "<br>";
 			
 			for (var key in response[i].result.items) {
 
