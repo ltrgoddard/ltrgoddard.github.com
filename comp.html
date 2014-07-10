@@ -30,8 +30,8 @@ function search() {
 	while (counter + chunkSize <= source.length) {
 
 		var chunk = source.slice(counter,counter+chunkSize);
-		var searchTermRaw = "\"" + chunk.join("+") + "\"";
-		var searchTerm = encodeURIComponent(searchTermRaw);
+		var searchTerm = "\"" + chunk.join("+") + "\"";
+		//var searchTerm = encodeURIComponent(searchTermRaw);
 		console.log(searchTerm);
 		
 		var request = gapi.client.request( {
