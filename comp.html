@@ -44,21 +44,16 @@ function search() {
 	
 	batch.execute(function(response, rawResponse) {
 		
-		console.log(response, rawResponse);
+		//console.log(response, rawResponse);
 		
-		var searchNumber = 0;
-		
-		while (searchNumber < counter) {
+		for (var i in response) {;
 			
-			var search = "search" + searchNumber;
-			
-			for (var key in response[search].result.items) {
+			for (var key in response[i].result.items) {
 
 				document.getElementById("output").innerHTML += "<b>" + searchTerm + "</b>" + "<br>";
-				document.getElementById("output").innerHTML += "<a href=\"" + response[search].result.items[key].infoLink + "\">" + + response[search].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
+				document.getElementById("output").innerHTML += "<a href=\"" + response[i].result.items[key].infoLink + "\">" + + response[i].result.items[key].volumeInfo.title + "</a>" + "<br><br>";
 
 			}
-			searchNumber++;
 		}
 	});
 }
