@@ -12,7 +12,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 800px;
     margin: auto;
-    background: #FFFFFF;
+    background: #fff;
     padding: 10px 10px 10px 10px;
 }
 
@@ -32,7 +32,7 @@ h1 {
 
 /* Titles of categories */
 h2 {
-    color: #006;
+    color: #008;
 }
 /* There is a bar just before each category */
 h2:before {
@@ -41,7 +41,7 @@ h2:before {
     margin-right:1%;
     width: 16%;
     height: 10px;
-    background-color: #00a;
+    background-color: #009;
 }
 
 /* Definitions */
