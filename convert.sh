@@ -10,6 +10,7 @@ inotifywait -m -q -e moved_to --format %f /home/ubuntu/Dropbox/PhD/Markdown/ | w
   pandoc "$path"/Markdown/"$filename".md -s -o "$path"/PDF/"$filename".pdf
   if [ "$filename"=="cv" ]
   then
+    git pull
     pandoc "$path"/Markdown/cv.md -s -c cv.css -o /home/ubuntu/ltrgoddard.github.com/index.html --smart
     git add index.html
     cp "$path"/PDF/cv.pdf /home/ubuntu/ltrgoddard.github.com/Louis_Goddard_CV.pdf
