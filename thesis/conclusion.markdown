@@ -45,4 +45,6 @@ Once the critical lens is focussed correctly, Prynne's status as the product of 
 Eagleton goes on to offer a few explanations of his own---'a certain English stiffness', 'the doctrine of aesthetic impersonality, which was in fashion at the time'---but the reasons are hardly as important as the simple fact that such a tendency is identifiable.
 
 * Owes as much to e.g. R.P. Blackmur in Prynne's case as to British poets; his Harvard *milieu*.
-* Earliest use of 'J.H. Prynne': to Tomlinson, 18 May 1961? Jesus College Lit. Soc.? National Service promotion? Inspired by military initialisation? 
+* Earliest self-use of 'J.H. Prynne': to Tomlinson, 18 May 1961?
+* Initialised in Jesus College publications, same as everyone else. 
+* National Service promotion? Inspired by military initialisation? 
