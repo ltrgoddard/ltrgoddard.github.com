@@ -1,0 +1,14 @@
+h1 {
+	color: #666;
+}
+
+h2 {
+	color: #aaa;
+}
+
+body {
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+}
