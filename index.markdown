@@ -9,4 +9,4 @@ I'm also a freelance writer and researcher on education policy. In recent years 
 
 Get in touch with me [via email](mailto:l.goddard@sussex.ac.uk) or [on Twitter](http://twitter.com/ltrgoddard).
 </div>
-<div class="pane">![Communities detected in a literary reference work](10_40_wt.png)</div>
+<div class="pane">![Communities detected in a literary reference work](10_40_wt.jpg)</div>
