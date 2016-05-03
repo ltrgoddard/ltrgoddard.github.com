@@ -16,6 +16,10 @@ img {
     margin-top: 25px;
 }
 
+.caption {
+    color: #aaa;
+}
+
 @media only screen and (orientation: portrait) {
 
     .pane {
