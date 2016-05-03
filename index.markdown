@@ -8,4 +8,4 @@ I'm also a freelance writer and researcher on education policy. In recent years 
 
 Get in touch with me [via email](mailto:l.goddard@sussex.ac.uk) or [on Twitter](http://twitter.com/ltrgoddard).
 
-<div id = "image">![A community graph based on a literary reference work](10_40_wt_small.png)</div>
+!(10_40_wt_small.png)
