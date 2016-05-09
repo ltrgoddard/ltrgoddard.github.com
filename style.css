@@ -29,6 +29,10 @@ img {
         margin-right: 7.5%;
         font-size: 20px;
     }
+
+    .forceNetwork html-widget {
+        margin: auto;
+    }
 }
 
 @media only screen and (orientation: landscape) {
