@@ -123,6 +123,9 @@ Forthcoming
 ## Skills and professional development
 
 2016
+:   **This&THAT Camp** (University of Sussex)  
+    Skills-sharing event at the Sussex Humanities Lab. Led a session on network analysis and visualisation using R and Shiny.
+
 :   **BAMS Postgraduate Training Day** (University of Oxford)  
     The British Association for Modernist Studies' triennial training day, focussing on textual criticism, archival research and public engagement.
 
