@@ -85,10 +85,10 @@ Forthcoming
 
 ## Conference papers
 
-2016 (scheduled)
-:   **'"Look, the poet is wearing red socks!": Biographical Recalcitrance in Contemporary Literary History'** (IABA 2016, University of Cyprus, 26--29 May)
+2016
+:   **'"Look, the poet is wearing red socks!": Biographical Recalcitrance in Contemporary Literary History'** (IABA 2016, University of Cyprus, 26--29 May [scheduled])
 
-:   **'Mapping literary groups using graph theory and online reference works'** (2nd Digital Humanities Early Career Conference, King's College, London, 20 May) 
+:   **'Mapping literary groups using graph theory and online reference works'** (2nd Digital Humanities Early Career Conference, King's College London, 20 May) 
 
 2015
 :   **'prynDAMMMMM: J.H. Prynne and Wyndham Lewis'** (BAMS graduate conference, University of Exeter, 5 November)
