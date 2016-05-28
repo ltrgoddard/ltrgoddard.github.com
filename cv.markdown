@@ -86,7 +86,7 @@ Forthcoming
 ## Conference papers
 
 2016
-:   **'"Look, the poet is wearing red socks!": Biographical Recalcitrance in Contemporary Literary History'** (IABA 2016, University of Cyprus, 26--29 May [scheduled])
+:   **'"Look, the poet is wearing red socks!": Biographical Recalcitrance in Contemporary Literary History'** (IABA 2016, University of Cyprus, 26--29 May)
 
 :   **'Mapping literary groups using graph theory and online reference works'** (2nd Digital Humanities Early Career Conference, King's College London, 20 May) 
 
