@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Constellations: mapping literary groups with graph theory</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/css/bootstrap-slider.min.css">
+        <style>
+            body {
+                background-color: #003;
+            }
+
+            .slider {
+                margin-left: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4" style="margin-top: 16px">
+                    <div class="card" style="border-color: #000">
+                        <div class="card-block">
+                            <h3 class="card-title">Constellations</h4>
+                            <h5 class="card-title text-muted">Mapping literary groups with graph theory</h6>
+                            <p class="card-text">This interactive graph shows the link structure of the online version of <a href="http://www.oxfordreference.com/view/10.1093/acref/9780199640256.001.0001/acref-9780199640256"> <em>The Oxford Companion to Modern Poetry</em> </a> (2nd edn). Mouse-over nodes to view the poets that they represent; click and drag to reposition them.</p>
+                            <label for="birthdates"><em>Birthdate range</em></label>
+                            <p class="card-text"><input
+                                type="text"
+                                id="birthdates"
+                                range="true"
+                                data-provide="slider"
+                                data-slider-ticks="[1890, 1915, 1940, 1965, 1990]"
+                                data-slider-ticks-labels='["1890", "1915", "1940", "1965", "1990"]'
+                                data-slider-min="1880"
+                                data-slider-max="1990"
+                                data-slider-step="1"
+                                data-slider-value="[1950, 1965]"
+                                ></input></p>
+                            <label for="weight"><em>Minimum connection weight (based on closeness in age)</em></label>
+                            <input
+                                type="text"
+                                id="weight"
+                                data-provide="slider"
+                                data-slider-ticks="[0, 0.25, 0.5, 0.75, 1]"
+                                data-slider-ticks-labels='["0", "0.25", "0.5", "0.75", "1"]'
+                                data-slider-min="0"
+                                data-slider-max="1"
+                                data-slider-step="0.05"
+                                data-slider-value="0.75"
+                            ></input>
+                        </div>
+                        <div class="card-footer text-muted">Created by <a href="https://github.com/ltrgoddard/lit-groups">Louis Goddard</a>, powered by <a href="https://d3js.org/">D3.js</a> and  <a href="http://neo4j.com/">Neo4j</a></div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="graph">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery first, then Bootstrap JS and D3.js. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+        <script src="http://jsconsole.com/js/remote.js?ltrgoddard"></script> 
+        <script type="text/javascript">
+
+$( document ).ready(function() {
+
+	// force layout setup
+    var bounds = $("#graph").width();
+    var width = bounds, height = Math.max(bounds, $(window).height());
+    var force = d3.layout.force()
+        .charge(-bounds/7).linkDistance(bounds/25).size([width, height]);
+	
+	// setup svg div    
+	var svg = d3.select("#graph").append("svg")
+    	.attr("width", bounds).attr("height", bounds)
+    	.attr("pointer-events", "all");
+
+    var birth_range = $("#birthdates").val();
+	var weight_cutoff = $("#weight").val();
+    var boundaries = $("#boundaries").val();
+
+    go(birth_range, weight_cutoff, boundaries);
+
+    $("#birthdates, #weight").on("slideStop", function(slide_event) {
+        if(typeof slide_event.value == "object") {
+            birth_range = $("#birthdates").val();
+            go(birth_range, weight_cutoff, boundaries);
+        } else {
+	        weight_cutoff = $("#weight").val();
+            go(birth_range, weight_cutoff, boundaries);
+        }
+    });
+    
+    function go(birth_range, weight_cutoff, boundaries) {
+	    
+            var query = {"statements":[{"statement":"MATCH p=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " RETURN p", "resultDataContents":["graph","row"]}]};
+    		// The helper function provided by neo4j documents
+    		function idIndex(a,id) {
+        		for (var i=0;i<a.length;i++) {if (a[i].id == id) return i;}
+			return null;
+    		}
+
+		    // jQuery ajax call
+		    var request = $.ajax({
+    			type: "POST",
+    			url: "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
+    			accepts: { json: "application/json" },
+    			dataType: "json",
+			    contentType:"application/json",
+			    data: JSON.stringify(query),
+    			//now pass a callback to success to do something with the data
+    			success: function (data) {
+                    var nodes = [], links = [];
+        			// parsing the output of neo4j rest api
+        			data.results[0].data.forEach(function (row) {
+            				row.graph.nodes.forEach(function (n) {
+                				if (idIndex(nodes,n.id) == null){
+                    					nodes.push({id:n.id,label:n.labels[0],title:n.properties.name});
+               					}
+            				});
+            				links = links.concat( row.graph.relationships.map(function(r) {
+                			// the neo4j documents has an error : replace start with source and end with target
+                				return {source:idIndex(nodes,r.startNode),target:idIndex(nodes,r.endNode),type:r.type};
+            				}));
+				});
+				var graph = {nodes:nodes, links:links};
+                draw_graph(graph, force, svg);
+    			}
+		});
+	};
+
+    function draw_graph(graph, force, svg)	{
+
+        force.nodes(graph.nodes).links(graph.links).start(); // does this need to be run only once?
+
+        // render relationships as lines
+	    var link = svg.selectAll(".link")
+		    .data(graph.links);
+    
+        link.enter()
+	    	.append("line").attr("class", "link");
+   
+        link.exit()
+            .remove(); // why doesn't this work?
+
+        //color assignment
+	    var get_color = {"poet": "#ff9"};
+
+        // render nodes as circles, css-class from label
+	    var node = svg.selectAll(".node")
+		    .data(graph.nodes);
+
+        node.enter()
+		    .append("circle")
+		    .attr("class", function (d) { return "node "+d.label })
+		    .attr("r", 5)
+		    .attr("fill", function (d){return get_color[d.label]})
+		    .call(force.drag);
+
+        node.exit()
+            .remove();
+
+	    // html title attribute for title node-attribute
+	    node.append("title")
+		    .text(function (d) { return d.title; })
+
+	    // force feed algo ticks for coordinate computation
+	    force.on("tick", function() {
+		    link.attr("x1", function(d) { return d.source.x; })
+            	.attr("stroke", "#999")
+             	.attr("y1", function(d) { return d.source.y; })
+            	.attr("x2", function(d) { return d.target.x; })
+         	    .attr("y2", function(d) { return d.target.y; });
+
+      	    node.attr("cx", function(d) { return d.x; })
+             	.attr("cy", function(d) { return d.y; });
+	    });
+
+    };
+
+});
+        </script>
+        
+    </body>
+</html>
