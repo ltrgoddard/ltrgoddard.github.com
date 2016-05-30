@@ -101,7 +101,7 @@ $( document ).ready(function() {
     
     function go(birth_range, weight_cutoff, boundaries) {
 	    
-            var query = {"statements":[{"statement":"MATCH p=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " RETURN p", "resultDataContents":["graph","row"]}]};
+            var query = {"statements":[{"statement":"MATCH p=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " RETURN p", "resultDataContents":["graph","row"]}]};
     		// The helper function provided by neo4j documents
     		function idIndex(a,id) {
         		for (var i=0;i<a.length;i++) {if (a[i].id == id) return i;}
