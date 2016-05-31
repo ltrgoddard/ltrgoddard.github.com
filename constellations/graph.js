@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
     var bounds = $("#graph").width();
-    var width = $("#graph").width(), height = Math.max(500, $(window).height());
+    var width = bounds, height = Math.max(400, $(window).height());
     var force = d3.layout.force()
-        .charge(-bounds/7).linkDistance(bounds/25).size([width, height]);
+        .charge(-bounds/6).linkDistance(bounds/25).size([width, height]);
 	
 	var svg = d3.select("#graph").append("svg")
     	.attr("width", bounds).attr("height", bounds)
