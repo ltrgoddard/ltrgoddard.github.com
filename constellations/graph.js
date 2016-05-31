@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var bounds = $("#graph").width();
-    var width = bounds, height = bounds; //Math.max(400, $(window).height());
+    var width = bounds, height = Math.max(680, $(window).height());
     var force = d3.layout.force()
         .charge(-bounds/6).linkDistance(bounds/25).size([width, height]);
 	
