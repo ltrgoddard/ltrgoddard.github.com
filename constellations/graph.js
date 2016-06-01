@@ -11,17 +11,16 @@ $(document).ready(function() {
 
     var birth_range = $("#birthdates").val();
 	var weight_cutoff = $("#weight").val();
-    var boundaries = $("#boundaries").val();
 
-    go(birth_range, weight_cutoff, boundaries);
+    draw(birth_range, weight_cutoff, init = true);
 
     $("#birthdates, #weight").on("slideStop", function(slide_event) {
         if(typeof slide_event.value == "object") {
             birth_range = $("#birthdates").val();
-            go(birth_range, weight_cutoff, boundaries);
+            draw(birth_range, weight_cutoff);
         } else {
 	        weight_cutoff = $("#weight").val();
-            go(birth_range, weight_cutoff, boundaries);
+            draw(birth_range, weight_cutoff);
         }
     });
 
@@ -35,17 +34,11 @@ $(document).ready(function() {
         }
     });
     
-    function go(birth_range, weight_cutoff, boundaries) {
+    function draw(birth_range, weight_cutoff) {
 	   
-        var query = {"statements":[{"statement":"MATCH p=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " RETURN p", "resultDataContents":["graph","row"]}]};
+        var query = {"statements":[{"statement":"MATCH g=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " RETURN g", "resultDataContents":["graph","row"]}]};
         
-        // The helper function provided by neo4j documents
-        function idIndex(a,id) {
-            for (var i=0;i<a.length;i++) {if (a[i].id == id) return i;}
-		    return null;
-    	}
-
-		var request = $.ajax({
+		$.ajax({
     		type: "POST",
     		url: "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
     		accepts: { json: "application/json" },
@@ -61,57 +54,69 @@ $(document).ready(function() {
                		    }
             		});
             		links = links.concat( row.graph.relationships.map(function(r) {
-                	// the neo4j documents has an error : replace start with source and end with target
-                	    return {source:idIndex(nodes,r.startNode),target:idIndex(nodes,r.endNode),type:r.type};
+                        return {source:idIndex(nodes,r.startNode),target:idIndex(nodes,r.endNode),type:r.type};
             		}));
 				});
-				var graph = {nodes:nodes, links:links};
-                draw_graph(graph, force, svg);
-    		}
+				
+                var graph = {nodes:nodes, links:links};
+                
+                if (init = true) {
+                    force.nodes(graph.nodes).links(graph.links);
+                }
+                
+                var link = svg.selectAll(".link")
+		            .data(graph.links);
+    
+                link.enter()
+	    	        .append("line").attr("class", "link");
+   
+                link.exit().remove();
+
+                svg.selectAll("g").remove();
+	    
+                var node = svg.selectAll(".node")
+		            .data(graph.nodes);
+        
+                node_group = node.enter()
+                    .append("g");
+        
+                node_group.append("circle")
+		            .attr("r", 5)
+		            .attr("fill", "#ff9")
+                    .call(force.drag);
+
+                node_group.append("text")
+                    .style("fill", "#bbb")
+                    .style("display", "block")
+                    .style("font-size", "10px")
+                    .attr("x", 12)
+                    .attr("dy", ".35em")
+                    .text(function (d) { return d.title; });
+
+                node.exit()
+                    .remove();
+
+	            force.on("tick", function() {
+		            link.attr("x1", function(d) { return d.source.x; })
+            	        .attr("stroke", "#999")
+             	        .attr("y1", function(d) { return d.source.y; })
+            	        .attr("x2", function(d) { return d.target.x; })
+         	            .attr("y2", function(d) { return d.target.y; });
+
+                    node.attr("transform", function(d){return "translate("+d.x+","+d.y+")"});
+	            });
+
+                force.start();
+            }
 		});
 	};
-
-    function draw_graph(graph, force, svg)	{
-
-        force.nodes(graph.nodes).links(graph.links).start(); // does this need to be run only once?
-
-	    var link = svg.selectAll(".link")
-		    .data(graph.links);
-    
-        link.enter()
-	    	.append("line").attr("class", "link");
-   
-        link.exit().remove();
-
-        svg.selectAll("g").remove();
-	    
-        var node = svg.selectAll(".node")
-		    .data(graph.nodes).enter()
-            .append("g");
-        
-        node.append("circle")
-		    .attr("r", 5)
-		    .attr("fill", "#ff9")
-            .call(force.drag);
-
-        node.append("text")
-            .style("fill", "#bbb")
-            .style("display", "block")
-            .style("font-size", "10px")
-            .attr("x", 12)
-            .attr("dy", ".35em")
-            .text(function (d) { return d.title; });
-
-	    force.on("tick", function() {
-		    link.attr("x1", function(d) { return d.source.x; })
-            	.attr("stroke", "#999")
-             	.attr("y1", function(d) { return d.source.y; })
-            	.attr("x2", function(d) { return d.target.x; })
-         	    .attr("y2", function(d) { return d.target.y; });
-
-      	    node.attr("cx", function(d) { return d.x; })
-             	.attr("cy", function(d) { return d.y; })
-                .attr("transform", function(d){return "translate("+d.x+","+d.y+")"});
-	    });
-    };
 });
+
+
+// Helper function from Neo4j documentation
+
+function idIndex(a,id) {
+
+    for (var i=0; i<a.length;i++) { if (a[i].id == id) return i; }
+    return null;
+}
