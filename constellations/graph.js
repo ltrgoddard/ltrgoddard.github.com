@@ -1,12 +1,11 @@
 $(document).ready(function() {
 
-    var bounds = $("#graph").width();
-    var width = bounds, height = $(window).height()-10;
+    var width = $("#graph").width(), height = Math.max($("#control-panel").height(), $(window).height()-10);
     var force = d3.layout.force()
-        .charge(-bounds/6).linkDistance(bounds/25).size([width, height]);
+        .charge(-width/6).linkDistance(width/25).size([width, height]);
 	
 	var svg = d3.select("#graph").append("svg")
-    	.attr("width", bounds).attr("height", $(window).height()-10)
+    	.attr("width", width).attr("height", height)
     	.attr("pointer-events", "all");
 
     var birth_range = $("#birthdates").val();
