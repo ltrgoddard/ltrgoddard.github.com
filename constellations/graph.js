@@ -6,7 +6,7 @@ $(document).ready(function() {
         .charge(-bounds/6).linkDistance(bounds/25).size([width, height]);
 	
 	var svg = d3.select("#graph").append("svg")
-    	.attr("width", bounds).attr("height", $("#graph").height())
+    	.attr("width", bounds).attr("height", $(window).height())
     	.attr("pointer-events", "all");
 
     var birth_range = $("#birthdates").val();
