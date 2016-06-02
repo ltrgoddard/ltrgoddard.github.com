@@ -8,6 +8,7 @@ $(document).ready(function() {
     	.attr("width", width).attr("height", height)
     	.attr("pointer-events", "all");
 
+    var label_size = 10;
     var birth_range = $("#birthdates").val();
 	var weight_cutoff = $("#weight").val();
 
@@ -25,11 +26,19 @@ $(document).ready(function() {
 
     $("#labels").button("toggle");
 
-    $("#labels").click(function() {
-        if($("#labels").hasClass("active")) {
-            svg.selectAll("text").style("display", "none"); 
-        } else {
-            svg.selectAll("text").style("display", "block");
+
+    $("button").click(function() {
+        if(this.id == "labels-toggle") {
+            if($("#labels-toggle").hasClass("active")) {
+                svg.selectAll("text").style("display", "block"); 
+            } else {
+                svg.selectAll("text").style("display", "none");
+            }
+        } else if(this.id == "labels-minus" && label_size > 4) { label_size = label_size - 2;
+        } else if(this.id == "labels-plus" && label_size < 40) { label_size = label_size + 2; }
+
+        if(this.id == "labels-minus" || this.id == "labels-plus") {
+            svg.selectAll("text").style("font-size", label_size + "px");
         }
     });
     
@@ -87,7 +96,7 @@ $(document).ready(function() {
                 node_group.append("text")
                     .style("fill", "#bbb")
                     .style("display", "block")
-                    .style("font-size", "10px")
+                    .style("font-size", label_size + "px")
                     .attr("x", 12)
                     .attr("dy", ".35em")
                     .text(function (d) { return d.title; });
