@@ -53,9 +53,13 @@
                                 data-slider-step="0.05"
                                 data-slider-value="0.75"
                             ></input></p>
-                            <p class="card-text"><button type="button" class="btn btn-primary" id="labels" data-toggle="button" aria-pressed="true" autocomplete="off">
-                                Labels on/off
-                            </button></p>
+                            <p class="card-text">
+                                <div class="btn-group" role="group" aria-label="Label controls" id="label-controls">
+                                    <button type="button" class="btn btn-primary" id="labels-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">Labels on/off</button>
+                                    <button type="button" class="btn btn-primary" id="labels-minus">-</button>
+                                    <button type="button" class="btn btn-primary" id="labels-plus">+</button>
+                                </div>
+                            </p>
                         </div>
                         <div class="card-footer text-muted">Created by <a href="https://github.com/ltrgoddard/lit-groups">Louis Goddard</a>, powered by <a href="https://d3js.org/">D3.js</a> and  <a href="http://neo4j.com/">Neo4j</a></div>
                     </div>
