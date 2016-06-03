@@ -8,9 +8,10 @@ $(document).ready(function() {
     	.attr("width", width).attr("height", height)
     	.attr("pointer-events", "all");
 
-    var label_size = 10;
+    var labels_display = "block";
+    var labels_size = 10;
     var birth_range = $("#birthdates").val();
-	var weight_cutoff = $("#weight").val();
+    var weight_cutoff = $("#weight").val();
 
     draw(birth_range, weight_cutoff, init = true);
 
@@ -24,21 +25,21 @@ $(document).ready(function() {
         }
     });
 
-    $("#labels").button("toggle");
-
+    //$("#labels").button("toggle");
 
     $("button").click(function() {
         if(this.id == "labels-toggle") {
             if($("#labels-toggle").hasClass("active")) {
-                svg.selectAll("text").style("display", "block"); 
+                labels = "block";
             } else {
-                svg.selectAll("text").style("display", "none");
+                labels = "none";
             }
-        } else if(this.id == "labels-minus" && label_size > 4) { label_size = label_size - 2;
-        } else if(this.id == "labels-plus" && label_size < 40) { label_size = label_size + 2; }
+            svg.selectAll("text").style("display", "none");
+        } else if(this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
+        } else if(this.id == "labels-plus" && labels_size < 40) { labels_size = labels_size + 2; }
 
         if(this.id == "labels-minus" || this.id == "labels-plus") {
-            svg.selectAll("text").style("font-size", label_size + "px");
+            svg.selectAll("text").style("font-size", labels_size + "px");
         }
     });
     
@@ -96,6 +97,7 @@ $(document).ready(function() {
                 node_group.append("text")
                     .style("fill", "#bbb")
                     .style("font-size", label_size + "px")
+                    .style("display", labels_display);
                     .attr("x", 12)
                     .attr("dy", ".35em")
                     .text(function (d) { return d.title; });
