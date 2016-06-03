@@ -97,7 +97,7 @@ $(document).ready(function() {
                 node_group.append("text")
                     .style("fill", "#bbb")
                     .style("font-size", label_size + "px")
-                    .style("display", labels_display);
+                    .style("display", labels_display)
                     .attr("x", 12)
                     .attr("dy", ".35em")
                     .text(function (d) { return d.title; });
