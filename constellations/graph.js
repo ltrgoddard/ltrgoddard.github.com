@@ -34,7 +34,7 @@ $(document).ready(function() {
             } else {
                 labels_display = "none";
             }
-            svg.selectAll("text").style("display", "none");
+            svg.selectAll("text").style("display", labels_display);
         } else if(this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
         } else if(this.id == "labels-plus" && labels_size < 40) { labels_size = labels_size + 2; }
 
