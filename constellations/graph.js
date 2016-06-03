@@ -30,9 +30,9 @@ $(document).ready(function() {
     $("button").click(function() {
         if(this.id == "labels-toggle") {
             if($("#labels-toggle").hasClass("active")) {
-                labels = "block";
+                labels_display = "block";
             } else {
-                labels = "none";
+                labels_display = "none";
             }
             svg.selectAll("text").style("display", "none");
         } else if(this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
