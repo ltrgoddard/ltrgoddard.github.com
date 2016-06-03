@@ -95,7 +95,6 @@ $(document).ready(function() {
 
                 node_group.append("text")
                     .style("fill", "#bbb")
-                    .style("display", "block")
                     .style("font-size", label_size + "px")
                     .attr("x", 12)
                     .attr("dy", ".35em")
