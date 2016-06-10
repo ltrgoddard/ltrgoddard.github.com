@@ -150,7 +150,7 @@ Forthcoming
 
 2015--16
 :   **Organising Committee member** (CHASE 2016 postgraduate conference)  
-    Assisting with the organisation of the 2016 Consortium of the Humanities and the Arts South-east England (CHASE) postgraduate conference, to be held at the University of Kent on the theme of 'Science and Literature'.
+    Assisting with the organisation of the 2016 Consortium of the Humanities and the Arts South-east England (CHASE) postgraduate conference, held at the University of Kent on the theme of 'Science and Literature'.
 
 :   **Editorial Board member** (ZARF)  
     Reading, ranking and commenting on submissions to a small poetry journal based at Cardiff University.
