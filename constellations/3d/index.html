@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Constellations: mapping literary groups with graph theory</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/css/bootstrap-slider.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4" style="margin-top: 16px">
+                    <div class="card" id="control-panel" style="border-color: #000">
+                        <div class="card-block">
+                            <h3 class="card-title">Constellations</h4>
+                            <h5 class="card-title text-muted">Mapping literary groups with graph theory</h6>
+                            <p class="card-text">This interactive graph&mdash;best viewed on a large screen&mdash;shows the structure of the online version of <a href="http://www.oxfordreference.com/view/10.1093/acref/9780199640256.001.0001/acref-9780199640256"> <em>The Oxford Companion to Modern Poetry</em> </a> (2nd edn). Connections reflect cross-references between entries. Weights are based on relative closeness in age and can be used to simplify the graph.</p>
+                            <label for="birthdates"><em>Birthdate range</em></label>
+                            <p class="card-text"><input
+                                type="text"
+                                id="birthdates"
+                                range="true"
+                                data-provide="slider"
+                                data-slider-ticks="[1890, 1915, 1940, 1965, 1990]"
+                                data-slider-ticks-labels='["1890", "1915", "1940", "1965", "1990"]'
+                                data-slider-min="1880"
+                                data-slider-max="1990"
+                                data-slider-step="1"
+                                data-slider-value="[1950, 1965]"
+                                ></input></p>
+                            <label for="weight"><em>Minimum connection weight</em></label>
+                            <p class="card-text"><input
+                                type="text"
+                                id="weight"
+                                data-provide="slider"
+                                data-slider-ticks="[0, 0.25, 0.5, 0.75, 1]"
+                                data-slider-ticks-labels='["0", "0.25", "0.5", "0.75", "1"]'
+                                data-slider-min="0"
+                                data-slider-max="1"
+                                data-slider-step="0.01"
+                                data-slider-value="0.75"
+                                ></input></p>
+                            <p class="card-text">
+                                <div class="btn-group" role="group" aria-label="Label controls" id="label-controls">
+                                    <button type="button" class="btn btn-primary" id="labels-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">Hide labels</button>
+                                    <button type="button" class="btn btn-primary" id="labels-minus">Aa-</button>
+                                    <button type="button" class="btn btn-primary" id="labels-plus">Aa+</button>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">Created by <a href="https://twitter.com/ltrgoddard">Louis Goddard</a>, powered by <a href="https://d3js.org/">D3.js</a> and <a href="http://neo4j.com/">Neo4j</a>.</div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="canvas">
+                        <div id="canvas-force">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49524936-4', 'auto');
+    ga('send', 'pageview');
+        </script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+        <script type="text/javascript" src="lib/helvetiker_regular.typeface.js"></script>
+        <script type="text/javascript" src="lib/OrbitControls.js"></script>
+        <script type="text/javascript" src="lib/d3three.js"></script>
+        <script type="text/javascript" src="lib/vida_template.js"></script>
+        <!--<script type="text/javascript" src="document.js"></script>-->
+    </body>
+</html>
