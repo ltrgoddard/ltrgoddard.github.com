@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var graph = {};
+    var name = "All";
 
     var width = $("#graph").width(), height = Math.max($("#control-panel").height(), $(window).height()-10);
     var force = d3.layout.force()
@@ -15,39 +16,33 @@ $(document).ready(function() {
     var birth_range = $("#birthdates").val();
     var weight_cutoff = $("#weight").val();
 
-    draw(birth_range, weight_cutoff, init = true);
+    draw(birth_range, weight_cutoff, init = true, name = "All");
 
-    $("#birthdates, #weight").on("slideStop", function(slide_event) {
-        if(typeof slide_event.value == "object") {
-            birth_range = $("#birthdates").val();
-            draw(birth_range, weight_cutoff);
+    function draw(birth_range, weight_cutoff, init, name) {
+
+        if (name != "All") {
+            
+            var query_phrase =
+                "MATCH g=(s:poet) -[l:linked]-> (t:poet) \
+                 WHERE s.name = " + '"' + name + '"' +
+               " OR t.name = " + '"' + name + '"' + 
+               " AND l.weight > " + weight_cutoff;
+
         } else {
-            weight_cutoff = $("#weight").val();
-            draw(birth_range, weight_cutoff);
+
+            var query_phrase = 
+                "MATCH g=(s:poet) -[l:linked]-> (t:poet) \
+                 WHERE l.weight > " + weight_cutoff;
         }
-    });
 
-    $("button").click(function() {
-        if(this.id == "launch-3d") {
-            window.open("3d/");
-        } else if(this.id == "labels-toggle") {
-            if($("#labels-toggle").hasClass("active")) {
-                labels_display = "block";
-            } else {
-                labels_display = "none";
-            }
-            svg.selectAll("text").style("display", labels_display);
-        } else if(this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
-        } else if(this.id == "labels-plus" && labels_size < 40) { labels_size = labels_size + 2; }
+        query_phrase = query_phrase +
+            " AND s.birthdate >= " + birth_range.slice(0, 4) +
+            " AND t.birthdate <= " + birth_range.slice(5, 9) +
+            " AND t.birthdate >= " + birth_range.slice(0, 4) +
+            " AND s.birthdate <= " + birth_range.slice(5, 9) +
+            " RETURN g";
 
-        if(this.id == "labels-minus" || this.id == "labels-plus") {
-            svg.selectAll("text").style("font-size", labels_size + "px");
-        }
-    });
-
-    function draw(birth_range, weight_cutoff) {
-
-        var query = {"statements":[{"statement":"MATCH g=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " RETURN g", "resultDataContents":["graph","row"]}]};
+        var query = {"statements":[{"statement": query_phrase, "resultDataContents": ["graph", "row"]}]};
 
         $.ajax({
             type: "POST",
@@ -69,10 +64,63 @@ $(document).ready(function() {
                     }));
                 });
 
-                sessionStorage.setItem("links", JSON.stringify(links));
                 sessionStorage.setItem("nodes", JSON.stringify(nodes));
-                
+                sessionStorage.setItem("links", JSON.stringify(links));
+
                 graph = {nodes:nodes, links:links};
+
+                var poets = [];
+
+                for (node in graph.nodes) {
+                    poets.push(graph.nodes[node].title);
+                }
+
+                poets.sort(function (a, b) {
+                    return a.toLowerCase().localeCompare(b.toLowerCase());
+                });
+
+                $("#poet-list").empty();
+                $("#poet-list").append('<a class="dropdown-item" href="#">All</a>');
+                
+                for (poet in poets) {
+                    $("#poet-list").append('<a class="dropdown-item" href="#">' + poets[poet] + '</a>');
+                }
+
+                $("#birthdates, #weight").off("click");
+                $("#birthdates, #weight").on("slideStop", function(slide_event) {
+                    if(typeof slide_event.value == "object") {
+                        birth_range = $("#birthdates").val();
+                        draw(birth_range, weight_cutoff, init = false, name = "All");
+                    } else {
+                        weight_cutoff = $("#weight").val();
+                        draw(birth_range, weight_cutoff, init = false, name = "All");
+                    }
+                });
+
+                $("button").off("click");
+                $("button").click(function() {
+                    if (this.id == "launch-3d") {
+                        window.open("3d/");
+                    } else if (this.id == "labels-toggle") {
+                        if ($("#labels-toggle").hasClass("active")) {
+                            labels_display = "block";
+                        } else {
+                            labels_display = "none";
+                        }
+                        svg.selectAll("text").style("display", labels_display);
+                    } else if (this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
+                    } else if (this.id == "labels-plus" && labels_size < 40) { labels_size = labels_size + 2; }
+
+                    if (this.id == "labels-minus" || this.id == "labels-plus") {
+                        svg.selectAll("text").style("font-size", labels_size + "px");
+                    }
+                });
+
+                $(".dropdown-item").off("click");
+                $(".dropdown-item").click(function() {
+                    name = $(this).text();
+                    draw(birth_range, weight_cutoff, init = false, name);
+                });
 
                 if (init = true) {
                     force.nodes(graph.nodes).links(graph.links);
