@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $("button").click(function() {
         if(this.id == "launch-3d") {
-            window.open("/3d");
+            window.open("3d/");
         } else if(this.id == "labels-toggle") {
             if($("#labels-toggle").hasClass("active")) {
                 labels_display = "block";
