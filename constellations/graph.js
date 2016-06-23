@@ -49,8 +49,6 @@ $(document).ready(function() {
 
         var query = {"statements":[{"statement":"MATCH g=(s:poet) -[l:linked]-> (t:poet) WHERE l.weight > " + weight_cutoff + " AND s.birthdate >= " + birth_range.slice(0, 4) + " AND t.birthdate <= " + birth_range.slice(5, 9) + " AND t.birthdate >= " + birth_range.slice(0, 4) + " AND s.birthdate <= " + birth_range.slice(5, 9) + " RETURN g", "resultDataContents":["graph","row"]}]};
 
-        sessionStorage.setItem("query", JSON.stringify(query));
-
         $.ajax({
             type: "POST",
             url: "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
@@ -71,6 +69,9 @@ $(document).ready(function() {
                     }));
                 });
 
+                sessionStorage.setItem("links", JSON.stringify(links));
+                sessionStorage.setItem("nodes", JSON.stringify(nodes));
+                
                 graph = {nodes:nodes, links:links};
 
                 if (init = true) {
