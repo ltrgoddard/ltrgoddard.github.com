@@ -7,15 +7,6 @@
         <title>Constellations: mapping literary groups with graph theory</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/css/bootstrap-slider.min.css">
-        <style>
-            body {
-                background-color: #003;
-            }
-
-            .slider {
-                margin-left: 18px;
-            }
-        </style>
     </head>
     <body>
         <div class="container-fluid">
@@ -53,10 +44,13 @@
                             ></input></p>
                             <p class="card-text">
                                 <div class="btn-group" role="group" aria-label="Label controls" id="label-controls">
-                                    <button type="button" class="btn btn-primary" id="labels-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">Hide labels</button>
-                                    <button type="button" class="btn btn-primary" id="labels-minus">Aa-</button>
-                                    <button type="button" class="btn btn-primary" id="labels-plus">Aa+</button>
+                                    <button type="button" class="btn btn-secondary" id="labels-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">Hide labels</button>
+                                    <button type="button" class="btn btn-secondary" id="labels-minus">Aa-</button>
+                                    <button type="button" class="btn btn-secondary" id="labels-plus">Aa+</button>
                                 </div>
+                            </p>
+                            <p class="card-text">
+                                <button type="button" class="btn btn-secondary" id="launch-3d">Launch in 3D (experimental)</button>
                             </p>
                         </div>
                         <div class="card-footer text-muted">Created by <a href="https://twitter.com/ltrgoddard">Louis Goddard</a>, powered by <a href="https://d3js.org/">D3.js</a> and <a href="http://neo4j.com/">Neo4j</a>.</div>
