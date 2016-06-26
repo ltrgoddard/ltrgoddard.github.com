@@ -687,7 +687,7 @@ D3THREE.Force = function(dt) {
 
   this._nodeGroup = new THREE.Object3D();
 
-  this._config = {color: 0x4682B4, linkColor: 0xcccccc, linkWidth: 1};
+  this._config = {color: 0xffffff, linkColor: 0x999999, linkWidth: 1};
 }
 
 D3THREE.Force.prototype = new D3THREE.Chart();
