@@ -18,6 +18,36 @@ $(document).ready(function() {
 
     draw(birth_range, weight_cutoff, init = true, name = "All");
 
+    //$("#birthdates, #weight").off("click");
+    $("#birthdates, #weight").on("slideStop", function(slide_event) {
+    if(typeof slide_event.value == "object") {
+            birth_range = $("#birthdates").val();
+            draw(birth_range, weight_cutoff, init = false, name);
+        } else {
+            weight_cutoff = $("#weight").val();
+            draw(birth_range, weight_cutoff, init = false, name);
+        }
+    });
+
+    //$("button").off("click");
+    $("button").click(function() {
+        if (this.id == "launch-3d") {
+            window.open("3d/");
+        } else if (this.id == "labels-toggle") {
+            if ($("#labels-toggle").hasClass("active")) {
+                labels_display = "block";
+            } else {
+                labels_display = "none";
+            }
+            svg.selectAll("text").style("display", labels_display);
+        } else if (this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
+        } else if (this.id == "labels-plus" && labels_size < 40) { labels_size = labels_size + 2; }
+
+        if (this.id == "labels-minus" || this.id == "labels-plus") {
+            svg.selectAll("text").style("font-size", labels_size + "px");
+        }
+    });
+
     function draw(birth_range, weight_cutoff, init, name) {
 
         if (name != "All") {
@@ -78,7 +108,7 @@ $(document).ready(function() {
                 poets.sort(function (a, b) {
                     return a.toLowerCase().localeCompare(b.toLowerCase());
                 });
-
+                
                 $("#poet-list").empty();
                 $("#poet-list").append('<a class="dropdown-item" href="#">All</a>');
                 
@@ -86,40 +116,9 @@ $(document).ready(function() {
                     $("#poet-list").append('<a class="dropdown-item" href="#">' + poets[poet] + '</a>');
                 }
 
-                $("#birthdates, #weight").off("click");
-                $("#birthdates, #weight").on("slideStop", function(slide_event) {
-                    if(typeof slide_event.value == "object") {
-                        birth_range = $("#birthdates").val();
-                        draw(birth_range, weight_cutoff, init = false, name = "All");
-                    } else {
-                        weight_cutoff = $("#weight").val();
-                        draw(birth_range, weight_cutoff, init = false, name = "All");
-                    }
-                });
-
-                $("button").off("click");
-                $("button").click(function() {
-                    if (this.id == "launch-3d") {
-                        window.open("3d/");
-                    } else if (this.id == "labels-toggle") {
-                        if ($("#labels-toggle").hasClass("active")) {
-                            labels_display = "block";
-                        } else {
-                            labels_display = "none";
-                        }
-                        svg.selectAll("text").style("display", labels_display);
-                    } else if (this.id == "labels-minus" && labels_size > 4) { labels_size = labels_size - 2;
-                    } else if (this.id == "labels-plus" && labels_size < 40) { labels_size = labels_size + 2; }
-
-                    if (this.id == "labels-minus" || this.id == "labels-plus") {
-                        svg.selectAll("text").style("font-size", labels_size + "px");
-                    }
-                });
-
                 $(".dropdown-item").off("click");
                 $(".dropdown-item").click(function() {
                     name = $(this).text();
-                    draw(birth_range, weight_cutoff, init = false, name);
                 });
 
                 if (init = true) {
