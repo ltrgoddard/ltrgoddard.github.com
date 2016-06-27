@@ -1,26 +1,30 @@
 $(document).ready(function() {
 
+	// Set up global variables and D3 force-directed layout
+
     var graph = {};
     var name = "All";
-
-    var width = $("#graph").width(), height = Math.max($("#control-panel").height(), $(window).height()-10);
-    var force = d3.layout.force()
-        .charge(-width/6).linkDistance(width/25).size([width, height]);
-
-    var svg = d3.select("#graph").append("svg")
-        .attr("width", width).attr("height", height)
-        .attr("pointer-events", "all");
-
-    var labels_display = "block";
+	var labels_display = "block";
     var labels_size = 10;
     var birth_range = $("#birthdates").val();
     var weight_cutoff = $("#weight").val();
 
-    draw(birth_range, weight_cutoff, init = true, name = "All");
+	var width = $("#graph").width(), height = Math.max($("#control-panel").height(), $(window).height()-10);
+	var force = d3.layout.force()
+		.charge(-width/6).linkDistance(width/25).size([width, height]);
 
-    //$("#birthdates, #weight").off("click");
+	var svg = d3.select("#graph").append("svg")
+		.attr("width", width).attr("height", height)
+		.attr("pointer-events", "all");
+		
+	// Draw the initial graph
+
+    draw(birth_range, weight_cutoff, init = true, name = "All");
+	
+	// Handle user input via the sliders and buttons
+
     $("#birthdates, #weight").on("slideStop", function(slide_event) {
-    if(typeof slide_event.value == "object") {
+		if(typeof slide_event.value == "object") {
             birth_range = $("#birthdates").val();
             draw(birth_range, weight_cutoff, init = false, name);
         } else {
@@ -29,7 +33,6 @@ $(document).ready(function() {
         }
     });
 
-    //$("button").off("click");
     $("button").click(function() {
         if (this.id == "launch-3d") {
             window.open("3d/");
@@ -47,10 +50,16 @@ $(document).ready(function() {
             svg.selectAll("text").style("font-size", labels_size + "px");
         }
     });
+	
+	function filter_click(name) {
+		draw(birth_range, weight_cutoff, init = false, name);
+	}
+
+	// The main draw function, which generates a query, sends it to Neo4j and plots the resulting data
 
     function draw(birth_range, weight_cutoff, init, name) {
 
-        if (name != "All") {
+        if (name != "All") { // No restriction by poet
             
             var query_phrase =
                 "MATCH g=(s:poet) -[l:linked]-> (t:poet) \
@@ -58,13 +67,15 @@ $(document).ready(function() {
                " OR t.name = " + '"' + name + '"' + 
                " AND l.weight > " + weight_cutoff;
 
-        } else {
+        } else { // Restriction by poet
 
             var query_phrase = 
                 "MATCH g=(s:poet) -[l:linked]-> (t:poet) \
                  WHERE l.weight > " + weight_cutoff;
         }
 
+		// Add birthdate restrictions to the query
+		
         query_phrase = query_phrase +
             " AND s.birthdate >= " + birth_range.slice(0, 4) +
             " AND t.birthdate <= " + birth_range.slice(5, 9) +
@@ -74,15 +85,25 @@ $(document).ready(function() {
 
         var query = {"statements":[{"statement": query_phrase, "resultDataContents": ["graph", "row"]}]};
 
+		// Request the data from Neo4j
+		
         $.ajax({
             type: "POST",
             url: "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
             accepts: { json: "application/json" },
             dataType: "json",
             contentType:"application/json",
-            data: JSON.stringify(query),
-            success: function (data) {
-                var nodes = [], links = [];
+            data: JSON.stringify(query)
+        });
+		
+		// Handle the response
+		
+		$(document).ajaxSuccess(function(event, response){
+			
+				// Convert the data into a form usable by D3
+			
+				var data = response.responseJSON;
+				var nodes = [], links = [];
                 data.results[0].data.forEach(function (row) {
                     row.graph.nodes.forEach(function (n) {
                         if (idIndex(nodes,n.id) == null){
@@ -93,12 +114,16 @@ $(document).ready(function() {
                         return {source:idIndex(nodes,r.startNode),target:idIndex(nodes,r.endNode),type:r.type};
                     }));
                 });
+				
+				// Store the data for use in the 3D graph
 
                 sessionStorage.setItem("nodes", JSON.stringify(nodes));
                 sessionStorage.setItem("links", JSON.stringify(links));
 
                 graph = {nodes:nodes, links:links};
 
+				// Repopulate the poet filter list based on the data
+				
                 var poets = [];
 
                 for (node in graph.nodes) {
@@ -115,23 +140,29 @@ $(document).ready(function() {
                 for (poet in poets) {
                     $("#poet-list").append('<a class="dropdown-item" href="#">' + poets[poet] + '</a>');
                 }
-
-                $(".dropdown-item").off("click");
-                $(".dropdown-item").click(function() {
-                    name = $(this).text();
-                });
+				
+				// Listen for user input using the poet filter list
+				
+				$(".dropdown-item").off("click");
+				$(".dropdown-item").click(function() {
+					filter_click($(this).text());
+				});
+				
+				// If this is the first run, set up the force layout with the data
 
                 if (init = true) {
                     force.nodes(graph.nodes).links(graph.links);
                 }
 
+				// Plot a D3 force-directed graph
+
                 var link = svg.selectAll(".link")
                     .data(graph.links);
 
                 link.enter()
-                    .append("line").attr("class", "link");
+                    .append("line").attr("class", "link"); // Add new edges
 
-                link.exit().remove();
+                link.exit().remove(); // Remove unused edges
 
                 svg.selectAll("g").remove();
 
@@ -139,7 +170,7 @@ $(document).ready(function() {
                     .data(graph.nodes);
 
                 node_group = node.enter()
-                    .append("g");
+                    .append("g"); // Add new vertices
 
                 node_group.append("circle")
                     .attr("r", 5)
@@ -155,7 +186,7 @@ $(document).ready(function() {
                     .text(function (d) { return d.title; });
 
                 node.exit()
-                    .remove();
+                    .remove(); // Remove unused vertices
 
                 force.on("tick", function() {
                     link.attr("x1", function(d) { return d.source.x; })
@@ -168,8 +199,7 @@ $(document).ready(function() {
                 });
 
                 force.start();
-            }
-        });
+		});
     };
 });
 
