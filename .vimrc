@@ -1,12 +1,37 @@
-set undolevels=0
-set nojoinspaces
-syntax enable
-set background=light
-autocmd BufNewFile,BufRead *.markdown syntax off|set linebreak|set display+=lastline|set foldcolumn=2|setlocal noautoindent|setlocal nocindent|setlocal nosmartindent|setlocal indentexpr=|nnoremap j gj|nnoremap k gk
-filetype plugin indent on
-" show existing tab with 4 spaces width
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'reedes/vim-pencil'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+augroup pencil
+    autocmd!
+    autocmd FileType markdown call pencil#init({'wrap': 'soft'})
+augroup END
+
 set tabstop=4
-" when indenting with '>', use 4 spaces width
 set shiftwidth=4
-" On pressing tab, insert 4 spaces
 set expandtab
