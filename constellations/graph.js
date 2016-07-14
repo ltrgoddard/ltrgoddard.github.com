@@ -1,5 +1,9 @@
 $(document).ready(function() {
+    
+    // Specify database server
 
+    var neo4j_url = "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit";
+    
     // Set up D3 force-directed layout and global variables
 
     var width = $("#graph").width();
@@ -88,7 +92,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
+            url: neo4j_url,
             accepts: {json: "application/json"},
             dataType: "json",
             contentType:"application/json",
