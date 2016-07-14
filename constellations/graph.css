@@ -2,8 +2,9 @@ body {
     background-color: #003;
 }
 
-.slider {
-    margin-left: 18px;
+.slider.slider-horizontal {
+    margin-left: 16px;
+    width: 75%;
 }
 
 #graph-3d {
