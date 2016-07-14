@@ -1,11 +1,9 @@
 $(document).ready(function() {
-    
+
     // Specify database server
-
     var neo4j_url = "http://ec2-54-229-149-196.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit";
-    
-    // Set up D3 force-directed layout and global variables
 
+    // Set up D3 force-directed layout and global variables
     var width = $("#graph").width();
     var height = Math.max($("#control-panel").height(), $(window).height()-10);
     var layout = d3.layout.force()
@@ -19,21 +17,18 @@ $(document).ready(function() {
     var labels_display = "block";
 
     // Draw the initial graph
-
     load($("#birthdates").val(), $("#weight").val(), init = true, name = "All");
-
+    
     // Set up event handlers that require a redraw
-
-    $("#birthdates, #weight").on("slideStop", function(slide_event) {
+    $("#birthdates, #weight").on("slideStop", function() {
         load($("#birthdates").val(), $("#weight").val(), init = false, name = "All");
     });
 
     function filterClick(poet) {
-        load($("#birthdates").val(), $("weight").val(), init = false, name = poet);
+        load($("#birthdates").val(), $("#weight").val(), init = false, name = poet);
     }
 
     // Set up event handlers that do not require a redraw (UI settings)
-
     $("button").click(function() {
         if (this.id == "launch-3d") {
             window.open("3d/");
@@ -53,14 +48,12 @@ $(document).ready(function() {
         else if (this.id == "labels-plus" && labels_size < 40) {
             labels_size = labels_size + 2;
         }
-
         if (this.id == "labels-minus" || this.id == "labels-plus") {
             frame.selectAll("text").style("font-size", labels_size + "px");
         }
     });
 
     // The main load function, which generates a query, sends it to Neo4j and passes the resulting data to D3
-
     function load(birth_range, weight_cutoff, init, name) {
 
         if (name != "All") { // No restriction by poet
@@ -69,7 +62,6 @@ $(document).ready(function() {
                 WHERE s.name = " + '"' + name + '"' +
                 " OR t.name = " + '"' + name + '"' + 
                 " AND l.weight > " + weight_cutoff;
-
         }
         else { // Restriction by poet
             var query_phrase = 
@@ -78,7 +70,6 @@ $(document).ready(function() {
         }
 
         // Add birthdate restrictions to the query
-
         query_phrase = query_phrase +
             " AND s.birthdate >= " + birth_range.slice(0, 4) +
             " AND t.birthdate <= " + birth_range.slice(5, 9) +
@@ -89,7 +80,6 @@ $(document).ready(function() {
         var query = {"statements": [{"statement": query_phrase, "resultDataContents": ["graph", "row"]}]};
 
         // Request the data from Neo4j
-
         $.ajax({
             type: "POST",
             url: neo4j_url,
@@ -101,63 +91,38 @@ $(document).ready(function() {
     };
 
     // Handle the response
-
     $(document).ajaxSuccess(function(event, response){
 
         // Convert the data into a form usable by D3
-
         graph = jsonToD3(response.responseJSON);
 
         // Store the data for use in the 3D graph
-
         sessionStorage.setItem("nodes", JSON.stringify(graph.nodes));
         sessionStorage.setItem("links", JSON.stringify(graph.links));
 
         // Repopulate the poet filter list based on the data
-
-        var poets = [];
-
-        for (node in graph.nodes) {
-            poets.push(graph.nodes[node].title);
-        }
-
-        poets.sort(function (a, b) {
-            return a.toLowerCase().localeCompare(b.toLowerCase());
-        });
-
-        $("#poet-list").empty();
-        $("#poet-list").append('<a class="dropdown-item" href="#">All</a>');
-
-        for (poet in poets) {
-            $("#poet-list").append('<a class="dropdown-item" href="#">' + poets[poet] + '</a>');
-        }
+        populateList(graph, $("#poet-list"));
 
         // Listen for user input using the poet filter list
-
         $(".dropdown-item").off("click");
         $(".dropdown-item").click(function() {
             filterClick($(this).text());
         });
 
         // (Re)draw the graph!
-
         draw(graph, layout, frame, labels_size, labels_display);
-
     });
 });
 
 // The draw function, containing all the D3 code except the initial set-up
-
 function draw(graph, layout, frame, labels_size, labels_display) {
 
     // If this is the first run, set up the force layout with the data
-
     if (init = true) {
         layout.nodes(graph.nodes).links(graph.links);
     }
 
     // Plot a D3 force-directed graph
-
     var link = frame.selectAll(".link")
         .data(graph.links);
 
@@ -191,7 +156,6 @@ function draw(graph, layout, frame, labels_size, labels_display) {
         .remove(); // Remove unused vertices
 
     // Update the layout dynamically
-
     layout.on("tick", function() {
         link.attr("x1", function(d) { return d.source.x; })
             .attr("stroke", "#999")
@@ -206,7 +170,6 @@ function draw(graph, layout, frame, labels_size, labels_display) {
 }
 
 // Function to convert JSON from Neo4j to nodes and links for D3
-
 function jsonToD3(data) {
 
     var nodes = [], links = [];
@@ -224,9 +187,29 @@ function jsonToD3(data) {
     return {nodes: nodes, links: links};
 
     // Helper function from Neo4j documentation
-
     function idIndex(a, id) {
         for (var i = 0; i < a.length; i++) { if (a[i].id == id) return i; }
         return null;
+    }
+}
+
+// Function to repopulate dropdown poet list after data reload
+function populateList(graph, list) {
+    
+    var poets = [];
+
+    for (node in graph.nodes) {
+        poets.push(graph.nodes[node].title);
+    }
+
+    poets.sort(function (a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
+
+    list.empty();
+    list.append('<a class="dropdown-item" href="#">All</a>');
+
+    for (poet in poets) {
+        list.append('<a class="dropdown-item" href="#">' + poets[poet] + '</a>');
     }
 }
