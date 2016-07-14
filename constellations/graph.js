@@ -105,13 +105,13 @@ $(document).ready(function() {
             filterClick($(this).text());
         });
 
-        // (Re)draw the graph!
-        draw(graph, layout, frame, labels_size, labels_display);
-
         // Store the data for use in the 3D graph
         sessionStorage.setItem("nodes", JSON.stringify(graph.nodes));
         sessionStorage.setItem("links", JSON.stringify(graph.links));
-    });
+
+        // (Re)draw the graph!
+        draw(graph, layout, frame, labels_size, labels_display);
+   });
 });
 
 // The draw function, containing all the D3 code except the initial set-up
