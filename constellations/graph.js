@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     // Draw the initial graph
     load($("#birthdates").val(), $("#weight").val(), init = true, name = "All");
-    
+
     // Set up event handlers that require a redraw
     $("#birthdates, #weight").on("slideStop", function() {
         load($("#birthdates").val(), $("#weight").val(), init = false, name = "All");
@@ -31,22 +31,22 @@ $(document).ready(function() {
     // Set up event handlers that do not require a redraw (UI settings)
     $("button").click(function() {
         if (this.id == "launch-3d") {
-            window.open("3d/");
+            window.open("3d/"); // Open 3D visualisation
         }
         else if (this.id == "labels-toggle") {
             if ($("#labels-toggle").hasClass("active")) {
-                labels_display = "block";
+                labels_display = "block"; // Show labels
             }
             else {
-                labels_display = "none";
+                labels_display = "none"; // Hide labels
             }
             frame.selectAll("text").style("display", labels_display);
         }
         else if (this.id == "labels-minus" && labels_size > 4) {
-            labels_size = labels_size - 2;
+            labels_size = labels_size - 2; // Decrease label size
         }
         else if (this.id == "labels-plus" && labels_size < 40) {
-            labels_size = labels_size + 2;
+            labels_size = labels_size + 2; // Increase label size
         }
         if (this.id == "labels-minus" || this.id == "labels-plus") {
             frame.selectAll("text").style("font-size", labels_size + "px");
@@ -91,14 +91,10 @@ $(document).ready(function() {
     };
 
     // Handle the response
-    $(document).ajaxSuccess(function(event, response){
+    $(document).ajaxSuccess(function(event, response) {
 
         // Convert the data into a form usable by D3
         graph = jsonToD3(response.responseJSON);
-
-        // Store the data for use in the 3D graph
-        sessionStorage.setItem("nodes", JSON.stringify(graph.nodes));
-        sessionStorage.setItem("links", JSON.stringify(graph.links));
 
         // Repopulate the poet filter list based on the data
         populateList(graph, $("#poet-list"));
@@ -111,6 +107,10 @@ $(document).ready(function() {
 
         // (Re)draw the graph!
         draw(graph, layout, frame, labels_size, labels_display);
+
+        // Store the data for use in the 3D graph
+        sessionStorage.setItem("nodes", JSON.stringify(graph.nodes));
+        sessionStorage.setItem("links", JSON.stringify(graph.links));
     });
 });
 
@@ -195,7 +195,7 @@ function jsonToD3(data) {
 
 // Function to repopulate dropdown poet list after data reload
 function populateList(graph, list) {
-    
+
     var poets = [];
 
     for (node in graph.nodes) {
