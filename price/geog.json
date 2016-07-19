@@ -1,0 +1,5491 @@
+[
+  {
+    "magazines": [
+      "E424"
+    ],
+    "location": "Aarhus, Denmark"
+  },
+  {
+    "magazines": [
+      "E249",
+      "E491",
+      "E721",
+      "E724",
+      "D326"
+    ],
+    "location": "Aberdeen"
+  },
+  {
+    "magazines": [
+      "E186"
+    ],
+    "location": "Abergavenny"
+  },
+  {
+    "magazines": [
+      "C29"
+    ],
+    "location": "Abergele"
+  },
+  {
+    "magazines": [
+      "D351",
+      "E164",
+      "E236",
+      "E389",
+      "E672",
+      "D135"
+    ],
+    "location": "Aberystwyth"
+  },
+  {
+    "magazines": [
+      "A1"
+    ],
+    "location": "Abinger Common"
+  },
+  {
+    "magazines": [
+      "D330"
+    ],
+    "location": "Ackworth"
+  },
+  {
+    "magazines": [
+      "E162"
+    ],
+    "location": "Aldershot"
+  },
+  {
+    "magazines": [
+      "C82"
+    ],
+    "location": "Aldington"
+  },
+  {
+    "magazines": [
+      "E350"
+    ],
+    "location": "Alford"
+  },
+  {
+    "magazines": [
+      "E740"
+    ],
+    "location": "Alperton"
+  },
+  {
+    "magazines": [
+      "E617",
+      "E803",
+      "E804",
+      "E604"
+    ],
+    "location": "Alsager"
+  },
+  {
+    "magazines": [
+      "D530"
+    ],
+    "location": "Altrincham"
+  },
+  {
+    "magazines": [
+      "D296"
+    ],
+    "location": "Amersham"
+  },
+  {
+    "magazines": [
+      "D432"
+    ],
+    "location": "Ampthill"
+  },
+  {
+    "magazines": [
+      "D243"
+    ],
+    "location": "Amsterdam"
+  },
+  {
+    "magazines": [
+      "E711"
+    ],
+    "location": "Annaghdown"
+  },
+  {
+    "magazines": [
+      "E713"
+    ],
+    "location": "Applecross, Australia"
+  },
+  {
+    "magazines": [
+      "B4"
+    ],
+    "location": "Arbroath"
+  },
+  {
+    "magazines": [
+      "D385"
+    ],
+    "location": "Ardgay"
+  },
+  {
+    "magazines": [
+      "E621"
+    ],
+    "location": "Ashby de la Zouch"
+  },
+  {
+    "magazines": [
+      "E469"
+    ],
+    "location": "Ashford, Middlesex"
+  },
+  {
+    "magazines": [
+      "E482"
+    ],
+    "location": "Ashton Keynes"
+  },
+  {
+    "magazines": [
+      "E919"
+    ],
+    "location": "Ashton-under-Lyne"
+  },
+  {
+    "magazines": [
+      "E361"
+    ],
+    "location": "Ashton-upon-Lyme"
+  },
+  {
+    "magazines": [
+      "D409",
+      "B50"
+    ],
+    "location": "Athens"
+  },
+  {
+    "magazines": [
+      "E858"
+    ],
+    "location": "Athens, Georgia"
+  },
+  {
+    "magazines": [
+      "D355"
+    ],
+    "location": "Athlone"
+  },
+  {
+    "magazines": [
+      "E600"
+    ],
+    "location": "Austin, Texas"
+  },
+  {
+    "magazines": [
+      "E809"
+    ],
+    "location": "Aylesbury"
+  },
+  {
+    "magazines": [
+      "C10"
+    ],
+    "location": "Aylesford"
+  },
+  {
+    "magazines": [
+      "D64"
+    ],
+    "location": "Aylestone"
+  },
+  {
+    "magazines": [
+      "B29",
+      "B28"
+    ],
+    "location": "Baile Atha Cliath"
+  },
+  {
+    "magazines": [
+      "E401"
+    ],
+    "location": "Bakewell"
+  },
+  {
+    "magazines": [
+      "A169"
+    ],
+    "location": "Balerno"
+  },
+  {
+    "magazines": [
+      "C31"
+    ],
+    "location": "Ballachulish"
+  },
+  {
+    "magazines": [
+      "E481"
+    ],
+    "location": "Banbridge"
+  },
+  {
+    "magazines": [
+      "E807"
+    ],
+    "location": "Banburgh"
+  },
+  {
+    "magazines": [
+      "E375",
+      "E575",
+      "D403"
+    ],
+    "location": "Banbury"
+  },
+  {
+    "magazines": [
+      "D262",
+      "D407",
+      "D442",
+      "C22"
+    ],
+    "location": "Bangor"
+  },
+  {
+    "magazines": [
+      "E814"
+    ],
+    "location": "Barbourne"
+  },
+  {
+    "magazines": [
+      "D293",
+      "B110"
+    ],
+    "location": "Barnet"
+  },
+  {
+    "magazines": [
+      "E381",
+      "D420"
+    ],
+    "location": "Barnsley"
+  },
+  {
+    "magazines": [
+      "E462"
+    ],
+    "location": "Barry"
+  },
+  {
+    "magazines": [
+      "D505",
+      "E330",
+      "E333",
+      "E590",
+      "E651",
+      "D65"
+    ],
+    "location": "Bath"
+  },
+  {
+    "magazines": [
+      "D25"
+    ],
+    "location": "Beaconsfield"
+  },
+  {
+    "magazines": [
+      "E264"
+    ],
+    "location": "Beaworthy"
+  },
+  {
+    "magazines": [
+      "E48",
+      "D494"
+    ],
+    "location": "Beckenham"
+  },
+  {
+    "magazines": [
+      "E405",
+      "E884",
+      "A110"
+    ],
+    "location": "Bedford"
+  },
+  {
+    "magazines": [
+      "A151",
+      "A187",
+      "A216",
+      "A217",
+      "A218",
+      "B119",
+      "B134",
+      "B136",
+      "C42",
+      "C95",
+      "C96",
+      "C111",
+      "D81",
+      "D84",
+      "D99",
+      "D126",
+      "D148",
+      "D176",
+      "D212",
+      "D220",
+      "D230",
+      "D435",
+      "D455",
+      "D527",
+      "E159",
+      "E270",
+      "E543",
+      "E695",
+      "E815",
+      "A69"
+    ],
+    "location": "Belfast"
+  },
+  {
+    "magazines": [
+      "D10"
+    ],
+    "location": "Belper"
+  },
+  {
+    "magazines": [
+      "D160",
+      "D35"
+    ],
+    "location": "Benburb"
+  },
+  {
+    "magazines": [
+      "E869"
+    ],
+    "location": "Benfleet"
+  },
+  {
+    "magazines": [
+      "E92"
+    ],
+    "location": "Bentilee"
+  },
+  {
+    "magazines": [
+      "E563"
+    ],
+    "location": "Benton"
+  },
+  {
+    "magazines": [
+      "A104"
+    ],
+    "location": "Berkeley"
+  },
+  {
+    "magazines": [
+      "D389",
+      "D338"
+    ],
+    "location": "Berkhamsted"
+  },
+  {
+    "magazines": [
+      "E807"
+    ],
+    "location": "Berlin"
+  },
+  {
+    "magazines": [
+      "E299"
+    ],
+    "location": "Bettws"
+  },
+  {
+    "magazines": [
+      "D236"
+    ],
+    "location": "Bexleyheath"
+  },
+  {
+    "magazines": [
+      "D44"
+    ],
+    "location": "Bibury"
+  },
+  {
+    "magazines": [
+      "B82",
+      "B68"
+    ],
+    "location": "Billericay"
+  },
+  {
+    "magazines": [
+      "E163"
+    ],
+    "location": "Billingham"
+  },
+  {
+    "magazines": [
+      "D532"
+    ],
+    "location": "Birdlip"
+  },
+  {
+    "magazines": [
+      "E211"
+    ],
+    "location": "Birkenhead"
+  },
+  {
+    "magazines": [
+      "A223",
+      "A228",
+      "B117",
+      "B118",
+      "B148",
+      "C32",
+      "C84",
+      "D19",
+      "D45",
+      "D47",
+      "D70",
+      "D71",
+      "D92",
+      "D156",
+      "D185",
+      "D241",
+      "D292",
+      "D373",
+      "D454",
+      "D464",
+      "D524",
+      "E104",
+      "E135",
+      "E142",
+      "E256",
+      "E353",
+      "E488",
+      "E551",
+      "E560",
+      "E598",
+      "E678",
+      "E714",
+      "E807",
+      "E907",
+      "A183"
+    ],
+    "location": "Birmingham"
+  },
+  {
+    "magazines": [
+      "E774"
+    ],
+    "location": "Birstall"
+  },
+  {
+    "magazines": [
+      "E434"
+    ],
+    "location": "Birtley"
+  },
+  {
+    "magazines": [
+      "A168"
+    ],
+    "location": "Bishop Auckland"
+  },
+  {
+    "magazines": [
+      "D194"
+    ],
+    "location": "Bishop Stortford"
+  },
+  {
+    "magazines": [
+      "D12"
+    ],
+    "location": "Bishopbriggs"
+  },
+  {
+    "magazines": [
+      "D192",
+      "D359",
+      "D73"
+    ],
+    "location": "Blackburn"
+  },
+  {
+    "magazines": [
+      "D438",
+      "B99"
+    ],
+    "location": "Blackpool"
+  },
+  {
+    "magazines": [
+      "E817"
+    ],
+    "location": "Blandford Forum"
+  },
+  {
+    "magazines": [
+      "D463"
+    ],
+    "location": "Bletchley"
+  },
+  {
+    "magazines": [
+      "C103"
+    ],
+    "location": "Bodmin"
+  },
+  {
+    "magazines": [
+      "E9"
+    ],
+    "location": "Bognor Regis"
+  },
+  {
+    "magazines": [
+      "E664",
+      "E820",
+      "E836",
+      "E431"
+    ],
+    "location": "Bolton"
+  },
+  {
+    "magazines": [
+      "D143",
+      "D55"
+    ],
+    "location": "Bootle"
+  },
+  {
+    "magazines": [
+      "C99"
+    ],
+    "location": "Botesdale"
+  },
+  {
+    "magazines": [
+      "E214",
+      "D11"
+    ],
+    "location": "Bothwell"
+  },
+  {
+    "magazines": [
+      "D201",
+      "E174",
+      "E603",
+      "C69"
+    ],
+    "location": "Bournemouth"
+  },
+  {
+    "magazines": [
+      "A101",
+      "D76",
+      "D345",
+      "D399",
+      "E121",
+      "E344",
+      "E524",
+      "E525",
+      "A87"
+    ],
+    "location": "Bradford"
+  },
+  {
+    "magazines": [
+      "E412",
+      "E411"
+    ],
+    "location": "Bradford-on-Tone"
+  },
+  {
+    "magazines": [
+      "D528",
+      "D522"
+    ],
+    "location": "Bramley"
+  },
+  {
+    "magazines": [
+      "D397"
+    ],
+    "location": "Breakish"
+  },
+  {
+    "magazines": [
+      "E215",
+      "D112"
+    ],
+    "location": "Brentwood"
+  },
+  {
+    "magazines": [
+      "E307"
+    ],
+    "location": "Bridge of Weir"
+  },
+  {
+    "magazines": [
+      "E146",
+      "E6"
+    ],
+    "location": "Bridgend"
+  },
+  {
+    "magazines": [
+      "E873"
+    ],
+    "location": "Bridport"
+  },
+  {
+    "magazines": [
+      "E18"
+    ],
+    "location": "Briercliff"
+  },
+  {
+    "magazines": [
+      "D275"
+    ],
+    "location": "Brierly Hill"
+  },
+  {
+    "magazines": [
+      "E611"
+    ],
+    "location": "Brighouse"
+  },
+  {
+    "magazines": [
+      "D324"
+    ],
+    "location": "Brightlingsea"
+  },
+  {
+    "magazines": [
+      "D2",
+      "D58",
+      "D134",
+      "D150",
+      "E96",
+      "E107",
+      "E246",
+      "E329",
+      "E442",
+      "E449",
+      "E581",
+      "E716",
+      "B92"
+    ],
+    "location": "Brighton"
+  },
+  {
+    "magazines": [
+      "A19",
+      "A201",
+      "A226",
+      "B14",
+      "B37",
+      "C24",
+      "C125",
+      "D2",
+      "D88",
+      "D110",
+      "D211",
+      "D222",
+      "D365",
+      "D535",
+      "E71",
+      "E86",
+      "E132",
+      "E253",
+      "E301",
+      "E321",
+      "E330",
+      "E463",
+      "E557",
+      "E565",
+      "E652",
+      "E658",
+      "E698",
+      "E810",
+      "E831",
+      "E855",
+      "E892",
+      "E908",
+      "A17"
+    ],
+    "location": "Bristol"
+  },
+  {
+    "magazines": [
+      "E444",
+      "E450",
+      "E10"
+    ],
+    "location": "Brixham"
+  },
+  {
+    "magazines": [
+      "E577"
+    ],
+    "location": "Brixton"
+  },
+  {
+    "magazines": [
+      "E529"
+    ],
+    "location": "Broadway"
+  },
+  {
+    "magazines": [
+      "D61"
+    ],
+    "location": "Bromley"
+  },
+  {
+    "magazines": [
+      "E600"
+    ],
+    "location": "Brookline, Massachusetts"
+  },
+  {
+    "magazines": [
+      "E780"
+    ],
+    "location": "Brooklyn, New York"
+  },
+  {
+    "magazines": [
+      "E600"
+    ],
+    "location": "Brunswick, Maine"
+  },
+  {
+    "magazines": [
+      "E861"
+    ],
+    "location": "Bruton"
+  },
+  {
+    "magazines": [
+      "A179"
+    ],
+    "location": "Buckhurst Hill"
+  },
+  {
+    "magazines": [
+      "A109"
+    ],
+    "location": "Buckingham"
+  },
+  {
+    "magazines": [
+      "B34"
+    ],
+    "location": "Buenos Aires"
+  },
+  {
+    "magazines": [
+      "E487",
+      "E595",
+      "E367"
+    ],
+    "location": "Burnley"
+  },
+  {
+    "magazines": [
+      "E781"
+    ],
+    "location": "Burslem"
+  },
+  {
+    "magazines": [
+      "E523",
+      "E76"
+    ],
+    "location": "Bury"
+  },
+  {
+    "magazines": [
+      "E323"
+    ],
+    "location": "Butleigh"
+  },
+  {
+    "magazines": [
+      "B95",
+      "B99",
+      "B102",
+      "B123",
+      "B21"
+    ],
+    "location": "Cairo"
+  },
+  {
+    "magazines": [
+      "E646"
+    ],
+    "location": "Callender"
+  },
+  {
+    "magazines": [
+      "E634"
+    ],
+    "location": "Calstock"
+  },
+  {
+    "magazines": [
+      "A36",
+      "A39",
+      "A64",
+      "A67",
+      "A83",
+      "A122",
+      "A152",
+      "A195",
+      "A197",
+      "A200",
+      "A207",
+      "A220",
+      "A235",
+      "B9",
+      "B13",
+      "B16",
+      "B55",
+      "B127",
+      "B152",
+      "C14",
+      "C18",
+      "C25",
+      "C41",
+      "C72",
+      "C76",
+      "C86",
+      "C91",
+      "C94",
+      "C101",
+      "D8",
+      "D24",
+      "D32",
+      "D77",
+      "D99",
+      "D111",
+      "D127",
+      "D173",
+      "D178",
+      "D310",
+      "D329",
+      "D393",
+      "D402",
+      "D411",
+      "D453",
+      "D492",
+      "D496",
+      "E35",
+      "E38",
+      "E147",
+      "E148",
+      "E193",
+      "E327",
+      "E360",
+      "E377",
+      "E386",
+      "E397",
+      "E399",
+      "E447",
+      "E484",
+      "E497",
+      "E549",
+      "E581",
+      "E601",
+      "E607",
+      "E650",
+      "E713",
+      "E738",
+      "E763",
+      "E789",
+      "E853",
+      "A25"
+    ],
+    "location": "Cambridge"
+  },
+  {
+    "magazines": [
+      "D462"
+    ],
+    "location": "Cambridge, Mass."
+  },
+  {
+    "magazines": [
+      "D457",
+      "D174"
+    ],
+    "location": "Campbelltown"
+  },
+  {
+    "magazines": [
+      "D321",
+      "D422",
+      "E169",
+      "E188",
+      "E277",
+      "E351",
+      "E771",
+      "E862",
+      "D161"
+    ],
+    "location": "Canterbury"
+  },
+  {
+    "magazines": [
+      "B137",
+      "D309",
+      "D336",
+      "D341",
+      "D417",
+      "D434",
+      "E95",
+      "E144",
+      "E153",
+      "E154",
+      "E314",
+      "E418",
+      "E437",
+      "E461",
+      "E482",
+      "E531",
+      "E805",
+      "E911",
+      "A229"
+    ],
+    "location": "Cardiff"
+  },
+  {
+    "magazines": [
+      "E580"
+    ],
+    "location": "Carleton Rode"
+  },
+  {
+    "magazines": [
+      "A227"
+    ],
+    "location": "Carmarthen"
+  },
+  {
+    "magazines": [
+      "D328",
+      "D136"
+    ],
+    "location": "Carshalton"
+  },
+  {
+    "magazines": [
+      "E209"
+    ],
+    "location": "Castlemilk"
+  },
+  {
+    "magazines": [
+      "D212"
+    ],
+    "location": "Castlerock"
+  },
+  {
+    "magazines": [
+      "E410"
+    ],
+    "location": "Castleroy"
+  },
+  {
+    "magazines": [
+      "E600"
+    ],
+    "location": "Catasaugua, Pennsylvania"
+  },
+  {
+    "magazines": [
+      "D385"
+    ],
+    "location": "Ceres"
+  },
+  {
+    "magazines": [
+      "E858",
+      "E372"
+    ],
+    "location": "Charleston, South Carolina"
+  },
+  {
+    "magazines": [
+      "E901",
+      "D429"
+    ],
+    "location": "Cheadle"
+  },
+  {
+    "magazines": [
+      "D325"
+    ],
+    "location": "Cheadle Hulme"
+  },
+  {
+    "magazines": [
+      "E384",
+      "E728",
+      "D149"
+    ],
+    "location": "Chelmsford"
+  },
+  {
+    "magazines": [
+      "C31",
+      "C93",
+      "D137",
+      "D214",
+      "D227",
+      "D411",
+      "D491",
+      "E201",
+      "E296",
+      "E752",
+      "C27"
+    ],
+    "location": "Cheltenham"
+  },
+  {
+    "magazines": [
+      "E687"
+    ],
+    "location": "Cherry Hinton"
+  },
+  {
+    "magazines": [
+      "E218"
+    ],
+    "location": "Chessington"
+  },
+  {
+    "magazines": [
+      "D433",
+      "E400",
+      "C120"
+    ],
+    "location": "Chesterfield"
+  },
+  {
+    "magazines": [
+      "A112",
+      "A63"
+    ],
+    "location": "Chicago"
+  },
+  {
+    "magazines": [
+      "E446",
+      "D4"
+    ],
+    "location": "Chichester"
+  },
+  {
+    "magazines": [
+      "E188"
+    ],
+    "location": "Chilham"
+  },
+  {
+    "magazines": [
+      "B132"
+    ],
+    "location": "Chisledon"
+  },
+  {
+    "magazines": [
+      "D403"
+    ],
+    "location": "Christchurch"
+  },
+  {
+    "magazines": [
+      "E559"
+    ],
+    "location": "Church Stretton"
+  },
+  {
+    "magazines": [
+      "E149",
+      "E261",
+      "E466",
+      "D452"
+    ],
+    "location": "Clacton-on-Sea"
+  },
+  {
+    "magazines": [
+      "E315"
+    ],
+    "location": "Clapham"
+  },
+  {
+    "magazines": [
+      "E408"
+    ],
+    "location": "Clare"
+  },
+  {
+    "magazines": [
+      "E835"
+    ],
+    "location": "Clondalkin"
+  },
+  {
+    "magazines": [
+      "E250"
+    ],
+    "location": "Cloone"
+  },
+  {
+    "magazines": [
+      "D215",
+      "D383",
+      "D525",
+      "E8",
+      "E127",
+      "E447",
+      "E780",
+      "D171"
+    ],
+    "location": "Colchester"
+  },
+  {
+    "magazines": [
+      "E292",
+      "E283"
+    ],
+    "location": "Colden Common"
+  },
+  {
+    "magazines": [
+      "D400",
+      "E905",
+      "D337"
+    ],
+    "location": "Coleraine"
+  },
+  {
+    "magazines": [
+      "E506"
+    ],
+    "location": "Colne"
+  },
+  {
+    "magazines": [
+      "D41"
+    ],
+    "location": "Coolgreany"
+  },
+  {
+    "magazines": [
+      "D312"
+    ],
+    "location": "Comber"
+  },
+  {
+    "magazines": [
+      "E238"
+    ],
+    "location": "Cootehill"
+  },
+  {
+    "magazines": [
+      "E562",
+      "E894",
+      "E288"
+    ],
+    "location": "Corby"
+  },
+  {
+    "magazines": [
+      "Cork"
+    ],
+    "location": "Corcaigh *See*"
+  },
+  {
+    "magazines": [
+      "A98",
+      "B59",
+      "B111",
+      "D228",
+      "D288",
+      "E137",
+      "E197",
+      "E198",
+      "E783",
+      "A47"
+    ],
+    "location": "Cork"
+  },
+  {
+    "magazines": [
+      "C98"
+    ],
+    "location": "Cornwall-on-Hudson"
+  },
+  {
+    "magazines": [
+      "E422"
+    ],
+    "location": "Corrandulla"
+  },
+  {
+    "magazines": [
+      "D42"
+    ],
+    "location": "Cottingham"
+  },
+  {
+    "magazines": [
+      "D486",
+      "E88a, E164",
+      "E464",
+      "E550",
+      "E835a",
+      "C117"
+    ],
+    "location": "Coventry"
+  },
+  {
+    "magazines": [
+      "E279"
+    ],
+    "location": "Cowling"
+  },
+  {
+    "magazines": [
+      "C103"
+    ],
+    "location": "Crail"
+  },
+  {
+    "magazines": [
+      "E796"
+    ],
+    "location": "Crewe"
+  },
+  {
+    "magazines": [
+      "E349"
+    ],
+    "location": "Croft"
+  },
+  {
+    "magazines": [
+      "D404",
+      "D316"
+    ],
+    "location": "Crowborough"
+  },
+  {
+    "magazines": [
+      "B64",
+      "B93",
+      "B151",
+      "D53",
+      "D57",
+      "E589",
+      "E875",
+      "A222"
+    ],
+    "location": "Croydon"
+  },
+  {
+    "magazines": [
+      "D230a"
+    ],
+    "location": "Cullercoats"
+  },
+  {
+    "magazines": [
+      "D425",
+      "E735",
+      "D139"
+    ],
+    "location": "Cullompton"
+  },
+  {
+    "magazines": [
+      "E6"
+    ],
+    "location": "Cwmbran"
+  },
+  {
+    "magazines": [
+      "D271"
+    ],
+    "location": "Dagenham"
+  },
+  {
+    "magazines": [
+      "E693"
+    ],
+    "location": "Darfield"
+  },
+  {
+    "magazines": [
+      "C104"
+    ],
+    "location": "Darlington"
+  },
+  {
+    "magazines": [
+      "E874"
+    ],
+    "location": "Dartford"
+  },
+  {
+    "magazines": [
+      "E900",
+      "E899"
+    ],
+    "location": "Dawley"
+  },
+  {
+    "magazines": [
+      "A178",
+      "A176"
+    ],
+    "location": "Dawlish"
+  },
+  {
+    "magazines": [
+      "D389",
+      "B144"
+    ],
+    "location": "Denham"
+  },
+  {
+    "magazines": [
+      "C89",
+      "D162",
+      "B48"
+    ],
+    "location": "Derby"
+  },
+  {
+    "magazines": [
+      "D6"
+    ],
+    "location": "Derry"
+  },
+  {
+    "magazines": [
+      "E294"
+    ],
+    "location": "Didsbury"
+  },
+  {
+    "magazines": [
+      "E126"
+    ],
+    "location": "Dieppe"
+  },
+  {
+    "magazines": [
+      "A63"
+    ],
+    "location": "Dijon"
+  },
+  {
+    "magazines": [
+      "E546",
+      "A5"
+    ],
+    "location": "Dingwall"
+  },
+  {
+    "magazines": [
+      "C97"
+    ],
+    "location": "Dorchester"
+  },
+  {
+    "magazines": [
+      "E914",
+      "E157"
+    ],
+    "location": "Douglas"
+  },
+  {
+    "magazines": [
+      "D493"
+    ],
+    "location": "Dovercourt"
+  },
+  {
+    "magazines": [
+      "E835"
+    ],
+    "location": "Drogheda"
+  },
+  {
+    "magazines": [
+      "D515"
+    ],
+    "location": "Droylsden"
+  },
+  {
+    "magazines": [
+      "A12",
+      "A19",
+      "A22",
+      "A40",
+      "A53",
+      "A91",
+      "A92",
+      "A94",
+      "A95",
+      "A96",
+      "A97",
+      "A103",
+      "A105",
+      "A130",
+      "A153",
+      "A209",
+      "B10",
+      "B35",
+      "B57",
+      "B58",
+      "B59",
+      "C46",
+      "C70",
+      "D49",
+      "D56",
+      "D80",
+      "D89",
+      "D91",
+      "D97",
+      "D132",
+      "D141",
+      "D144",
+      "D145",
+      "D158",
+      "D210",
+      "D246",
+      "D268",
+      "D284",
+      "D368",
+      "D406",
+      "D466",
+      "E39",
+      "E89",
+      "E90",
+      "E187",
+      "E203",
+      "E250",
+      "E308",
+      "E328",
+      "E406",
+      "E410",
+      "E489",
+      "E502",
+      "E596",
+      "E627",
+      "E628",
+      "E629",
+      "E715",
+      "E785",
+      "E835",
+      "A4"
+    ],
+    "location": "Dublin"
+  },
+  {
+    "magazines": [
+      "E30"
+    ],
+    "location": "Dudley"
+  },
+  {
+    "magazines": [
+      "E821"
+    ],
+    "location": "Dulverton"
+  },
+  {
+    "magazines": [
+      "D86",
+      "C48"
+    ],
+    "location": "Dulwich"
+  },
+  {
+    "magazines": [
+      "E510",
+      "E339"
+    ],
+    "location": "Dunblane"
+  },
+  {
+    "magazines": [
+      "D182",
+      "D229",
+      "E24",
+      "E108",
+      "E257",
+      "E307",
+      "E448",
+      "E725",
+      "A126"
+    ],
+    "location": "Dundee"
+  },
+  {
+    "magazines": [
+      "E790",
+      "A224"
+    ],
+    "location": "Dunfermline"
+  },
+  {
+    "magazines": [
+      "E422"
+    ],
+    "location": "D\\u00fan Laoghaire"
+  },
+  {
+    "magazines": [
+      "E477"
+    ],
+    "location": "Dunning"
+  },
+  {
+    "magazines": [
+      "E764"
+    ],
+    "location": "Dunston"
+  },
+  {
+    "magazines": [
+      "E385"
+    ],
+    "location": "Dunsyre"
+  },
+  {
+    "magazines": [
+      "D165",
+      "D242",
+      "E255",
+      "E271",
+      "E500",
+      "E536",
+      "E622",
+      "E779",
+      "D75"
+    ],
+    "location": "Durham"
+  },
+  {
+    "magazines": [
+      "E440"
+    ],
+    "location": "Dyfed"
+  },
+  {
+    "magazines": [
+      "A140"
+    ],
+    "location": "Dymock"
+  },
+  {
+    "magazines": [
+      "E720"
+    ],
+    "location": "Eaglescliffe"
+  },
+  {
+    "magazines": [
+      "D291"
+    ],
+    "location": "Ealing"
+  },
+  {
+    "magazines": [
+      "E398"
+    ],
+    "location": "Earls Barton"
+  },
+  {
+    "magazines": [
+      "E641"
+    ],
+    "location": "East Hampton, Maine"
+  },
+  {
+    "magazines": [
+      "E213"
+    ],
+    "location": "East Hunsbury"
+  },
+  {
+    "magazines": [
+      "D267",
+      "E879",
+      "A167"
+    ],
+    "location": "Eastbourne"
+  },
+  {
+    "magazines": [
+      "E136"
+    ],
+    "location": "Edgware"
+  },
+  {
+    "magazines": [
+      "A34",
+      "A77",
+      "A89",
+      "A113",
+      "A134",
+      "A149",
+      "A150",
+      "A155",
+      "A191",
+      "B60",
+      "B78",
+      "C32",
+      "C39",
+      "C52",
+      "C71",
+      "C79",
+      "C102",
+      "C121",
+      "D93",
+      "D100",
+      "D105",
+      "D114",
+      "D169",
+      "D300",
+      "D385",
+      "D415",
+      "D428",
+      "D429",
+      "D430",
+      "D439",
+      "D480",
+      "E72",
+      "E113",
+      "E139",
+      "E160",
+      "E178",
+      "E210",
+      "E247",
+      "E249",
+      "E266",
+      "E325",
+      "E368",
+      "E387",
+      "E442a",
+      "E454",
+      "E510",
+      "E646",
+      "E662",
+      "E707",
+      "E719",
+      "E733",
+      "E847",
+      "E915",
+      "A21"
+    ],
+    "location": "Edinburgh"
+  },
+  {
+    "magazines": [
+      "E249"
+    ],
+    "location": "Ellon"
+  },
+  {
+    "magazines": [
+      "E336"
+    ],
+    "location": "Ely"
+  },
+  {
+    "magazines": [
+      "E141",
+      "E117"
+    ],
+    "location": "Enfield"
+  },
+  {
+    "magazines": [
+      "D321"
+    ],
+    "location": "Enugu"
+  },
+  {
+    "magazines": [
+      "D203"
+    ],
+    "location": "Epping"
+  },
+  {
+    "magazines": [
+      "D470"
+    ],
+    "location": "Erith"
+  },
+  {
+    "magazines": [
+      "D253",
+      "E574",
+      "D247"
+    ],
+    "location": "Esher"
+  },
+  {
+    "magazines": [
+      "A61",
+      "A129",
+      "A23"
+    ],
+    "location": "Eton"
+  },
+  {
+    "magazines": [
+      "D5",
+      "D189",
+      "D243",
+      "D346",
+      "D467",
+      "E388",
+      "E459",
+      "E530",
+      "E564",
+      "E735",
+      "E759",
+      "E796",
+      "B36"
+    ],
+    "location": "Exeter"
+  },
+  {
+    "magazines": [
+      "E259"
+    ],
+    "location": "Exmouth"
+  },
+  {
+    "magazines": [
+      "C64"
+    ],
+    "location": "Eynsham"
+  },
+  {
+    "magazines": [
+      "E314"
+    ],
+    "location": "Fairwater"
+  },
+  {
+    "magazines": [
+      "E222"
+    ],
+    "location": "Fakenham"
+  },
+  {
+    "magazines": [
+      "E128"
+    ],
+    "location": "Falmouth"
+  },
+  {
+    "magazines": [
+      "E586"
+    ],
+    "location": "Fareham"
+  },
+  {
+    "magazines": [
+      "E897",
+      "D364"
+    ],
+    "location": "Farnborough"
+  },
+  {
+    "magazines": [
+      "D408",
+      "D281"
+    ],
+    "location": "Farnham"
+  },
+  {
+    "magazines": [
+      "E45"
+    ],
+    "location": "Faversham"
+  },
+  {
+    "magazines": [
+      "E408"
+    ],
+    "location": "Felixstowe"
+  },
+  {
+    "magazines": [
+      "E883"
+    ],
+    "location": "Feltham"
+  },
+  {
+    "magazines": [
+      "E112"
+    ],
+    "location": "Filey"
+  },
+  {
+    "magazines": [
+      "E873"
+    ],
+    "location": "Fishpond"
+  },
+  {
+    "magazines": [
+      "E746"
+    ],
+    "location": "Fleet"
+  },
+  {
+    "magazines": [
+      "E773",
+      "E109"
+    ],
+    "location": "Flitwick"
+  },
+  {
+    "magazines": [
+      "E265",
+      "E302",
+      "E647",
+      "D349"
+    ],
+    "location": "Folkestone"
+  },
+  {
+    "magazines": [
+      "B61",
+      "B31"
+    ],
+    "location": "Fordingbridge, Hampshire"
+  },
+  {
+    "magazines": [
+      "B110"
+    ],
+    "location": "Forest Hill"
+  },
+  {
+    "magazines": [
+      "D534",
+      "C105"
+    ],
+    "location": "Fowey"
+  },
+  {
+    "magazines": [
+      "D408"
+    ],
+    "location": "Frensham"
+  },
+  {
+    "magazines": [
+      "E702"
+    ],
+    "location": "Frieth"
+  },
+  {
+    "magazines": [
+      "E758",
+      "E426"
+    ],
+    "location": "Frome"
+  },
+  {
+    "magazines": [
+      "E205",
+      "E626",
+      "C21"
+    ],
+    "location": "Galway"
+  },
+  {
+    "magazines": [
+      "E845"
+    ],
+    "location": "Gateshead"
+  },
+  {
+    "magazines": [
+      "E25",
+      "E603",
+      "E861",
+      "D36"
+    ],
+    "location": "Gillingham"
+  },
+  {
+    "magazines": [
+      "A194",
+      "A224",
+      "B3",
+      "B20",
+      "B27",
+      "B74",
+      "B85",
+      "B106",
+      "B113",
+      "B124",
+      "B125",
+      "C38",
+      "C59",
+      "C83",
+      "D12",
+      "D26",
+      "D204",
+      "D319",
+      "D429",
+      "D430",
+      "D477",
+      "D506",
+      "D512",
+      "E7",
+      "E17",
+      "E209",
+      "E317",
+      "E414",
+      "E465",
+      "E522",
+      "E541",
+      "E545",
+      "E552",
+      "E758",
+      "E858",
+      "E870",
+      "A32"
+    ],
+    "location": "Glasgow"
+  },
+  {
+    "magazines": [
+      "E705"
+    ],
+    "location": "Glasshoughton"
+  },
+  {
+    "magazines": [
+      "E323",
+      "C1"
+    ],
+    "location": "Glastonbury"
+  },
+  {
+    "magazines": [
+      "E725"
+    ],
+    "location": "Glenrothes"
+  },
+  {
+    "magazines": [
+      "D532"
+    ],
+    "location": "Gloucester"
+  },
+  {
+    "magazines": [
+      "E737"
+    ],
+    "location": "Goleen"
+  },
+  {
+    "magazines": [
+      "E500"
+    ],
+    "location": "Goole"
+  },
+  {
+    "magazines": [
+      "E680"
+    ],
+    "location": "Grantham"
+  },
+  {
+    "magazines": [
+      "E568"
+    ],
+    "location": "Great Ayton"
+  },
+  {
+    "magazines": [
+      "E775"
+    ],
+    "location": "Great Wakering"
+  },
+  {
+    "magazines": [
+      "D239"
+    ],
+    "location": "Greenwich"
+  },
+  {
+    "magazines": [
+      "E433"
+    ],
+    "location": "Gressenhall"
+  },
+  {
+    "magazines": [
+      "E404",
+      "E130"
+    ],
+    "location": "Grimsby"
+  },
+  {
+    "magazines": [
+      "E751",
+      "A79"
+    ],
+    "location": "Guildford"
+  },
+  {
+    "magazines": [
+      "E357"
+    ],
+    "location": "Guisborough"
+  },
+  {
+    "magazines": [
+      "D474"
+    ],
+    "location": "Gunthorpe"
+  },
+  {
+    "magazines": [
+      "E1"
+    ],
+    "location": "Hackney"
+  },
+  {
+    "magazines": [
+      "E742"
+    ],
+    "location": "Halesworth"
+  },
+  {
+    "magazines": [
+      "E11"
+    ],
+    "location": "Haleworth"
+  },
+  {
+    "magazines": [
+      "E611",
+      "D352"
+    ],
+    "location": "Halifax"
+  },
+  {
+    "magazines": [
+      "D105"
+    ],
+    "location": "Hamilton"
+  },
+  {
+    "magazines": [
+      "E162"
+    ],
+    "location": "Hampton"
+  },
+  {
+    "magazines": [
+      "D225",
+      "D363",
+      "E20",
+      "D207"
+    ],
+    "location": "Harlow"
+  },
+  {
+    "magazines": [
+      "B101",
+      "A165"
+    ],
+    "location": "Harmondsworth"
+  },
+  {
+    "magazines": [
+      "D487"
+    ],
+    "location": "Harpford"
+  },
+  {
+    "magazines": [
+      "D128",
+      "D378",
+      "A148"
+    ],
+    "location": "Harrogate"
+  },
+  {
+    "magazines": [
+      "D476",
+      "E50",
+      "E136",
+      "D164"
+    ],
+    "location": "Harrow"
+  },
+  {
+    "magazines": [
+      "E587"
+    ],
+    "location": "Hartlepool"
+  },
+  {
+    "magazines": [
+      "D528"
+    ],
+    "location": "Haslemere"
+  },
+  {
+    "magazines": [
+      "E716"
+    ],
+    "location": "Hassocks"
+  },
+  {
+    "magazines": [
+      "E278",
+      "D153"
+    ],
+    "location": "Hastings"
+  },
+  {
+    "magazines": [
+      "E214"
+    ],
+    "location": "Hastings-on-Hudson"
+  },
+  {
+    "magazines": [
+      "D146"
+    ],
+    "location": "Hawthorn"
+  },
+  {
+    "magazines": [
+      "D465",
+      "D170"
+    ],
+    "location": "Hayes"
+  },
+  {
+    "magazines": [
+      "B23"
+    ],
+    "location": "Hayle"
+  },
+  {
+    "magazines": [
+      "D257"
+    ],
+    "location": "Heaton"
+  },
+  {
+    "magazines": [
+      "D205"
+    ],
+    "location": "Hebburn"
+  },
+  {
+    "magazines": [
+      "E287",
+      "E340",
+      "E424",
+      "E535",
+      "E707",
+      "E843",
+      "D129"
+    ],
+    "location": "Hebden Bridge"
+  },
+  {
+    "magazines": [
+      "D345"
+    ],
+    "location": "Heckmondwike"
+  },
+  {
+    "magazines": [
+      "D106"
+    ],
+    "location": "Hednesford"
+  },
+  {
+    "magazines": [
+      "E234"
+    ],
+    "location": "Heeley"
+  },
+  {
+    "magazines": [
+      "D436",
+      "D177"
+    ],
+    "location": "Hemel Hempstead"
+  },
+  {
+    "magazines": [
+      "E470",
+      "E913",
+      "D456"
+    ],
+    "location": "Hereford"
+  },
+  {
+    "magazines": [
+      "E347"
+    ],
+    "location": "Hertford"
+  },
+  {
+    "magazines": [
+      "E668"
+    ],
+    "location": "Heslington"
+  },
+  {
+    "magazines": [
+      "C53"
+    ],
+    "location": "Hessle"
+  },
+  {
+    "magazines": [
+      "D526",
+      "E432",
+      "E702",
+      "D503"
+    ],
+    "location": "High Wycombe"
+  },
+  {
+    "magazines": [
+      "D208"
+    ],
+    "location": "Hillingdon"
+  },
+  {
+    "magazines": [
+      "D402",
+      "D516",
+      "D142"
+    ],
+    "location": "Hitchin"
+  },
+  {
+    "magazines": [
+      "A27"
+    ],
+    "location": "Holmbury St. Mary"
+  },
+  {
+    "magazines": [
+      "E374"
+    ],
+    "location": "Hong Kong"
+  },
+  {
+    "magazines": [
+      "E385"
+    ],
+    "location": "Horfield"
+  },
+  {
+    "magazines": [
+      "D475"
+    ],
+    "location": "Horsforth"
+  },
+  {
+    "magazines": [
+      "D20"
+    ],
+    "location": "Hounslow"
+  },
+  {
+    "magazines": [
+      "D198",
+      "E103",
+      "E538",
+      "E661",
+      "E881",
+      "D117"
+    ],
+    "location": "Hove"
+  },
+  {
+    "magazines": [
+      "D118",
+      "D260",
+      "D345",
+      "D414",
+      "E217",
+      "E303",
+      "E420",
+      "E542",
+      "E876",
+      "D7"
+    ],
+    "location": "Huddersfield"
+  },
+  {
+    "magazines": [
+      "C45",
+      "D27",
+      "D519",
+      "E91",
+      "E125",
+      "E171",
+      "E382",
+      "E489",
+      "E667",
+      "E685",
+      "E786",
+      "E787",
+      "C22"
+    ],
+    "location": "Hull"
+  },
+  {
+    "magazines": [
+      "E584"
+    ],
+    "location": "Huntingdon"
+  },
+  {
+    "magazines": [
+      "E3"
+    ],
+    "location": "Hyde"
+  },
+  {
+    "magazines": [
+      "E554",
+      "D388"
+    ],
+    "location": "Ilford"
+  },
+  {
+    "magazines": [
+      "B108",
+      "E411",
+      "A172"
+    ],
+    "location": "Ilfracombe"
+  },
+  {
+    "magazines": [
+      "E15a"
+    ],
+    "location": "Ingatestone"
+  },
+  {
+    "magazines": [
+      "D460",
+      "E602",
+      "D421"
+    ],
+    "location": "Ipswich"
+  },
+  {
+    "magazines": [
+      "E98"
+    ],
+    "location": "Islandmagee"
+  },
+  {
+    "magazines": [
+      "E687"
+    ],
+    "location": "Islington, New South Wales"
+  },
+  {
+    "magazines": [
+      "D205"
+    ],
+    "location": "Jarrow"
+  },
+  {
+    "magazines": [
+      "A6"
+    ],
+    "location": "Jersey"
+  },
+  {
+    "magazines": [
+      "E481"
+    ],
+    "location": "Katesbridge"
+  },
+  {
+    "magazines": [
+      "C118"
+    ],
+    "location": "Keele"
+  },
+  {
+    "magazines": [
+      "E706"
+    ],
+    "location": "Keighley"
+  },
+  {
+    "magazines": [
+      "E268"
+    ],
+    "location": "Kelty"
+  },
+  {
+    "magazines": [
+      "D460"
+    ],
+    "location": "Kersey"
+  },
+  {
+    "magazines": [
+      "D286",
+      "D16"
+    ],
+    "location": "Kettering"
+  },
+  {
+    "magazines": [
+      "D128"
+    ],
+    "location": "Kettlesing"
+  },
+  {
+    "magazines": [
+      "E583"
+    ],
+    "location": "Kidderminster"
+  },
+  {
+    "magazines": [
+      "E275"
+    ],
+    "location": "Kidlington"
+  },
+  {
+    "magazines": [
+      "D298"
+    ],
+    "location": "Kilkee"
+  },
+  {
+    "magazines": [
+      "D240"
+    ],
+    "location": "Kilkenny"
+  },
+  {
+    "magazines": [
+      "E768"
+    ],
+    "location": "Kilmarnock"
+  },
+  {
+    "magazines": [
+      "E63"
+    ],
+    "location": "Kincardine-on-Forth"
+  },
+  {
+    "magazines": [
+      "E222",
+      "E764",
+      "D431"
+    ],
+    "location": "King\\u2019s Lynn"
+  },
+  {
+    "magazines": [
+      "D424"
+    ],
+    "location": "Kingston, Jamaica"
+  },
+  {
+    "magazines": [
+      "E200"
+    ],
+    "location": "Kingston upon Thames"
+  },
+  {
+    "magazines": [
+      "D275"
+    ],
+    "location": "Kingswinford"
+  },
+  {
+    "magazines": [
+      "D186"
+    ],
+    "location": "Kirbymoorside"
+  },
+  {
+    "magazines": [
+      "E915"
+    ],
+    "location": "Kirkcaldy"
+  },
+  {
+    "magazines": [
+      "E478"
+    ],
+    "location": "Kirkcudbright"
+  },
+  {
+    "magazines": [
+      "D46"
+    ],
+    "location": "Kirkintilloch"
+  },
+  {
+    "magazines": [
+      "E880",
+      "E770"
+    ],
+    "location": "Knaphill"
+  },
+  {
+    "magazines": [
+      "E735"
+    ],
+    "location": "Kuala Lumpur"
+  },
+  {
+    "magazines": [
+      "D445"
+    ],
+    "location": "Lake Toxaway"
+  },
+  {
+    "magazines": [
+      "E767",
+      "E567"
+    ],
+    "location": "Lampeter"
+  },
+  {
+    "magazines": [
+      "D167",
+      "E22",
+      "E428",
+      "D122"
+    ],
+    "location": "Lancaster"
+  },
+  {
+    "magazines": [
+      "A118"
+    ],
+    "location": "Langford"
+  },
+  {
+    "magazines": [
+      "E868"
+    ],
+    "location": "Largs"
+  },
+  {
+    "magazines": [
+      "D398",
+      "D242"
+    ],
+    "location": "Leamington Spa"
+  },
+  {
+    "magazines": [
+      "A234",
+      "B65",
+      "C85",
+      "D79",
+      "D221",
+      "D238",
+      "D244",
+      "D311",
+      "D475",
+      "D482",
+      "E19",
+      "E120",
+      "E194",
+      "E199",
+      "E222",
+      "E223",
+      "E248",
+      "E279",
+      "E358",
+      "E423",
+      "E436",
+      "E453",
+      "E473",
+      "E544",
+      "E591",
+      "E677",
+      "E703",
+      "E823",
+      "E859",
+      "A123"
+    ],
+    "location": "Leeds"
+  },
+  {
+    "magazines": [
+      "E221"
+    ],
+    "location": "Leedstown"
+  },
+  {
+    "magazines": [
+      "E509"
+    ],
+    "location": "Leek"
+  },
+  {
+    "magazines": [
+      "C67",
+      "D155",
+      "D168",
+      "D274",
+      "D302",
+      "D323",
+      "D347",
+      "E61",
+      "E318",
+      "E521",
+      "E563",
+      "E621",
+      "C20"
+    ],
+    "location": "Leicester"
+  },
+  {
+    "magazines": [
+      "E849"
+    ],
+    "location": "Leighton Buzzard"
+  },
+  {
+    "magazines": [
+      "E131",
+      "B86"
+    ],
+    "location": "Lerwick"
+  },
+  {
+    "magazines": [
+      "E269"
+    ],
+    "location": "Leslie"
+  },
+  {
+    "magazines": [
+      "E326"
+    ],
+    "location": "Letchworth"
+  },
+  {
+    "magazines": [
+      "B93"
+    ],
+    "location": "Lettcombe Bassett"
+  },
+  {
+    "magazines": [
+      "E111",
+      "B103"
+    ],
+    "location": "Lewes"
+  },
+  {
+    "magazines": [
+      "E202"
+    ],
+    "location": "Lewis"
+  },
+  {
+    "magazines": [
+      "E172",
+      "E334",
+      "E30"
+    ],
+    "location": "Lichfield"
+  },
+  {
+    "magazines": [
+      "E588",
+      "D461"
+    ],
+    "location": "Limerick, Ireland"
+  },
+  {
+    "magazines": [
+      "C57"
+    ],
+    "location": "Limerick, Maine"
+  },
+  {
+    "magazines": [
+      "E237",
+      "E346",
+      "E799",
+      "E890",
+      "E904",
+      "D197"
+    ],
+    "location": "Lincoln"
+  },
+  {
+    "magazines": [
+      "D83"
+    ],
+    "location": "Lindfield"
+  },
+  {
+    "magazines": [
+      "B119",
+      "B63"
+    ],
+    "location": "Lisburn"
+  },
+  {
+    "magazines": [
+      "E634"
+    ],
+    "location": "Liskeard"
+  },
+  {
+    "magazines": [
+      "B117"
+    ],
+    "location": "Little Chalfont"
+  },
+  {
+    "magazines": [
+      "E554"
+    ],
+    "location": "Little Clacton"
+  },
+  {
+    "magazines": [
+      "E681",
+      "E354"
+    ],
+    "location": "Little Neston"
+  },
+  {
+    "magazines": [
+      "C8",
+      "C11",
+      "C80",
+      "D31",
+      "D123",
+      "D157",
+      "D280",
+      "D449",
+      "D504",
+      "D531",
+      "E56",
+      "E69",
+      "E140",
+      "E226",
+      "E235",
+      "E559",
+      "E574",
+      "E612",
+      "E750",
+      "E816",
+      "E845",
+      "E893",
+      "A114"
+    ],
+    "location": "Liverpool"
+  },
+  {
+    "magazines": [
+      "D339"
+    ],
+    "location": "Llandybie"
+  },
+  {
+    "magazines": [
+      "D357",
+      "D103"
+    ],
+    "location": "Llandysul"
+  },
+  {
+    "magazines": [
+      "A227"
+    ],
+    "location": "Llangadog"
+  },
+  {
+    "magazines": [
+      "B17"
+    ],
+    "location": "Llanllechid"
+  },
+  {
+    "magazines": [
+      "A3",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A14",
+      "A15",
+      "A16",
+      "A24",
+      "A26",
+      "A29",
+      "A31",
+      "A33",
+      "A37",
+      "A38",
+      "A41",
+      "A42",
+      "A43",
+      "A44",
+      "A45",
+      "A46",
+      "A50",
+      "A51",
+      "A52",
+      "A54",
+      "A55",
+      "A56",
+      "A57",
+      "A58",
+      "A59",
+      "A60",
+      "A62",
+      "A65",
+      "A66",
+      "A69",
+      "A70",
+      "A73",
+      "A74",
+      "A76",
+      "A78",
+      "A80",
+      "A81",
+      "A82",
+      "A83",
+      "A84",
+      "A85",
+      "A86",
+      "A88",
+      "A90",
+      "A93",
+      "A99",
+      "A100",
+      "A106",
+      "A107",
+      "A108",
+      "A111",
+      "A115",
+      "A116",
+      "A117",
+      "A120",
+      "A124",
+      "A125",
+      "A127",
+      "A128",
+      "A131",
+      "A132",
+      "A133",
+      "A135",
+      "A136",
+      "A137",
+      "A138",
+      "A139",
+      "A143",
+      "A145",
+      "A146",
+      "A147",
+      "A156",
+      "A157",
+      "A162",
+      "A165",
+      "A170",
+      "A171",
+      "A172",
+      "A173",
+      "A174",
+      "A175",
+      "A176",
+      "A177",
+      "A180",
+      "A182",
+      "A184",
+      "A186",
+      "A189",
+      "A190",
+      "A196",
+      "A197",
+      "A198",
+      "A199",
+      "A202",
+      "A204",
+      "A208",
+      "A210",
+      "A211",
+      "A213",
+      "A214",
+      "A215",
+      "A219",
+      "A221",
+      "A223",
+      "A225",
+      "A230",
+      "A231",
+      "A233",
+      "A235",
+      "A236",
+      "B1",
+      "B2",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B15",
+      "B18",
+      "B19",
+      "B22",
+      "B25",
+      "B26",
+      "B30",
+      "B32",
+      "B40",
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "B46",
+      "B47",
+      "B51",
+      "B52",
+      "B54",
+      "B56",
+      "B67",
+      "B71",
+      "B73",
+      "B75",
+      "B76",
+      "B77",
+      "B80",
+      "B81",
+      "B83",
+      "B87",
+      "B88",
+      "B89",
+      "B94",
+      "B96",
+      "B97",
+      "B98",
+      "B104",
+      "B105",
+      "B108",
+      "B109",
+      "B110",
+      "B114",
+      "B115",
+      "B120",
+      "B130",
+      "B131",
+      "B133",
+      "B134",
+      "B138",
+      "B139",
+      "B140",
+      "B142",
+      "B143",
+      "B144",
+      "B145",
+      "B146",
+      "B147",
+      "B149",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C22",
+      "C30",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C62",
+      "C63",
+      "C68",
+      "C77",
+      "C78",
+      "C81",
+      "C90",
+      "C92",
+      "C109",
+      "C113",
+      "C115",
+      "C122",
+      "C123",
+      "C124",
+      "D1",
+      "D3",
+      "D9",
+      "D13",
+      "D15",
+      "D17",
+      "D20",
+      "D21",
+      "D22",
+      "D26",
+      "D28",
+      "D34",
+      "D37",
+      "D38",
+      "D40",
+      "D43",
+      "D47",
+      "D52",
+      "D54",
+      "D61",
+      "D63",
+      "D66",
+      "D67",
+      "D68",
+      "D69",
+      "D86",
+      "D96",
+      "D102",
+      "D112",
+      "D119",
+      "D154",
+      "D166",
+      "D180",
+      "D181",
+      "D184",
+      "D187",
+      "D193",
+      "D195",
+      "D196",
+      "D197",
+      "D199",
+      "D206",
+      "D209",
+      "D213",
+      "D214",
+      "D227",
+      "D231",
+      "D232",
+      "D235",
+      "D239",
+      "D245",
+      "D250",
+      "D252",
+      "D255",
+      "D258",
+      "D259",
+      "D269",
+      "D272",
+      "D276",
+      "D277",
+      "D283",
+      "D285",
+      "D287",
+      "D290",
+      "D291",
+      "D303",
+      "D304",
+      "D305",
+      "D307",
+      "D308",
+      "D314",
+      "D317",
+      "D318",
+      "D320",
+      "D332",
+      "D333",
+      "D338",
+      "D348",
+      "D358",
+      "D362",
+      "D366",
+      "D367",
+      "D369",
+      "D375",
+      "D377",
+      "D386",
+      "D387",
+      "D391",
+      "D405",
+      "D409",
+      "D412",
+      "D415",
+      "D416",
+      "D419",
+      "D424",
+      "D440",
+      "D441",
+      "D443",
+      "D445",
+      "D446",
+      "D450",
+      "D451",
+      "D456",
+      "D462",
+      "D478",
+      "D481",
+      "D484",
+      "D485",
+      "D488",
+      "D489",
+      "D490",
+      "D494",
+      "D497",
+      "D499",
+      "D500",
+      "D518",
+      "D520",
+      "D523",
+      "D525",
+      "D526",
+      "D528",
+      "D533",
+      "D537",
+      "E1",
+      "E4",
+      "E14",
+      "E15",
+      "E16",
+      "E21",
+      "E26",
+      "E33",
+      "E35",
+      "E37",
+      "E41",
+      "E42",
+      "E43",
+      "E47",
+      "E52",
+      "E57",
+      "E59",
+      "E64",
+      "E65",
+      "E68",
+      "E74",
+      "E77",
+      "E79",
+      "E82",
+      "E87",
+      "E88",
+      "E91",
+      "E100",
+      "E101",
+      "E126",
+      "E133",
+      "E134",
+      "E136",
+      "E138",
+      "E143",
+      "E155",
+      "E167",
+      "E170",
+      "E175",
+      "E176",
+      "E179",
+      "E181",
+      "E182",
+      "E219",
+      "E220",
+      "E227",
+      "E229",
+      "E240",
+      "E245",
+      "E252",
+      "E254",
+      "E271",
+      "E272",
+      "E282",
+      "E290",
+      "E291",
+      "E304",
+      "E311",
+      "E312",
+      "E315",
+      "E320",
+      "E327",
+      "E335",
+      "E346",
+      "E355",
+      "E356",
+      "E364",
+      "E369",
+      "E373",
+      "E378",
+      "E380",
+      "E383",
+      "E407",
+      "E413",
+      "E419",
+      "E425",
+      "E426",
+      "E427",
+      "E430",
+      "E438",
+      "E442a",
+      "E443",
+      "E445a,"
+      "E455",
+      "E456",
+      "E457",
+      "E458",
+      "E460",
+      "E467",
+      "E469",
+      "E471",
+      "E472",
+      "E475",
+      "E477",
+      "E479",
+      "E490",
+      "E492",
+      "E493",
+      "E495",
+      "E496",
+      "E505",
+      "E508",
+      "E512",
+      "E514",
+      "E519",
+      "E520",
+      "E532",
+      "E537",
+      "E539",
+      "E558",
+      "E561",
+      "E574",
+      "E575",
+      "E577",
+      "E578",
+      "E579",
+      "E597",
+      "E600",
+      "E606",
+      "E608",
+      "E609",
+      "E610",
+      "E615",
+      "E616",
+      "E623",
+      "E625",
+      "E631",
+      "E632",
+      "E636",
+      "E637",
+      "E641",
+      "E642",
+      "E644",
+      "E648",
+      "E655",
+      "E657",
+      "E661",
+      "E666",
+      "E670a",
+      "E673",
+      "E676",
+      "E679",
+      "E680",
+      "E684",
+      "E690",
+      "E694",
+      "E697",
+      "E698",
+      "E700",
+      "E701",
+      "E707",
+      "E717",
+      "E723",
+      "E727",
+      "E729",
+      "E732",
+      "E743",
+      "E745",
+      "E747",
+      "E758",
+      "E765",
+      "E769",
+      "E784",
+      "E788",
+      "E791",
+      "E794",
+      "E796",
+      "E800",
+      "E809",
+      "E810",
+      "E812",
+      "E813",
+      "E819",
+      "E822",
+      "E824",
+      "E828",
+      "E830",
+      "E832",
+      "E833",
+      "E839",
+      "E842",
+      "E846",
+      "E847",
+      "E848",
+      "E851",
+      "E854",
+      "E856",
+      "E857",
+      "E858",
+      "E860",
+      "E863",
+      "E864",
+      "E867",
+      "E877",
+      "E878",
+      "E881",
+      "E882",
+      "E888",
+      "E891",
+      "E896",
+      "E912",
+      "E918",
+      "A2"
+    ],
+    "location": "London"
+  },
+  {
+    "magazines": [
+      "E274"
+    ],
+    "location": "Longfield"
+  },
+  {
+    "magazines": [
+      "E184",
+      "E191",
+      "E227",
+      "E258",
+      "D370"
+    ],
+    "location": "Loughborough"
+  },
+  {
+    "magazines": [
+      "C49"
+    ],
+    "location": "Loughton"
+  },
+  {
+    "magazines": [
+      "E728"
+    ],
+    "location": "Louth"
+  },
+  {
+    "magazines": [
+      "E370",
+      "E429",
+      "B49"
+    ],
+    "location": "Lowestoft"
+  },
+  {
+    "magazines": [
+      "D352"
+    ],
+    "location": "Luddenden Foot"
+  },
+  {
+    "magazines": [
+      "E216",
+      "D172"
+    ],
+    "location": "Luton"
+  },
+  {
+    "magazines": [
+      "E630",
+      "E363"
+    ],
+    "location": "Lymington"
+  },
+  {
+    "magazines": [
+      "D426"
+    ],
+    "location": "Lyth"
+  },
+  {
+    "magazines": [
+      "E707"
+    ],
+    "location": "Macclesfield"
+  },
+  {
+    "magazines": [
+      "D461"
+    ],
+    "location": "Madrid"
+  },
+  {
+    "magazines": [
+      "B91"
+    ],
+    "location": "Maidenhead"
+  },
+  {
+    "magazines": [
+      "D448",
+      "E166",
+      "E183",
+      "E267",
+      "E313",
+      "E337",
+      "E393",
+      "E494",
+      "E844",
+      "D129"
+    ],
+    "location": "Maidstone"
+  },
+  {
+    "magazines": [
+      "A60",
+      "A71",
+      "A28"
+    ],
+    "location": "Majorca"
+  },
+  {
+    "magazines": [
+      "E447"
+    ],
+    "location": "Maldon"
+  },
+  {
+    "magazines": [
+      "E731"
+    ],
+    "location": "Malton"
+  },
+  {
+    "magazines": [
+      "E275",
+      "E212"
+    ],
+    "location": "Malvern"
+  },
+  {
+    "magazines": [
+      "B128",
+      "C22",
+      "C88",
+      "D14",
+      "D124",
+      "D140",
+      "D315",
+      "D372",
+      "D382",
+      "D410",
+      "D447",
+      "D508",
+      "E13",
+      "E31",
+      "E67",
+      "E80",
+      "E124",
+      "E206",
+      "E294",
+      "E371",
+      "E485",
+      "E486",
+      "E613",
+      "E633",
+      "E659",
+      "E668",
+      "E675",
+      "E866",
+      "E903",
+      "A107"
+    ],
+    "location": "Manchester"
+  },
+  {
+    "magazines": [
+      "D270"
+    ],
+    "location": "Mansfield"
+  },
+  {
+    "magazines": [
+      "E885",
+      "E725"
+    ],
+    "location": "Markinch"
+  },
+  {
+    "magazines": [
+      "E778"
+    ],
+    "location": "Matlock"
+  },
+  {
+    "magazines": [
+      "E183"
+    ],
+    "location": "Mereworth"
+  },
+  {
+    "magazines": [
+      "E692"
+    ],
+    "location": "Merstham"
+  },
+  {
+    "magazines": [
+      "D380",
+      "E70",
+      "E498",
+      "C116"
+    ],
+    "location": "Merthyr Tydfil"
+  },
+  {
+    "magazines": [
+      "E818",
+      "E568"
+    ],
+    "location": "Middlesbrough"
+  },
+  {
+    "magazines": [
+      "E730"
+    ],
+    "location": "Millbrook"
+  },
+  {
+    "magazines": [
+      "E665",
+      "E852",
+      "E889",
+      "E503"
+    ],
+    "location": "Milton Keynes"
+  },
+  {
+    "magazines": [
+      "B25"
+    ],
+    "location": "Mistley"
+  },
+  {
+    "magazines": [
+      "E116"
+    ],
+    "location": "Monaghan"
+  },
+  {
+    "magazines": [
+      "D342"
+    ],
+    "location": "Monmouth"
+  },
+  {
+    "magazines": [
+      "A193",
+      "A192"
+    ],
+    "location": "Montrose"
+  },
+  {
+    "magazines": [
+      "E629"
+    ],
+    "location": "Mornington"
+  },
+  {
+    "magazines": [
+      "E686"
+    ],
+    "location": "Morpeth"
+  },
+  {
+    "magazines": [
+      "D190"
+    ],
+    "location": "Motherwell"
+  },
+  {
+    "magazines": [
+      "E687"
+    ],
+    "location": "Mountain Creek, Queensland"
+  },
+  {
+    "magazines": [
+      "C110",
+      "A163"
+    ],
+    "location": "Mytholmroyd"
+  },
+  {
+    "magazines": [
+      "E841"
+    ],
+    "location": "Nacton"
+  },
+  {
+    "magazines": [
+      "E421",
+      "E110"
+    ],
+    "location": "Nailsworth"
+  },
+  {
+    "magazines": [
+      "E483"
+    ],
+    "location": "Neath"
+  },
+  {
+    "magazines": [
+      "D529"
+    ],
+    "location": "Nenagh"
+  },
+  {
+    "magazines": [
+      "E242"
+    ],
+    "location": "Neston"
+  },
+  {
+    "magazines": [
+      "E656",
+      "E555"
+    ],
+    "location": "Nether Stowey"
+  },
+  {
+    "magazines": [
+      "E376"
+    ],
+    "location": "New Duston"
+  },
+  {
+    "magazines": [
+      "D471",
+      "D394"
+    ],
+    "location": "New Malden"
+  },
+  {
+    "magazines": [
+      "D123"
+    ],
+    "location": "New Milton"
+  },
+  {
+    "magazines": [
+      "A211",
+      "B101",
+      "C87",
+      "C113",
+      "D141",
+      "D238",
+      "D258",
+      "D518",
+      "E327",
+      "E495",
+      "E571",
+      "A112"
+    ],
+    "location": "New York"
+  },
+  {
+    "magazines": [
+      "E403"
+    ],
+    "location": "Newark"
+  },
+  {
+    "magazines": [
+      "E249"
+    ],
+    "location": "Newburgh"
+  },
+  {
+    "magazines": [
+      "D51",
+      "D82",
+      "D219",
+      "D249",
+      "D257",
+      "D266",
+      "D331",
+      "D366",
+      "D423",
+      "D443",
+      "E78",
+      "E99",
+      "E180",
+      "E241",
+      "E289",
+      "E362",
+      "E516",
+      "E547",
+      "E563",
+      "E755",
+      "E906",
+      "C107"
+    ],
+    "location": "Newcastle upon Tyne"
+  },
+  {
+    "magazines": [
+      "E445",
+      "D509"
+    ],
+    "location": "Newport, Essex"
+  },
+  {
+    "magazines": [
+      "C31",
+      "D501",
+      "E668",
+      "C6"
+    ],
+    "location": "Newport, Wales"
+  },
+  {
+    "magazines": [
+      "E593"
+    ],
+    "location": "Newquay"
+  },
+  {
+    "magazines": [
+      "E564"
+    ],
+    "location": "Newton Abbot"
+  },
+  {
+    "magazines": [
+      "D279"
+    ],
+    "location": "Newton Aycliffe"
+  },
+  {
+    "magazines": [
+      "D508"
+    ],
+    "location": "Newton Heath"
+  },
+  {
+    "magazines": [
+      "E611"
+    ],
+    "location": "Nice"
+  },
+  {
+    "magazines": [
+      "D95"
+    ],
+    "location": "Nivaa"
+  },
+  {
+    "magazines": [
+      "D87"
+    ],
+    "location": "North Harrow"
+  },
+  {
+    "magazines": [
+      "D251"
+    ],
+    "location": "North Shields"
+  },
+  {
+    "magazines": [
+      "E331"
+    ],
+    "location": "North Weald"
+  },
+  {
+    "magazines": [
+      "D138"
+    ],
+    "location": "Northallerton"
+  },
+  {
+    "magazines": [
+      "E167",
+      "E213",
+      "E895",
+      "E119"
+    ],
+    "location": "Northampton"
+  },
+  {
+    "magazines": [
+      "C40"
+    ],
+    "location": "Northolt Park"
+  },
+  {
+    "magazines": [
+      "D301"
+    ],
+    "location": "Northwood"
+  },
+  {
+    "magazines": [
+      "E782"
+    ],
+    "location": "Norton"
+  },
+  {
+    "magazines": [
+      "D350",
+      "D498",
+      "E58",
+      "E233",
+      "E453",
+      "E548",
+      "E660",
+      "E682",
+      "E696",
+      "E704",
+      "E764",
+      "D131"
+    ],
+    "location": "Norwich"
+  },
+  {
+    "magazines": [
+      "D62",
+      "D354",
+      "D371",
+      "D392",
+      "D473",
+      "E40",
+      "E51",
+      "E75",
+      "E480",
+      "E510",
+      "E513",
+      "E619",
+      "E635",
+      "E671",
+      "E747",
+      "E811",
+      "E916",
+      "B112"
+    ],
+    "location": "Nottingham"
+  },
+  {
+    "magazines": [
+      "D117"
+    ],
+    "location": "Odense"
+  },
+  {
+    "magazines": [
+      "C119"
+    ],
+    "location": "Old Windsor"
+  },
+  {
+    "magazines": [
+      "E919"
+    ],
+    "location": "Oldham"
+  },
+  {
+    "magazines": [
+      "D90",
+      "E684",
+      "D15"
+    ],
+    "location": "Orpington"
+  },
+  {
+    "magazines": [
+      "D151"
+    ],
+    "location": "Oundle"
+  },
+  {
+    "magazines": [
+      "A68",
+      "A72",
+      "A102",
+      "A119",
+      "A141",
+      "A158",
+      "A159",
+      "A160",
+      "A161",
+      "A181",
+      "A188",
+      "A206",
+      "A230",
+      "B24",
+      "B45",
+      "B47",
+      "B51",
+      "B69",
+      "B72",
+      "B93",
+      "C7",
+      "C19",
+      "C26",
+      "C28",
+      "C74",
+      "C75",
+      "C112",
+      "C114",
+      "D18",
+      "D33",
+      "D98",
+      "D168",
+      "D217",
+      "D226",
+      "D237",
+      "D256",
+      "D263",
+      "D295",
+      "D301",
+      "D313",
+      "D322",
+      "D334",
+      "D335",
+      "D344",
+      "D412",
+      "D468",
+      "D469",
+      "D483",
+      "D499",
+      "D502",
+      "D503",
+      "D513",
+      "D521",
+      "E2",
+      "E36",
+      "E49",
+      "E54",
+      "E55",
+      "E86",
+      "E158",
+      "E232",
+      "E298",
+      "E306",
+      "E390",
+      "E474",
+      "E518",
+      "E528",
+      "E563",
+      "E569",
+      "E570",
+      "E571",
+      "E572",
+      "E573",
+      "E585",
+      "E683",
+      "E807",
+      "E831",
+      "E858",
+      "E910",
+      "E917",
+      "A16"
+    ],
+    "location": "Oxford"
+  },
+  {
+    "magazines": [
+      "E780"
+    ],
+    "location": "Oxford, Ohio"
+  },
+  {
+    "magazines": [
+      "E744",
+      "E838",
+      "A154"
+    ],
+    "location": "Paisley"
+  },
+  {
+    "magazines": [
+      "D411"
+    ],
+    "location": "Pampisford"
+  },
+  {
+    "magazines": [
+      "A49",
+      "A142",
+      "A205",
+      "A211",
+      "A212",
+      "C15a",
+      "C57",
+      "D233",
+      "E310",
+      "E485",
+      "A18"
+    ],
+    "location": "Paris"
+  },
+  {
+    "magazines": [
+      "D411"
+    ],
+    "location": "Paulton"
+  },
+  {
+    "magazines": [
+      "C5",
+      "B33"
+    ],
+    "location": "Pembroke Dock"
+  },
+  {
+    "magazines": [
+      "D154"
+    ],
+    "location": "Pembury"
+  },
+  {
+    "magazines": [
+      "E555"
+    ],
+    "location": "Pen Selwood"
+  },
+  {
+    "magazines": [
+      "E483"
+    ],
+    "location": "Penarth"
+  },
+  {
+    "magazines": [
+      "E876"
+    ],
+    "location": "Penistone"
+  },
+  {
+    "magazines": [
+      "E649"
+    ],
+    "location": "Pensby"
+  },
+  {
+    "magazines": [
+      "D12"
+    ],
+    "location": "Penwortham"
+  },
+  {
+    "magazines": [
+      "D159",
+      "D469",
+      "D474",
+      "E60",
+      "E452",
+      "E614",
+      "E639",
+      "E643",
+      "E766",
+      "D151"
+    ],
+    "location": "Peterborough"
+  },
+  {
+    "magazines": [
+      "E366"
+    ],
+    "location": "Peterlee"
+  },
+  {
+    "magazines": [
+      "A185"
+    ],
+    "location": "Petersfield"
+  },
+  {
+    "magazines": [
+      "E772"
+    ],
+    "location": "Pickering"
+  },
+  {
+    "magazines": [
+      "E395",
+      "E488",
+      "E735",
+      "E827",
+      "E837",
+      "E871",
+      "D183"
+    ],
+    "location": "Plymouth"
+  },
+  {
+    "magazines": [
+      "E705",
+      "B90"
+    ],
+    "location": "Pontefract"
+  },
+  {
+    "magazines": [
+      "E840",
+      "E365"
+    ],
+    "location": "Pontypridd"
+  },
+  {
+    "magazines": [
+      "E106"
+    ],
+    "location": "Port Saint Mary"
+  },
+  {
+    "magazines": [
+      "E391"
+    ],
+    "location": "Portree"
+  },
+  {
+    "magazines": [
+      "D517",
+      "E527",
+      "B116"
+    ],
+    "location": "Portsmouth"
+  },
+  {
+    "magazines": [
+      "E319"
+    ],
+    "location": "Postmarnock"
+  },
+  {
+    "magazines": [
+      "D278"
+    ],
+    "location": "Potters Bar"
+  },
+  {
+    "magazines": [
+      "E489",
+      "A93"
+    ],
+    "location": "Prague"
+  },
+  {
+    "magazines": [
+      "E681"
+    ],
+    "location": "Predannack"
+  },
+  {
+    "magazines": [
+      "D289",
+      "D340",
+      "D343",
+      "E594",
+      "E657",
+      "D12"
+    ],
+    "location": "Preston"
+  },
+  {
+    "magazines": [
+      "E659"
+    ],
+    "location": "Prestonpans"
+  },
+  {
+    "magazines": [
+      "E775",
+      "E206"
+    ],
+    "location": "Prestwich"
+  },
+  {
+    "magazines": [
+      "B84"
+    ],
+    "location": "Prettyman Lane, Kent"
+  },
+  {
+    "magazines": [
+      "E335"
+    ],
+    "location": "Putney"
+  },
+  {
+    "magazines": [
+      "E75",
+      "D12"
+    ],
+    "location": "Radcliffe-on-Trent"
+  },
+  {
+    "magazines": [
+      "E51"
+    ],
+    "location": "Radford"
+  },
+  {
+    "magazines": [
+      "E46"
+    ],
+    "location": "Ramsgate"
+  },
+  {
+    "magazines": [
+      "C100",
+      "E161",
+      "E286",
+      "E295",
+      "E674",
+      "E808",
+      "E850",
+      "B53"
+    ],
+    "location": "Reading"
+  },
+  {
+    "magazines": [
+      "E553"
+    ],
+    "location": "Redditch"
+  },
+  {
+    "magazines": [
+      "E692"
+    ],
+    "location": "Redhill"
+  },
+  {
+    "magazines": [
+      "E297"
+    ],
+    "location": "Rhondda"
+  },
+  {
+    "magazines": [
+      "C36"
+    ],
+    "location": "Rhu"
+  },
+  {
+    "magazines": [
+      "E858"
+    ],
+    "location": "Richmond, Virginia"
+  },
+  {
+    "magazines": [
+      "D162"
+    ],
+    "location": "Risley"
+  },
+  {
+    "magazines": [
+      "D60",
+      "D59"
+    ],
+    "location": "Rochdale"
+  },
+  {
+    "magazines": [
+      "E415",
+      "E192"
+    ],
+    "location": "Rochester"
+  },
+  {
+    "magazines": [
+      "E599",
+      "E145"
+    ],
+    "location": "Romford"
+  },
+  {
+    "magazines": [
+      "D479"
+    ],
+    "location": "Rontswood"
+  },
+  {
+    "magazines": [
+      "E85"
+    ],
+    "location": "Rotherham"
+  },
+  {
+    "magazines": [
+      "E902"
+    ],
+    "location": "Rothesay"
+  },
+  {
+    "magazines": [
+      "E566",
+      "E118"
+    ],
+    "location": "Runcorn"
+  },
+  {
+    "magazines": [
+      "E372"
+    ],
+    "location": "Ryde"
+  },
+  {
+    "magazines": [
+      "D299"
+    ],
+    "location": "Rye"
+  },
+  {
+    "magazines": [
+      "D94"
+    ],
+    "location": "Saffron Walden"
+  },
+  {
+    "magazines": [
+      "D376",
+      "D384",
+      "E97",
+      "E698",
+      "D357"
+    ],
+    "location": "St. Albans"
+  },
+  {
+    "magazines": [
+      "E807",
+      "E858",
+      "E688"
+    ],
+    "location": "St. Andrews"
+  },
+  {
+    "magazines": [
+      "E872"
+    ],
+    "location": "St. Helens"
+  },
+  {
+    "magazines": [
+      "E388"
+    ],
+    "location": "St. Helier"
+  },
+  {
+    "magazines": [
+      "E476",
+      "E898",
+      "D379"
+    ],
+    "location": "St. Ives"
+  },
+  {
+    "magazines": [
+      "E858",
+      "E124"
+    ],
+    "location": "Salford"
+  },
+  {
+    "magazines": [
+      "E28",
+      "D39"
+    ],
+    "location": "Salisbury"
+  },
+  {
+    "magazines": [
+      "E260"
+    ],
+    "location": "Saltburn"
+  },
+  {
+    "magazines": [
+      "E651"
+    ],
+    "location": "Salzburg"
+  },
+  {
+    "magazines": [
+      "E372"
+    ],
+    "location": "San Francisco"
+  },
+  {
+    "magazines": [
+      "E737"
+    ],
+    "location": "Schull"
+  },
+  {
+    "magazines": [
+      "D395"
+    ],
+    "location": "Scunthorpe"
+  },
+  {
+    "magazines": [
+      "E709"
+    ],
+    "location": "Selby"
+  },
+  {
+    "magazines": [
+      "E638"
+    ],
+    "location": "Sevenoaks"
+  },
+  {
+    "magazines": [
+      "D224"
+    ],
+    "location": "Shalford"
+  },
+  {
+    "magazines": [
+      "D203",
+      "D507",
+      "E200",
+      "E208",
+      "E234",
+      "E416",
+      "E680",
+      "E693",
+      "E734",
+      "E736",
+      "E749",
+      "E760",
+      "E778",
+      "E876",
+      "D200"
+    ],
+    "location": "Sheffield"
+  },
+  {
+    "magazines": [
+      "D30",
+      "D44",
+      "D78",
+      "E244",
+      "D29"
+    ],
+    "location": "Sherborne"
+  },
+  {
+    "magazines": [
+      "D254"
+    ],
+    "location": "Shipley"
+  },
+  {
+    "magazines": [
+      "E620",
+      "E826",
+      "E115"
+    ],
+    "location": "Shrewsbury"
+  },
+  {
+    "magazines": [
+      "E654"
+    ],
+    "location": "Sibford Ferris"
+  },
+  {
+    "magazines": [
+      "D487",
+      "D74"
+    ],
+    "location": "Sidmouth"
+  },
+  {
+    "magazines": [
+      "E741"
+    ],
+    "location": "Sittingbourne"
+  },
+  {
+    "magazines": [
+      "E350"
+    ],
+    "location": "Skegness"
+  },
+  {
+    "magazines": [
+      "E281"
+    ],
+    "location": "Sligo"
+  },
+  {
+    "magazines": [
+      "B62"
+    ],
+    "location": "Slough"
+  },
+  {
+    "magazines": [
+      "E343",
+      "E273"
+    ],
+    "location": "Small Heath"
+  },
+  {
+    "magazines": [
+      "D397"
+    ],
+    "location": "Solihull"
+  },
+  {
+    "magazines": [
+      "E352"
+    ],
+    "location": "Somerton"
+  },
+  {
+    "magazines": [
+      "B93"
+    ],
+    "location": "Sonning"
+  },
+  {
+    "magazines": [
+      "E482"
+    ],
+    "location": "South Cerney"
+  },
+  {
+    "magazines": [
+      "C61"
+    ],
+    "location": "South Hinksey"
+  },
+  {
+    "magazines": [
+      "E150",
+      "E507",
+      "E149"
+    ],
+    "location": "South Woodham Ferrers"
+  },
+  {
+    "magazines": [
+      "E225",
+      "D433"
+    ],
+    "location": "Southall"
+  },
+  {
+    "magazines": [
+      "D147",
+      "E12",
+      "E94",
+      "E177",
+      "E754",
+      "E825",
+      "E879",
+      "E897",
+      "B70"
+    ],
+    "location": "Southampton"
+  },
+  {
+    "magazines": [
+      "E73",
+      "E81",
+      "E309",
+      "E504",
+      "E35"
+    ],
+    "location": "Southend-on-Sea"
+  },
+  {
+    "magazines": [
+      "E111"
+    ],
+    "location": "Southport"
+  },
+  {
+    "magazines": [
+      "E605",
+      "E618",
+      "E704",
+      "E284"
+    ],
+    "location": "Southsea"
+  },
+  {
+    "magazines": [
+      "E704",
+      "E574"
+    ],
+    "location": "Southwick"
+  },
+  {
+    "magazines": [
+      "E239",
+      "E587",
+      "D50"
+    ],
+    "location": "Spalding"
+  },
+  {
+    "magazines": [
+      "C23",
+      "C15"
+    ],
+    "location": "Spondon"
+  },
+  {
+    "magazines": [
+      "E224",
+      "E761",
+      "E792",
+      "E793",
+      "D282"
+    ],
+    "location": "Stafford"
+  },
+  {
+    "magazines": [
+      "E758"
+    ],
+    "location": "Staines"
+  },
+  {
+    "magazines": [
+      "E829"
+    ],
+    "location": "Stamford"
+  },
+  {
+    "magazines": [
+      "E409"
+    ],
+    "location": "Stanley"
+  },
+  {
+    "magazines": [
+      "C73"
+    ],
+    "location": "Stevenage"
+  },
+  {
+    "magazines": [
+      "E394"
+    ],
+    "location": "Stirling"
+  },
+  {
+    "magazines": [
+      "D353"
+    ],
+    "location": "Stockbridge"
+  },
+  {
+    "magazines": [
+      "E285"
+    ],
+    "location": "Stockport"
+  },
+  {
+    "magazines": [
+      "C98"
+    ],
+    "location": "Stockton Heath"
+  },
+  {
+    "magazines": [
+      "D194",
+      "E435",
+      "E722",
+      "C31"
+    ],
+    "location": "Stoke-on-Trent"
+  },
+  {
+    "magazines": [
+      "E762"
+    ],
+    "location": "Storrington"
+  },
+  {
+    "magazines": [
+      "E817"
+    ],
+    "location": "Stourpaine"
+  },
+  {
+    "magazines": [
+      "E396"
+    ],
+    "location": "Stowmarket"
+  },
+  {
+    "magazines": [
+      "E305"
+    ],
+    "location": "Stow-on-the-Wold"
+  },
+  {
+    "magazines": [
+      "E400"
+    ],
+    "location": "Stratford-upon-Avon"
+  },
+  {
+    "magazines": [
+      "C66"
+    ],
+    "location": "Stratton St. Margaret"
+  },
+  {
+    "magazines": [
+      "D193"
+    ],
+    "location": "Streatham"
+  },
+  {
+    "magazines": [
+      "D175",
+      "D491",
+      "B129"
+    ],
+    "location": "Stroud"
+  },
+  {
+    "magazines": [
+      "D179"
+    ],
+    "location": "Stuttgart"
+  },
+  {
+    "magazines": [
+      "D458"
+    ],
+    "location": "Sudbury"
+  },
+  {
+    "magazines": [
+      "D511",
+      "E345",
+      "E582",
+      "E689",
+      "D102"
+    ],
+    "location": "Sunderland"
+  },
+  {
+    "magazines": [
+      "D328",
+      "D437",
+      "E640",
+      "E710",
+      "E797",
+      "D88"
+    ],
+    "location": "Sutton"
+  },
+  {
+    "magazines": [
+      "E109"
+    ],
+    "location": "Sutton Bridge"
+  },
+  {
+    "magazines": [
+      "E586"
+    ],
+    "location": "Sutton Coldfield"
+  },
+  {
+    "magazines": [
+      "D396",
+      "D418",
+      "E251",
+      "E576",
+      "E802",
+      "D216"
+    ],
+    "location": "Swansea"
+  },
+  {
+    "magazines": [
+      "A232"
+    ],
+    "location": "Sway"
+  },
+  {
+    "magazines": [
+      "E897",
+      "E338"
+    ],
+    "location": "Swindon"
+  },
+  {
+    "magazines": [
+      "E275"
+    ],
+    "location": "Tackley"
+  },
+  {
+    "magazines": [
+      "D264",
+      "D306",
+      "D130"
+    ],
+    "location": "Talybont-on-Usk"
+  },
+  {
+    "magazines": [
+      "E372"
+    ],
+    "location": "Tanzania"
+  },
+  {
+    "magazines": [
+      "B141",
+      "A197"
+    ],
+    "location": "Taunton"
+  },
+  {
+    "magazines": [
+      "C73"
+    ],
+    "location": "Teddington"
+  },
+  {
+    "magazines": [
+      "E712"
+    ],
+    "location": "Telford"
+  },
+  {
+    "magazines": [
+      "E151",
+      "C37"
+    ],
+    "location": "Thames Ditton"
+  },
+  {
+    "magazines": [
+      "D101"
+    ],
+    "location": "Thaxted"
+  },
+  {
+    "magazines": [
+      "E244"
+    ],
+    "location": "Thornford"
+  },
+  {
+    "magazines": [
+      "D438"
+    ],
+    "location": "Thornton-Cleveleys"
+  },
+  {
+    "magazines": [
+      "D188"
+    ],
+    "location": "Thurrock"
+  },
+  {
+    "magazines": [
+      "C106"
+    ],
+    "location": "Tipton"
+  },
+  {
+    "magazines": [
+      "D191"
+    ],
+    "location": "Tondu"
+  },
+  {
+    "magazines": [
+      "D510"
+    ],
+    "location": "Torbay"
+  },
+  {
+    "magazines": [
+      "E730"
+    ],
+    "location": "Torpoint"
+  },
+  {
+    "magazines": [
+      "A48"
+    ],
+    "location": "Torquay"
+  },
+  {
+    "magazines": [
+      "E441"
+    ],
+    "location": "Torrington"
+  },
+  {
+    "magazines": [
+      "E691"
+    ],
+    "location": "Totnes"
+  },
+  {
+    "magazines": [
+      "C15a"
+    ],
+    "location": "Toulouse"
+  },
+  {
+    "magazines": [
+      "D296"
+    ],
+    "location": "Towcester"
+  },
+  {
+    "magazines": [
+      "E887"
+    ],
+    "location": "Towson, Maryland"
+  },
+  {
+    "magazines": [
+      "E62"
+    ],
+    "location": "Tralee"
+  },
+  {
+    "magazines": [
+      "D401"
+    ],
+    "location": "Tredegar"
+  },
+  {
+    "magazines": [
+      "D351"
+    ],
+    "location": "Tregaron"
+  },
+  {
+    "magazines": [
+      "B94"
+    ],
+    "location": "Tring"
+  },
+  {
+    "magazines": [
+      "E647",
+      "E661",
+      "E757",
+      "E439"
+    ],
+    "location": "Tunbridge Wells"
+  },
+  {
+    "magazines": [
+      "E189",
+      "E795",
+      "D413"
+    ],
+    "location": "Twickenham"
+  },
+  {
+    "magazines": [
+      "E887"
+    ],
+    "location": "Uckfield"
+  },
+  {
+    "magazines": [
+      "E204",
+      "E322",
+      "D375"
+    ],
+    "location": "Upminster"
+  },
+  {
+    "magazines": [
+      "E718"
+    ],
+    "location": "Usk"
+  },
+  {
+    "magazines": [
+      "D234"
+    ],
+    "location": "Uxbridge"
+  },
+  {
+    "magazines": [
+      "E694",
+      "D462"
+    ],
+    "location": "Vancouver"
+  },
+  {
+    "magazines": [
+      "E451",
+      "A170"
+    ],
+    "location": "Ventnor"
+  },
+  {
+    "magazines": [
+      "C58"
+    ],
+    "location": "Ventura, California"
+  },
+  {
+    "magazines": [
+      "D79"
+    ],
+    "location": "Vermont"
+  },
+  {
+    "magazines": [
+      "B12"
+    ],
+    "location": "Virginia Water"
+  },
+  {
+    "magazines": [
+      "D101",
+      "E918",
+      "A75"
+    ],
+    "location": "Walthamstow"
+  },
+  {
+    "magazines": [
+      "D113"
+    ],
+    "location": "Walton-on-Naze"
+  },
+  {
+    "magazines": [
+      "E347",
+      "E84"
+    ],
+    "location": "Ware"
+  },
+  {
+    "magazines": [
+      "E173"
+    ],
+    "location": "Warley"
+  },
+  {
+    "magazines": [
+      "E621"
+    ],
+    "location": "Warlingham"
+  },
+  {
+    "magazines": [
+      "E379"
+    ],
+    "location": "Warminster"
+  },
+  {
+    "magazines": [
+      "E341"
+    ],
+    "location": "Warrington"
+  },
+  {
+    "magazines": [
+      "E765"
+    ],
+    "location": "Watford"
+  },
+  {
+    "magazines": [
+      "E152"
+    ],
+    "location": "Watford Heath"
+  },
+  {
+    "magazines": [
+      "E222"
+    ],
+    "location": "Watlington"
+  },
+  {
+    "magazines": [
+      "E352"
+    ],
+    "location": "Wellington"
+  },
+  {
+    "magazines": [
+      "E115"
+    ],
+    "location": "Welshpool"
+  },
+  {
+    "magazines": [
+      "D402",
+      "E342",
+      "D85"
+    ],
+    "location": "Welwyn"
+  },
+  {
+    "magazines": [
+      "E913"
+    ],
+    "location": "Weobley"
+  },
+  {
+    "magazines": [
+      "E663",
+      "E669",
+      "E670",
+      "E276"
+    ],
+    "location": "West Bromwich"
+  },
+  {
+    "magazines": [
+      "E834"
+    ],
+    "location": "West Croydon"
+  },
+  {
+    "magazines": [
+      "D218"
+    ],
+    "location": "West Hartlepool"
+  },
+  {
+    "magazines": [
+      "E300"
+    ],
+    "location": "West Kirby"
+  },
+  {
+    "magazines": [
+      "E263",
+      "A144"
+    ],
+    "location": "West Wickham"
+  },
+  {
+    "magazines": [
+      "B39",
+      "B126",
+      "C11",
+      "C33",
+      "C34",
+      "C108",
+      "B38"
+    ],
+    "location": "West Worthing"
+  },
+  {
+    "magazines": [
+      "A29"
+    ],
+    "location": "Westcliff-on-Sea"
+  },
+  {
+    "magazines": [
+      "D121"
+    ],
+    "location": "Westgate-on-Sea"
+  },
+  {
+    "magazines": [
+      "E27",
+      "E753",
+      "E798",
+      "D23"
+    ],
+    "location": "Weston-super-Mare"
+  },
+  {
+    "magazines": [
+      "E699",
+      "D345"
+    ],
+    "location": "Wetherby"
+  },
+  {
+    "magazines": [
+      "D514",
+      "E230",
+      "D107"
+    ],
+    "location": "Weymouth"
+  },
+  {
+    "magazines": [
+      "D119"
+    ],
+    "location": "Whipsnade"
+  },
+  {
+    "magazines": [
+      "D374",
+      "E777",
+      "D331"
+    ],
+    "location": "Whitley Bay"
+  },
+  {
+    "magazines": [
+      "E726"
+    ],
+    "location": "Whitstable"
+  },
+  {
+    "magazines": [
+      "D163",
+      "D116"
+    ],
+    "location": "Whitton"
+  },
+  {
+    "magazines": [
+      "E621"
+    ],
+    "location": "Whitwick"
+  },
+  {
+    "magazines": [
+      "D427"
+    ],
+    "location": "Wick"
+  },
+  {
+    "magazines": [
+      "E858"
+    ],
+    "location": "Williamsburg, Virginia"
+  },
+  {
+    "magazines": [
+      "E316"
+    ],
+    "location": "Willowdale, Ontario"
+  },
+  {
+    "magazines": [
+      "D235"
+    ],
+    "location": "Wimbledon"
+  },
+  {
+    "magazines": [
+      "E756",
+      "E230"
+    ],
+    "location": "Wimborne"
+  },
+  {
+    "magazines": [
+      "D273",
+      "D294",
+      "E53",
+      "E114",
+      "E283",
+      "E292",
+      "E363",
+      "E624",
+      "E630",
+      "D72"
+    ],
+    "location": "Winchester"
+  },
+  {
+    "magazines": [
+      "E592",
+      "A121"
+    ],
+    "location": "Windsor"
+  },
+  {
+    "magazines": [
+      "E109"
+    ],
+    "location": "Wingland"
+  },
+  {
+    "magazines": [
+      "E271"
+    ],
+    "location": "Winster"
+  },
+  {
+    "magazines": [
+      "E11"
+    ],
+    "location": "Wissett"
+  },
+  {
+    "magazines": [
+      "D108"
+    ],
+    "location": "Wivenhoe"
+  },
+  {
+    "magazines": [
+      "E880"
+    ],
+    "location": "Woking"
+  },
+  {
+    "magazines": [
+      "E424"
+    ],
+    "location": "Wollongong"
+  },
+  {
+    "magazines": [
+      "E865",
+      "D381"
+    ],
+    "location": "Wolverhampton"
+  },
+  {
+    "magazines": [
+      "E748"
+    ],
+    "location": "Woodbridge"
+  },
+  {
+    "magazines": [
+      "E392"
+    ],
+    "location": "Wootton"
+  },
+  {
+    "magazines": [
+      "C58",
+      "D479",
+      "E256",
+      "B117"
+    ],
+    "location": "Worcester"
+  },
+  {
+    "magazines": [
+      "E886",
+      "E515"
+    ],
+    "location": "Worthing"
+  },
+  {
+    "magazines": [
+      "E501"
+    ],
+    "location": "Wrexham"
+  },
+  {
+    "magazines": [
+      "E888",
+      "E195"
+    ],
+    "location": "Yeovil"
+  },
+  {
+    "magazines": [
+      "D538",
+      "D539",
+      "E122",
+      "E232",
+      "E237",
+      "E359",
+      "E470",
+      "E534",
+      "E653",
+      "E720",
+      "E909",
+      "D125"
+    ],
+    "location": "York"
+  },
+  {
+    "magazines": [
+      "D379 ",
+      "D361"
+    ],
+    "location": "Zennor"
+  }
+]
