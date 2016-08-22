@@ -30,7 +30,7 @@ Versions: [HTML](http://louisg.xyz/cv.html) / [PDF](http://louisg.xyz/Louis_Godd
 ## Publications
 
 Forthcoming
-:   **'"An object with no predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*
+:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*
 
 :   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*
 
@@ -105,6 +105,9 @@ Forthcoming
 
 
 ## Reviews and academic journalism
+
+Forthcoming
+:   **'Arrays'**, *Hix Eros*, 7 (August 2016), pp. 10--14. Review of Ian Heames, *Arrays*.
 
 2015
 :   **'Not spooked'**, *The Times Literary Supplement* (11 December 2015), p. 17. 'Commentary' piece analysing Edward Upward's MI5 file, <http://www.the-tls.co.uk/tls/reviews/literature_and_poetry/article1643000.ece>
