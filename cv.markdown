@@ -106,7 +106,7 @@ Forthcoming
 
 ## Reviews and academic journalism
 
-Forthcoming
+2016
 :   **'Arrays'**, *Hix Eros*, 7 (August 2016), pp. 10--14. Review of Ian Heames, *Arrays*.
 
 2015
