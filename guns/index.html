@@ -31,7 +31,6 @@
                     font-size: 3.5vw;
                 }
             }
-
         </style>
     </head>
     <body>
@@ -52,10 +51,12 @@ var source_url = "http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf";
 
 var suffix = "since you opened this page."
 var times = 0;
+var probability_per_second = number_per_year / 31536000;
+
 document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
 document.getElementById("source").innerHTML = "Source: " + "\<a href=\"" + source_url + "\"\>" + source_text + "\<\/a\>"; 
 window.setInterval(function(){
-    if(Math.random() <= number_per_year / 31536000) {
+    if(Math.random() <= probability_per_second) {
         times++;
         if(times == 1) {
             document.getElementById("message").innerHTML = times + " " + thing_singular + " " + occurence + " " + suffix;
