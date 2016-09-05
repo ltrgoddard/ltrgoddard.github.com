@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guns</title>
+        <style>
+            body, a {
+                font-family: sans-serif;
+                color: #222;
+                background-color: #ccc;
+            }
+
+            #container {
+                font-size: 6vw;
+                width: 65%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #source {
+                font-size: 3vw;
+                font-style: italic;
+                float: right;
+            }
+            
+            @media (max-width: 600px) {
+                body {
+                    font-size: 8vw;
+                }
+                
+                #source {
+                    font-size: 3.5vw;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p id="message"></p>
+            <p id="source"></p>
+        </div>
+        <script type="text/javascript">
+// CONFIG VARIABLES BEGIN
+// Change these, and the page's title, as necessary
+var number_per_year = 33599; // Must be less than 31,536,000, i.e. one per second
+var thing_singular = "person has";
+var thing_plural = "people have";
+var occurence = "died from gun injuries in the US";
+var source_text = "CDC (33,599 per year in 2014)";
+var source_url = "http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf";
+// CONFIG VARIABLES END
+
+var suffix = "since you opened this page."
+var times = 0;
+document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
+document.getElementById("source").innerHTML = "Source: " + "\<a href=\"" + source_url + "\"\>" + source_text + "\<\/a\>"; 
+window.setInterval(function(){
+    if(Math.random() <= number_per_year / 31536000) {
+        times++;
+        if(times == 1) {
+            document.getElementById("message").innerHTML = times + " " + thing_singular + " " + occurence + " " + suffix;
+        } else {
+            document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
+        };
+    };
+}, 1000); 
+        </script>
+    </body>
+</html>
