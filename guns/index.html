@@ -42,8 +42,8 @@
 // CONFIG VARIABLES BEGIN
 // Change these, and the page's title, as necessary
 var number_per_year = 33599;
-var thing_singular = "person has";
-var thing_plural = "people have";
+var singular = "person has";
+var plural = "people have";
 var occurence = "died from gun injuries in the US";
 var source_text = "CDC (33,599 per year in 2014)";
 var source_url = "http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf";
@@ -57,10 +57,11 @@ document.getElementById("source").innerHTML = "Source: " + "\<a href=\"" + sourc
 
 function write(times) {
     if(times == 1) {
-        document.getElementById("message").innerHTML = times + " " + thing_singular + " " + occurence + " " + suffix;
+        var thing = singular;
     } else {
-        document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
+        var thing = plural;
     }
+    document.getElementById("message").innerHTML = times + " " + thing + " " + occurence + " " + suffix;
 }
 
 write(times);
