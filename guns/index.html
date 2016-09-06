@@ -41,7 +41,7 @@
         <script type="text/javascript">
 // CONFIG VARIABLES BEGIN
 // Change these, and the page's title, as necessary
-var number_per_year = 33599; // Must be less than 31,536,000, i.e. one per second
+var number_per_year = 33599;
 var thing_singular = "person has";
 var thing_plural = "people have";
 var occurence = "died from gun injuries in the US";
@@ -49,22 +49,35 @@ var source_text = "CDC (33,599 per year in 2014)";
 var source_url = "http://www.cdc.gov/nchs/data/nvsr/nvsr65/nvsr65_04.pdf";
 // CONFIG VARIABLES END
 
-var suffix = "since you opened this page."
+var suffix = "since you opened this page.";
 var times = 0;
 var probability_per_second = number_per_year / 31536000;
 
-document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
 document.getElementById("source").innerHTML = "Source: " + "\<a href=\"" + source_url + "\"\>" + source_text + "\<\/a\>"; 
-window.setInterval(function(){
-    if(Math.random() <= probability_per_second) {
-        times++;
-        if(times == 1) {
-            document.getElementById("message").innerHTML = times + " " + thing_singular + " " + occurence + " " + suffix;
-        } else {
-            document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
-        };
-    };
-}, 1000); 
+
+function write(times) {
+    if(times == 1) {
+        document.getElementById("message").innerHTML = times + " " + thing_singular + " " + occurence + " " + suffix;
+    } else {
+        document.getElementById("message").innerHTML = times + " " + thing_plural + " " + occurence + " " + suffix;
+    }
+}
+
+write(times);
+
+if(probability_per_second < 1) {
+    window.setInterval(function(){
+        if(Math.random() <= probability_per_second) {
+            times++;
+            write(times);
+        }
+    }, 1000);
+} else {
+    window.setInterval(function(){
+        times = times + probability_per_second;
+        write(Math.round(times));
+    }, 1000);
+}
         </script>
     </body>
 </html>
