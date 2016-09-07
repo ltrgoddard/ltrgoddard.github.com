@@ -8,7 +8,7 @@ with open(sys.argv[1], "r") as input:
     data = input.read()
 
 output = csv.writer(open(sys.argv[2], "w"))
-output.writerow(["Location", "Density"])
+output.writerow(["id", "location"])
 
 data = re.sub("(?<=\d), ", "|", data)
 data = re.sub("(?<=\da), ", "|", data)
@@ -21,6 +21,8 @@ for entry in entries:
     elements.pop(0)
     try:
         elements.append(first_element[1])
-        output.writerow([location, len(elements)])
+        for element in elements:
+            output.writerow([element, location])
+        #output.writerow([location, len(elements)])
     except Exception as e:
         print(e)

@@ -7300,7 +7300,7 @@ TCD: Vol.1 no.2 (Mar. 1922)-no. 3. (106.a.82, Nos.19-20)
 \
 
 \
-[SPLIT]
+
 **1 Adam International Review** / edited by Miron Grindea. London: St.
 Clements Press, No. 152 (Sept. 1941)-499 (1988). ISSN: 0001-8015
 
@@ -11518,7 +11518,7 @@ UCL
 \
 
 \
-[SPLIT]
+
 **1 4: a review of the visual arts, literature, music and drama** /
 edited by Garry Denbury. Glastonbury: [Garry Denbury], Vol. 1 no. 1
 (Oct. 1952)
@@ -15152,7 +15152,7 @@ of the Year** D479
 \
 
 \
-[SPLIT]
+
 **1 A: a magazine of visual poetry** / edited by Jeremy Adler. London:
 Jeremy Adler, No. A (1971/2)-ABCD (1977)
 
@@ -21344,7 +21344,7 @@ Linen Hall Library, Belfast: Incomplete set
 
 \
 
-**230a Iron** / edited by Peter Mortimer. Cullercoats, North
+**230a** **Iron** / edited by Peter Mortimer. Cullercoats, North
 Shields: Iron Press, No. 1 (Spring 1973)-81/82 (1997). ISSN: 0140-7597
 
 \
@@ -30053,7 +30053,7 @@ E297
 \
 
 \
-[SPLIT]
+
 **1 A**. Hackney, London: [No. 1-?, 198?]
 
 \
@@ -31992,7 +31992,7 @@ Poetry Library: Summer 1997
 \
 
 **99 Billy Liar: from the frontlines to the frontiers.** Newcastle upon
-Tyne: Billy Liar, 1 (15/12/1997-31/3/1998)-5 (Spring 2001). ISSN 1460-8529
+Tyne: Billy Liar, 1 (15/12/97-31/3/98)-5 (Spring 2001). ISSN 1460-8529
 
 \
 
@@ -48046,7 +48046,7 @@ CUL: 1999. (L727.d.297)
 
 \
 
-**811 Tak Tak Tak** Nottingham: Tak Tak Tak, Issue [1] (1987)-6 (1993).
+**811 Tak Tak Tak Nottingham: Tak Tak Tak, Issue [1] (1987)-6 (1993).
 ISSN: 0952-9411
 
 \
