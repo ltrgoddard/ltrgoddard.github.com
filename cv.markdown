@@ -45,6 +45,12 @@ Forthcoming
 :   **'De Kooning, O'Hara, Prynne: Towards a Poetics of Paint'**, *Bristol Journal of English Studies*, 4 (Spring 2014)
 
 
+## Digital projects
+
+2016
+:   **Constellations**. An interactive representation of the *The Oxford Companion to Modern Poetry* (2nd edn), using D3.js and Neo4j. <http://louisg.xyz/constellations/>
+
+
 ## Grants and prizes
 
 2014--15
