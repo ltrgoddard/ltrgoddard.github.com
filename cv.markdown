@@ -29,12 +29,12 @@ Versions: [HTML](http://louisg.xyz/cv.html) / [PDF](http://louisg.xyz/Louis_Godd
 
 ## Publications
 
-Forthcoming
-:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*
+2016
+:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*, <https://poetry.openlibhums.org/articles/10.16995/biip.9/>
 
-:   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*
+:   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*, <http://www.tandfonline.com/doi/full/10.1080/0950236X.2016.1188143> (forthcoming in print)
 
-:   **'J.H. Prynne'**, in Jay Parini, ed., *British Writers Supplement*, vol. XXIII (Farmington Hills, MI: Gale Cengage, 2016)
+:   **'J.H. Prynne'**, in Jay Parini, ed., *British Writers*, Supplement XXIII (Farmington Hills, MI: Charles Scribner's Sons, 2017), pp. 303--19
 
 2015
 :   **'"A few feet of film run backwards": Tracing the Sonic Construction of Shellfire, 1914--30'**, in Michael Bull and Les Back, eds, *The Auditory Culture Reader*, 2nd edn (London: Bloomsbury, 2015), pp. 293--302
