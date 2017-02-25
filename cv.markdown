@@ -10,7 +10,8 @@
 2013--17
 :   **Ph.D., University of Sussex**  
     *Title*: 'J.H. Prynne in Context, 1955--1975'  
-    *Supervisor*: Professor Keston Sutherland  
+    *Supervisor*: Professor Keston Sutherland 
+    *Examiners*: Professor David Herd (external) and Dr. Hope Wolf (internal) 
     *Funding*: Arts and Humanities Research Council (£53,594) 
 
 2012--13
