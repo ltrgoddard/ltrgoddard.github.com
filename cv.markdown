@@ -4,12 +4,10 @@
 
 17c Blythe Hill, London SE6 4UL / +44 (0)7909 027117  
 
-Versions: [HTML](http://louisg.xyz/cv.html) / [PDF](http://louisg.xyz/Louis_Goddard_CV.pdf)
-
 
 ## Education
 
-2013--present
+2013--2017
 :   **Ph.D., University of Sussex**  
     *Title*: 'J.H. Prynne in Context, 1955--1975'  
     *Supervisor*: Professor Keston Sutherland  
@@ -29,26 +27,21 @@ Versions: [HTML](http://louisg.xyz/cv.html) / [PDF](http://louisg.xyz/Louis_Godd
 
 ## Publications
 
+2017
+:   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*, 31.2 (2017), <http://www.tandfonline.com/doi/full/10.1080/0950236X.2016.1188143>
+
+:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*, 9.1 (2017), <https://poetry.openlibhums.org/articles/10.16995/biip.9/>
+
 2016
-:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*, <https://poetry.openlibhums.org/articles/10.16995/biip.9/>
-
-:   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*, <http://www.tandfonline.com/doi/full/10.1080/0950236X.2016.1188143> (forthcoming in print)
-
 :   **'J.H. Prynne'**, in Jay Parini, ed., *British Writers*, Supplement XXIII (Farmington Hills, MI: Charles Scribner's Sons, 2017), pp. 303--19
 
 2015
 :   **'"A few feet of film run backwards": Tracing the Sonic Construction of Shellfire, 1914--30'**, in Michael Bull and Les Back, eds, *The Auditory Culture Reader*, 2nd edn (London: Bloomsbury, 2015), pp. 293--302
 
 2014
-:   **'Higher Education: A Tale of Two Payslips'**, *The Intergenerational Foundation* (July 2014), <http://www.if.org.uk/archives/5409/higher-education-a-tale-of-two-payslips>
+:   **'Higher Education: A Tale of Two Payslips'**, *The Intergenerational Foundation* (2014), <http://www.if.org.uk/archives/5409/higher-education-a-tale-of-two-payslips>
 
-:   **'De Kooning, O'Hara, Prynne: Towards a Poetics of Paint'**, *Bristol Journal of English Studies*, 4 (Spring 2014)
-
-
-## Digital projects
-
-2016
-:   **Constellations**. An interactive representation of the *The Oxford Companion to Modern Poetry* (2nd edn), using D3.js and Neo4j. <http://louisg.xyz/constellations/>
+:   **'De Kooning, O'Hara, Prynne: Towards a Poetics of Paint'**, *Bristol Journal of English Studies*, 4 (2014), <http://englishjournal.blogs.ilrt.org/files/2014/04/De-Kooning-O%E2%80%99Hara-Prynne-Towards-a-Poetics-of-Paint-Louis-Goddard.pdf>
 
 
 ## Grants and prizes
