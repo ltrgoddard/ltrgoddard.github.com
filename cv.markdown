@@ -7,7 +7,7 @@
 
 ## Education
 
-2013--2017
+2013--17
 :   **Ph.D., University of Sussex**  
     *Title*: 'J.H. Prynne in Context, 1955--1975'  
     *Supervisor*: Professor Keston Sutherland  
