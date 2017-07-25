@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bus times for Blythe Vale</title>
+    </head>
+    <body>
+        <div id="timetable">
+            <div id="west">
+                <h2>Westbound</h2>
+            </div>
+            <div id="east">
+                <h2>Eastbound</h2>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var getJSON = function(url, callback) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.responseType = 'json';
+                xhr.onload = function() {
+                    var status = xhr.status;
+                    if (status == 200) {
+                        callback(null, xhr.response);
+                    } else {
+                        callback(status);
+                    }
+                };
+                xhr.send();
+            };
+
+            var stops = [{id: '490004124W', direction: 'west'}, {id: '490004124E', direction: 'east'}]
+
+            stops.forEach(function(stop) {
+                getJSON('https://api.tfl.gov.uk/StopPoint/' + stop.id + '/arrivals',
+                function(err, data) {
+                    if (err != null) {
+                        console.log(err);
+                    } else {
+                        data = data.sort(function(a, b) {
+                            return Date.parse(a.expectedArrival) - Date.parse(b.expectedArrival);
+                        });
+                        current = Date.parse(new Date()) / 1000;
+                        timetable = document.getElementById(stop.direction);
+                        data.forEach(function(bus) {
+                            arrival = Date.parse(bus.expectedArrival) / 1000;
+                            timeToArrivalMins = Math.floor((arrival - current) / 60);
+                            timeToArrivalSecs = (arrival - current) - (timeToArrivalMins * 60);
+                            var info = bus.lineName + ', ' + bus.destinationName + ', ' + timeToArrivalMins + 'm, ' + timeToArrivalSecs + 's' + '<br/>';
+                            timetable.innerHTML = timetable.innerHTML + info;
+                        });
+                    }
+                });
+            });
+
+            setTimeout(function () { window.location.reload(); }, 5000);
+        </script>
+    <body>
+</html>
