@@ -1,6 +1,6 @@
 # Louis Goddard
 
-[l.goddard@sussex.ac.uk](mailto:l.goddard@sussex.ac.uk) / [github.com/ltrgoddard](http://github.com/ltrgoddard) / [\@ltrgoddard](http://twitter.com/ltrgoddard)  
+[louis.goddard@thetimes.co.uk](mailto:louis.goddard@thetimes.co.uk) / [github.com/ltrgoddard](http://github.com/ltrgoddard) / [\@ltrgoddard](http://twitter.com/ltrgoddard)  
 
 17c Blythe Hill, London SE6 4UL / +44 (0)7909 027117  
 
@@ -8,7 +8,7 @@
 ## Education
 
 2013--17
-:   **Ph.D., University of Sussex**  
+:   **Ph.D., University of Sussex** (*Pass, no corrections* - [PDF version](http://sro.sussex.ac.uk/68758/1/Goddard%2C%20Louis.pdf))  
     *Title*: 'J.H. Prynne in Context, 1955--1975'  
     *Supervisor*: Professor Keston Sutherland 
     *Examiners*: Professor David Herd (external) and Dr. Hope Wolf (internal) 
@@ -21,7 +21,7 @@
     *Funding*: Kathleen Hannay Memorial Charity (£7,176)
 
 2008--11
-:   **B.A. (Hons.), University of Oxford** (*First Class*)  
+:   **B.A. (Hons.), University of Oxford** (*First class*)  
     *Course*: English Language and Literature  
     *College*: Mansfield
 
@@ -31,7 +31,7 @@
 2017
 :   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*, 31.2 (2017), <http://www.tandfonline.com/doi/full/10.1080/0950236X.2016.1188143>
 
-:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*, 9.1 (2017), <https://poetry.openlibhums.org/articles/10.16995/biip.9/>
+:   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*, 9.1 (2017), <https://poetry.openlibhums.org/article/doi/10.16995/biip.9/>
 
 2016
 :   **'J.H. Prynne'**, in Jay Parini, ed., *British Writers*, Supplement XXIII (Farmington Hills, MI: Charles Scribner's Sons, 2017), pp. 303--19
@@ -85,6 +85,14 @@
 
 ## Conference papers
 
+2018
+:   **'Dark net Darwinism: how criminals stay ahead of the game'** (Nordic IT Security, Stockholm, 15 November)
+
+2017
+:   **'Lessons from the dark net applied in high-pressure situations at a UK newspaper'** (Nordic IT Security, Stockholm, 7 November)
+
+:   **'Finding your way on the dark net'** (European Investigative Journalism Conference, Mechelen, 19-21 May 2017)
+
 2016
 :   **'"Look, the poet is wearing red socks!": Biographical Recalcitrance in Contemporary Literary History'** (IABA 2016, University of Cyprus, 26--29 May)
 
@@ -125,6 +133,10 @@
 
 ## Skills and professional development
 
+2018
+:   **Sussex Humanities Lab summer workshop** (University of Sussex)
+    Invited to participate in annual workshop on the theme 'Narrative as Data <> Data as Narrative'.
+
 2016
 :   **This&THAT Camp** (University of Sussex)  
     Skills-sharing event at the Sussex Humanities Lab. Led a session on network analysis and visualisation using R and Shiny.
@@ -144,10 +156,6 @@
 :   **Numerical Analysis Skills for Historians** (UCL)  
     Selective, AHRC-funded workshop on statistical techniques, led by Professor John MacInnes (University of Edinburgh).
 
-2005--present
-:   **Self-taught technical skills**  
-    Extensive knowledge of HTML/CSS; intermediate working knowledge of Python (incl. NLTK), R (incl. igraph), Bash scripting, web server administration (incl. running Amazon Web Services instances), GNU/Linux system tools and the vi/vim editor; basic familiarity with JavaScript and PHP.
-
 
 ## Administrative activities
 
@@ -166,15 +174,10 @@ Professor of Poetics and Lecturer in English
 School of English, University of Sussex  
 [k.sutherland@sussex.ac.uk](mailto:k.sutherland@sussex.ac.uk)
 
-**Dr. Samuel Solomon**  
-Lecturer in Creative and Critical Writing  
-School of English, University of Sussex  
-[samuel.solomon@sussex.ac.uk](mailto:samuel.solomon@sussex.ac.uk)
-
-**Dr. Ian Patterson**   
-Fellow in English, Librarian and Keeper of the Old Library   
-Queens’ College, University of Cambridge  
-[ikp1000@cam.ac.uk](mailto:ikp1000@cam.ac.uk)
+**Professor David Herd**  
+Professor of Modern Literature  
+School of English, University of Kent  
+[d.herd@kent.ac.uk](mailto:d.herd@kent.ac.uk)
 
 
 <script>
