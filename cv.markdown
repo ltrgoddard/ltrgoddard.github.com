@@ -91,7 +91,7 @@
 2017
 :   **'Lessons from the dark net applied in high-pressure situations at a UK newspaper'** (Nordic IT Security, Stockholm, 7 November)
 
-:   **'Finding your way on the dark net'** (European Investigative Journalism Conference, Mechelen, 19-21 May 2017)
+:   **'Finding your way on the dark net'** (European Investigative Journalism Conference, Mechelen, 19--21 May)
 
 2016
 :   **'"Look, the poet is wearing red socks!": Biographical Recalcitrance in Contemporary Literary History'** (IABA 2016, University of Cyprus, 26--29 May)
