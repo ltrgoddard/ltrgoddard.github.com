@@ -10,8 +10,8 @@
 2013--17
 :   **Ph.D., University of Sussex** (*Pass, no corrections* - [PDF version](http://sro.sussex.ac.uk/68758/1/Goddard%2C%20Louis.pdf))  
     *Title*: 'J.H. Prynne in Context, 1955--1975'  
-    *Supervisor*: Professor Keston Sutherland 
-    *Examiners*: Professor David Herd (external) and Dr. Hope Wolf (internal) 
+    *Supervisor*: Professor Keston Sutherland  
+    *Examiners*: Professor David Herd (external) and Dr. Hope Wolf (internal)  
     *Funding*: Arts and Humanities Research Council (£53,594) 
 
 2012--13
