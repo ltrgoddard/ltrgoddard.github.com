@@ -134,7 +134,7 @@
 ## Skills and professional development
 
 2018
-:   **Sussex Humanities Lab summer workshop** (University of Sussex)
+:   **Sussex Humanities Lab summer workshop** (University of Sussex)  
     Invited to participate in annual workshop on the theme 'Narrative as Data <> Data as Narrative'.
 
 2016
