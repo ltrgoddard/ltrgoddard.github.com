@@ -89,6 +89,8 @@
 :   **'Dark net Darwinism: how criminals stay ahead of the game'** (Nordic IT Security, Stockholm, 15 November)
 
 2017
+:   **'Dark net research: international cases'** (Netzwerk Recherche, Hamburg, 28--30 June)
+
 :   **'Lessons from the dark net applied in high-pressure situations at a UK newspaper'** (Nordic IT Security, Stockholm, 7 November)
 
 :   **'Finding your way on the dark net'** (European Investigative Journalism Conference, Mechelen, 19--21 May)
