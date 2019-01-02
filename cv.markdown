@@ -29,7 +29,7 @@
 ## Publications
 
 2017
-:   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*, 31.2 (2017), pp. 365--78 <http://www.tandfonline.com/doi/full/10.1080/0950236X.2016.1188143>
+:   **'Migration Patterns: Two Little Magazines of 1960--62'**, *Textual Practice*, 31.2 (2017), pp. 365--78, <http://www.tandfonline.com/doi/full/10.1080/0950236X.2016.1188143>
 
 :   **'"An Object With No Predecessors?" A Computational Reading of J.H. Prynne's *For the Monogram*'**, *Journal of British and Irish Innovative Poetry*, 9.1 (2017), <https://poetry.openlibhums.org/article/doi/10.16995/biip.9/>
 
