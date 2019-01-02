@@ -1,6 +1,6 @@
 # Louis Goddard
 
-[louis.goddard@thetimes.co.uk](mailto:louis.goddard@thetimes.co.uk) / [github.com/ltrgoddard](http://github.com/ltrgoddard) / [\@ltrgoddard](http://twitter.com/ltrgoddard)  
+[louisgoddard@gmail.com](mailto:louisgoddard@gmail.com) / [github.com/ltrgoddard](http://github.com/ltrgoddard) / [\@ltrgoddard](http://twitter.com/ltrgoddard)  
 
 17c Blythe Hill, London SE6 4UL / +44 (0)7909 027117  
 
