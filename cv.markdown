@@ -133,6 +133,24 @@
 :   **'Pothead Profits'**, *The Times Literary Supplement* (17 September 2010). Review of Jess Walter, *The Financial Lives of the Poets*, <http://www.the-tls.co.uk/tls/reviews/fiction/article746653.ece>
 
 
+## Selected non-academic journalism
+
+2018
+:   **'Criticism of Theresa May banned in Grenfell safety deal'**, *The Times* (6 November 2018), <https://www.thetimes.co.uk/article/gagging-clauses-criticism-of-theresa-may-banned-in-grenfell-safety-deal-7mbdll6cj>
+
+:   **'British firms behind $30m spending on US elections'**, *The Times* (20 October 2018), <https://www.thetimes.co.uk/article/british-firms-behind-30m-spending-on-us-elections-c89rrfgph>
+
+:   **'Ministers waste tens of millions of pounds on pledges'**, *The Times* (30 March 2018), <https://www.thetimes.co.uk/article/ministers-waste-tens-of-millions-of-pounds-on-pledges-r23jpgc57>
+
+
+2017
+:   **'Ministers' email addresses and passwords up for sale'**, *The Times* (23 June 2017), <https://www.thetimes.co.uk/article/russian-hackers-trade-british-ministers-email-addresses-and-passwords-hqtr7pv9z>
+
+:   **'Child abuse network had 10,000 UK members'**, *The Times* (8 May 2017), <https://www.thetimes.co.uk/article/child-abuse-network-had-10-000-uk-members-d665p2nwk>
+
+:   **'Girl of 15 on sugar daddy site'**, *The Sunday Times* (19 March 2017), <https://www.thetimes.co.uk/article/girl-of-15-on-sugar-daddy-site-5602zrxmf>
+
+
 ## Skills and professional development
 
 2018
