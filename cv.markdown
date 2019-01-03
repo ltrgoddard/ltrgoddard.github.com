@@ -168,6 +168,20 @@
 :   **Editorial Board member** (ZARF)  
     Reading, ranking and commenting on submissions to a small poetry journal based at Cardiff University.
 
+
+## Referees
+
+**Professor Keston Sutherland**  
+Professor of Poetics and Lecturer in English  
+School of English, University of Sussex  
+[k.sutherland@sussex.ac.uk](mailto:k.sutherland@sussex.ac.uk)
+
+**Professor David Herd**  
+Professor of Modern Literature  
+School of English, University of Kent  
+[d.herd@kent.ac.uk](mailto:d.herd@kent.ac.uk)
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
