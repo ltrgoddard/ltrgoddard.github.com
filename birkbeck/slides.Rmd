@@ -1,0 +1,185 @@
+---
+title: "Using programming to get stories"
+author: "Louis Goddard"
+output:
+  revealjs::revealjs_presentation:
+    theme: simple
+---
+
+<style>
+.reveal section img { background:none; border:none; box-shadow:none; }
+</style>
+
+# Who am I?
+
+## Work
+
+* Did a PhD in English from 2013 and freelanced
+
+* Data journalist at *The Times* and *Sunday Times* since 2016
+
+* Data advisor at Global Witness from next month
+
+
+![Global Witness logo](http://static.dwcdn.net/custom/themes/globalwitness/594a5e938fcc8/globalwitness.png){width=400px}
+
+---
+
+![PhD work](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/magazines.png){width=600px}
+
+---
+
+![Electric cars](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2016-12-28.jpg){width=125px}
+![Sugar daddies](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2017-03-19.jpg){width=125px}
+![Child abuse](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2017-05-08.jpg){width=125px}
+![Passwords](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2017-06-23.jpg){width=125px}
+![Trains](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2017-07-30.jpg){width=125px}
+![Church land](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-01-09.jpg){width=125px}
+![Oxbridge places](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-01-25.jpg){width=125px}
+![Ski doping](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-02-04.jpg){width=125px}
+![Consultations](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-03-30.jpg){width=125px}
+![Corbyn](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-04-29.jpg){width=125px}
+![Antidepressants](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-07-21.jpg){width=125px}
+![Gagging clauses 1](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-10-12.jpg){width=125px}
+![US campaign finance](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-10-20.jpg){width=125px}
+![Gagging clauses 2](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-11-07.jpg){width=125px}
+![School funding](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2019-03-05.jpg){width=125px}
+![Tax 1](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2019-03-07.jpg){width=125px}
+![Tax 2](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2019-03-08.jpg){width=125px}
+
+## Interests
+
+* Cyber-crime and the dark net
+
+* Transparency and open data
+
+* Bringing innovative techniques to data journalism
+
+## Tools
+
+* R programming language
+
+* Tidyverse family of packages
+
+* Elasticsearch and Kibana
+
+![R logo](https://www.r-project.org/logo/Rlogo.png){width=300px}
+
+
+# How can programming help us get stories out of data?
+
+## The three As
+
+* Access
+
+* Amalgamation (OK, this one's not great)
+
+* Analysis
+
+## Access
+
+* People talk a lot about creating new data
+
+* Another way to think of it: accessing hidden data
+
+* Examples: web scraping, using APIs, getting data from PDFs and Word documents, working with data bigger than Excel can handle
+
+## Amalgamation
+
+* 2 + 2 = 5
+
+* When combined, data is more than the sum of its parts
+
+* Examples: joins and fuzzy matching, working with weird file formats, tidying data
+
+## Analysis
+
+* How can programming help us *see* stories?
+
+* Visualisation is important, but not the be all and end all 
+
+* Examples: geospatial analysis, times series analysis, statistical analysis, search
+
+
+# Access
+
+## Web scraping
+
+* Getting information from a website into structured form
+
+* 90% of scraping jobs for stories follow this format:
+
+  1. Page through an index to get links to individual items
+  2. Load each item and extract some data
+  3. Combine the results
+
+---
+
+![Consultations](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-03-30.jpg){width=500px}
+
+---
+
+![Consultations screen 1](images/consultations_screen_1.png){width=1200px}
+
+---
+
+![Consultations screen 2](images/consultations_screen_2.png){width=1200px}
+
+---
+
+![Consultations screen 3](images/consultations_screen_3.png){width=1200px}
+
+---
+
+![Consultations screen 4](images/consultations_screen_4.png){width=1200px}
+
+## Web scraping
+
+* Key tools: rvest and SelectorGadget
+
+```{r, message = F, warning = F}
+library(tidyverse)
+library(rvest)
+
+read_html("https://www.thetimes.co.uk/") %>%
+  html_nodes(".Item-headline") %>%
+  html_text()
+```
+
+## APIs
+
+* API: application programming interface
+
+* Structured way for programs to talk to each other
+
+* Lots of organisations provide them: private sector and public sector
+
+---
+
+![Gagging clauses 1](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2018-10-12.jpg){width=500px}
+
+## APIs
+
+https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?stages=award&order=ASC&page=1
+
+* Domain: "https://www.contractsfinder.service.gov.uk"
+
+* Endpoint: "/Published/Notices/OCDS/Search"
+
+* Parameter: "stages=award"
+
+* Parameter: "order=ASC"
+
+* Parameter: "page=1"
+
+---
+
+![Open contracting API data](images/contracting_api.png){width=1200px}
+
+--
+
+![Electric cars](https://raw.githubusercontent.com/ltrgoddard/ltrgoddard.github.com/master/front-pages/2016-12-28.jpg){width=500px}
+
+## APIs
+
+Live demo! https://www.zap-map.com/live/
