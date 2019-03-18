@@ -436,4 +436,4 @@ __r4ds.had.co.nz__
 
 ## URL for these slides
 
-http://louisg.xyz/birkbeck/slides.html
+__louisg.xyz/birkbeck__
