@@ -434,6 +434,5 @@ __r4ds.had.co.nz__
 
 * Think laterally!
 
-## URL for these slides
 
-__louisg.xyz/birkbeck__
+# __louisg.xyz/birkbeck__
