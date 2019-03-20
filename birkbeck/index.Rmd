@@ -119,19 +119,19 @@ output:
 
 ---
 
-![Consultations screen 1](images/consultations_screen_1.png){width=1200px}
+![Consultations screen 1](images/consultations_screen_1.png)
 
 ---
 
-![Consultations screen 2](images/consultations_screen_2.png){width=1200px}
+![Consultations screen 2](images/consultations_screen_2.png)
 
 ---
 
-![Consultations screen 3](images/consultations_screen_3.png){width=1200px}
+![Consultations screen 3](images/consultations_screen_3.png)
 
 ---
 
-![Consultations screen 4](images/consultations_screen_4.png){width=1200px}
+![Consultations screen 4](images/consultations_screen_4.png)
 
 ---
 
@@ -178,7 +178,7 @@ https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?stages=
 
 ---
 
-![Open contracting API data](images/contracting_api.png){width=1200px}
+![Open contracting API data](images/contracting_api.png)
 
 ---
 
@@ -188,7 +188,27 @@ https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?stages=
 
 ## APIs
 
-Live demo! https://www.zap-map.com/live/
+* Not always documented
+
+* Dynamic websites use APIs behind the scenes
+
+* How can we access these?
+
+---
+
+![Zap-Map 1](images/zap_map_screen_1.png)
+
+---
+
+![Zap-Map 2](images/zap_map_screen_2.png)
+
+---
+
+![Zap-Map 3](images/zap_map_screen_3.png)
+
+---
+
+![Zap-Map 4](images/zap_map_screen_4.png)
 
 
 # Amalgamation
@@ -241,7 +261,7 @@ Live demo! https://www.zap-map.com/live/
 
 ---
 
-![Land map](images/land_map.png){width=1200px}
+![Land map](images/land_map.png)
 
 ---
 
@@ -343,7 +363,7 @@ stringdist_inner_join(countries, tax_exiles, by = "country")
 
 ---
 
-![RStudio IDE](images/rstudio.png){width=1200px}
+![RStudio IDE](images/rstudio.png)
 
 ---
 
