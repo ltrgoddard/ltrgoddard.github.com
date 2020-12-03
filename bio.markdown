@@ -1,6 +1,6 @@
 % Louis Goddard
 
-I'm a journalist and programmer. I currently work as a data investigations advisor for the NGO [Global Witness](https://www.globalwitness.org), where I help campaign teams with data-driven investigations and produce my own stories. My [most recent major story](https://www.globalwitness.org/en/campaigns/corruption-and-money-laundering/btc-e-vinnik-mayzus/) looks at the collapse of the Bitcoin exchange BTC-e.
+I'm a journalist and programmer. I currently work as a data investigations advisor for the NGO [Global Witness](https://www.globalwitness.org), where I help campaign teams with [data-driven investigations](https://www.globalwitness.org/tagged/digital-investigations/) and produce my own stories.
 
 I finished a [PhD in contemporary poetry](https://sro.sussex.ac.uk/id/eprint/68758/) at the University of Sussex in 2016 then worked as a data journalist at *The Times* for two and a half years. Before that I worked as a technology journalist and completed my undergraduate and masters degrees at the universities of Oxford and Cambridge.
 
