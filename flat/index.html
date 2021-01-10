@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Helvetica;
+      }
+
+      p {
+        line-height: 150%;
+        clear: both;
+      }
+
+      h2 {
+        clear: both;
+      }
+
+      #container {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (max-width: 800px) {
+        #container {
+          width: 90%
+        }
+      }
+
+      #street-view {
+        width: 100%;
+        height: 400px;
+      }
+
+      #locator-map {
+        height: 60%;
+        width: 100%;
+      }
+
+      #sign-off {
+        float: right;
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <title>Rent our London flat!</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Rent our London flat!</h1>
+      <p>
+        We're moving to Cambridgeshire for the 2021–22 academic year and are renting out our <b>one-bedroom flat</b> in Lewisham. The address is <b>17C Blythe Hill, SE6 4UL</b> and it'll be <b>available from Summer 2021</b> for at least a year, for around £1,000/month (or less for friends and family).
+      </p>
+      <p>
+        The flat is on the top floor of a three-storey Victorian house. It's in Zone 3, near a <a href="https://www.blythehillfields.org.uk/">nice park</a>, a <a href="http://www.blythehilltavern.org.uk/">nice pub</a> and stations with <b>direct trains to London Bridge</b> (11 mins) and connections to the <b>Jubilee Line</b> via the Overground.</p>
+      <p>
+        More info below – if you're interested or have any questions, get in touch!
+      </p>
+      <p id="sign-off">
+        — Louis (<a href="mailto:louisgoddard@gmail.com">louisgoddard@gmail.com</a>) and Kay (<a href="mailto:k1immiller@gmail.com">k1immiller@gmail.com</a>)
+      </p>
+      <h2>What the flat looks like</h2>
+      <p><em>[Slideshow here.]</em></p>
+      <h2>What's nearby</h2>
+      <div id="locator-map"></div>
+      <p><em>Circle = 15 mins walk – click an icon for info</em></p>
+      <h2>What the street looks like</h2>
+      <div id="street-view">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1610290441726!6m8!1m7!1sD6Nofmz6UPwqh7QReOXsiw!2m2!1d51.44420649086069!2d-0.03380212140712571!3f38.29652949142062!4f12.840609658347702!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <p><em>17 Blythe Hill on the left – ignore the scaffolding...</em></p>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+      <script type="text/javascript">
+        var locator_map = L.map('locator-map').setView([51.44533487677536, -0.04100583480577173], 14);
+
+        var flat = {
+          "type": "Feature",
+          "properties": { "gml_id": "PREDEFINED.fid--39c7bf96_176c657ed67_7224", "INSPIREID": 54317507, "LABEL": 54317507, "NATIONALCADASTRALREFERENCE": 54317507, "VALIDFROM": "2012-07-04T13:43:20.833Z", "BEGINLIFESPANVERSION": "2012-07-04T13:43:20.833Z" },
+          "geometry": { "type": "Polygon", "coordinates": [ [ [ -0.033697937372477, 51.444477822939469 ], [ -0.03379119241099, 51.444668684126277 ], [ -0.033864488207046, 51.444654176301746 ], [ -0.033771232889168, 51.444463315169855 ], [ -0.033747317194739, 51.444417051095733 ], [ -0.033713600765282, 51.444347691159308 ], [ -0.033688420881508, 51.444297359138211 ], [ -0.033612191672748, 51.444313166549342 ], [ -0.033638129091674, 51.444362612022488 ], [ -0.033674002444122, 51.444432008163744 ], [ -0.033697937372477, 51.444477822939469 ] ] ] }
+        };
+
+        var railIcon = new L.Icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/en/3/31/National_Rail_logo.svg',
+          iconSize: [40]
+        });
+
+        var overgroundIcon = new L.Icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Overground_roundel_%28no_text%29.svg',
+          iconSize: [40]
+        });
+
+        var beerIcon = new L.Icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Pint_Glass_%28Pub%29.svg',
+          iconSize: [30]
+        });
+
+        var nhsIcon = new L.Icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/NHS-Logo.svg',
+          iconSize: [50]
+        });
+
+        var treeIcon = new L.Icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Noto_Emoji_Pie_1f333.svg',
+          iconSize: [50]
+        });
+
+        var museumIcon = new L.Icon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Noun_project_-_Museum_-_Acropolis.svg',
+          iconSize: [50]
+        });
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox/light-v10',
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken: 'pk.eyJ1IjoibG91aXNnb2RkYXJkIiwiYSI6ImNranI3MnJ6aTdsem4yc2xneHhhY2dvMjAifQ.Vv9MVVU0oo9YXKmw2uZACg'
+        }).addTo(locator_map);
+        
+        L.geoJSON(flat).addTo(locator_map);
+
+        L.circle([51.4453, -0.03364735743449985], 900).addTo(locator_map);
+
+        L.marker([51.444, -0.026], {icon: railIcon})
+          .addTo(locator_map)
+          .bindPopup('<b>Catford</b> and <b>Catford Bridge</b> stations<br/><br/>11 mins to London Bridge<br/>17 mins to Waterloo East<br/>21 mins to Charing Cross</br>24 mins to Blackfriars</br>45 mins to Sevenoaks');
+
+        L.marker([51.45007588366855, -0.04559532917042219], {icon: overgroundIcon})
+          .addTo(locator_map)
+          .bindPopup('<b>Honor Oak Park</b> station<br/><br/>10 mins to Canada Water (Jubilee Line)<br/>15 mins to London Bridge');
+
+        L.marker([51.442342488911514, -0.033755531961820344], {icon: beerIcon})
+          .addTo(locator_map)
+          .bindPopup('<img src="https://live.staticflickr.com/8380/28273933374_0a8986aeff_w_d.jpg" width="300px" /><br/><br/>The <b>Blythe Hill Tavern</b><br/><br/><em><a href="https://www.flickr.com/photos/kake_pugh/28273933374">Photo: Kake/Flickr</a></em>');
+
+        L.marker([51.453193268447016, -0.0169930164542771], {icon: nhsIcon})
+          .addTo(locator_map)
+          .bindPopup('<b>University Hospital Lewisham</b>');
+
+        L.marker([51.447426264221434, -0.035346839967960376], {icon: treeIcon})
+          .addTo(locator_map)
+  .bindPopup('<img src="https://live.staticflickr.com/1676/23754367714_fd5934fd08_w_d.jpg" width="300px"/><br/><br/><b>Blythe Hill Fields</b>. A local park with panomaric views over central London and Canary Wharf. Great for sitting out in good weather.<br/><br/><em><a href="https://www.flickr.com/photos/eaglesham/23754367714">Photo: Dan Eaglesham/Flickr</a></em>');
+
+        L.marker([51.441507355809534, -0.06246121253233619], {icon: museumIcon})
+          .addTo(locator_map)
+          .bindPopup('The <b>Horniman Museum and Gardens</b>');
+      </script>
+    </div>
+  </body>
+</html>
