@@ -26,17 +26,27 @@
         }
       }
 
-      #street-view {
+      .gallery figure {
+        margin: 10px;
+      }
+
+      .gallery img {
         width: 100%;
-        height: 400px;
+        margin-bottom: 5px;
+        float: left;
       }
 
       #locator-map {
-        height: 60%;
         width: 100%;
+        height: 500px;
       }
 
-      #sign-off {
+      .street-view {
+        width: 100%;
+        height: 500px;
+      }
+
+      .sign-off {
         float: right;
       }
     </style>
@@ -54,16 +64,71 @@
       <p>
         More info below – if you're interested or have any questions, get in touch!
       </p>
-      <p id="sign-off">
+      <p class="sign-off">
         — Louis (<a href="mailto:louisgoddard@gmail.com">louisgoddard@gmail.com</a>) and Kay (<a href="mailto:k1immiller@gmail.com">k1immiller@gmail.com</a>)
       </p>
       <h2>What the flat looks like</h2>
-      <p><em>[Slideshow here.]</em></p>
+      <table class="gallery">
+        <tr>
+          <td>
+            <figure>
+              <a href="images/house_1.jpg">
+                <img src="images/house_1.jpg" alt="A house" />
+              </a>
+              <figcaption>Living room</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="images/house_1.jpg">
+                <img src="images/house_1.jpg" alt="A house" />
+              </a>
+              <figcaption>Living room</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <a href="images/house_1.jpg">
+                <img src="images/house_1.jpg" alt="A house" />
+              </a>
+              <figcaption>Living room</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="images/house_1.jpg">
+                <img src="images/house_1.jpg" alt="A house" />
+              </a>
+              <figcaption>Living room</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <a href="images/house_1.jpg">
+                <img src="images/house_1.jpg" alt="A house" />
+              </a>
+              <figcaption>Living room</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="images/house_1.jpg">
+                <img src="images/house_1.jpg" alt="A house" />
+              </a>
+              <figcaption>Living room</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </table> 
       <h2>What's nearby</h2>
       <div id="locator-map"></div>
       <p><em>Circle = 15 mins walk – click an icon for info</em></p>
       <h2>What the street looks like</h2>
-      <div id="street-view">
+      <div class="street-view">
         <iframe src="https://www.google.com/maps/embed?pb=!4v1610290441726!6m8!1m7!1sD6Nofmz6UPwqh7QReOXsiw!2m2!1d51.44420649086069!2d-0.03380212140712571!3f38.29652949142062!4f12.840609658347702!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <p><em>17 Blythe Hill on the left – ignore the scaffolding...</em></p>
@@ -77,34 +142,46 @@
           "geometry": { "type": "Polygon", "coordinates": [ [ [ -0.033697937372477, 51.444477822939469 ], [ -0.03379119241099, 51.444668684126277 ], [ -0.033864488207046, 51.444654176301746 ], [ -0.033771232889168, 51.444463315169855 ], [ -0.033747317194739, 51.444417051095733 ], [ -0.033713600765282, 51.444347691159308 ], [ -0.033688420881508, 51.444297359138211 ], [ -0.033612191672748, 51.444313166549342 ], [ -0.033638129091674, 51.444362612022488 ], [ -0.033674002444122, 51.444432008163744 ], [ -0.033697937372477, 51.444477822939469 ] ] ] }
         };
 
-        var railIcon = new L.Icon({
-          iconUrl: 'https://upload.wikimedia.org/wikipedia/en/3/31/National_Rail_logo.svg',
-          iconSize: [40]
+        var mapIcon = L.Icon.extend({
+          options: {
+            iconSize: [40],
+            iconAnchor: [20, 20]
+          }
+        })
+
+        var railIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/en/3/31/National_Rail_logo.svg'
         });
 
-        var overgroundIcon = new L.Icon({
-          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Overground_roundel_%28no_text%29.svg',
-          iconSize: [40]
+        var overgroundIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Overground_roundel_%28no_text%29.svg'
         });
 
-        var beerIcon = new L.Icon({
+        var beerIcon = new mapIcon({
           iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Pint_Glass_%28Pub%29.svg',
           iconSize: [30]
         });
 
-        var nhsIcon = new L.Icon({
-          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/NHS-Logo.svg',
-          iconSize: [50]
+        var nhsIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/NHS-Logo.svg'
         });
 
-        var treeIcon = new L.Icon({
-          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Noto_Emoji_Pie_1f333.svg',
-          iconSize: [50]
+        var treeIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Noto_Emoji_Pie_1f333.svg'
         });
 
-        var museumIcon = new L.Icon({
-          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Noun_project_-_Museum_-_Acropolis.svg',
-          iconSize: [50]
+        var museumIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Noun_project_-_Museum_-_Acropolis.svg'
+        });
+
+        var tescoIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/en/b/b0/Tesco_Logo.svg',
+          iconSize: [60]
+        });
+
+        var sainsburysIcon = new mapIcon({
+          iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Sainsbury%27s_Logo.svg',
+          iconSize: [70]
         });
 
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -143,6 +220,14 @@
         L.marker([51.441507355809534, -0.06246121253233619], {icon: museumIcon})
           .addTo(locator_map)
           .bindPopup('The <b>Horniman Museum and Gardens</b>');
+
+        L.marker([51.44625374827402, -0.022206394965618038], {icon: tescoIcon})
+          .addTo(locator_map)
+          .bindPopup('Big <b>Tesco</b> supermarket');
+
+        L.marker([51.43027472691537, -0.03336367502316201], {icon: sainsburysIcon})
+          .addTo(locator_map)
+          .bindPopup('Big <b>Sainsbury\'s</b> supermarket');
       </script>
     </div>
   </body>
