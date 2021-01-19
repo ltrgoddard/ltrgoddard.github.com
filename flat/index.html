@@ -7,11 +7,10 @@
 
       p {
         line-height: 150%;
-        clear: both;
       }
 
       h2 {
-        clear: both;
+        margin-top: 7%;
       }
 
       #container {
@@ -50,10 +49,6 @@
         width: 100%;
         height: 500px;
       }
-
-      .sign-off {
-        float: right;
-      }
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <title>Rent our London flat!</title>
@@ -65,14 +60,15 @@
         We’re moving to Cambridgeshire for the 2021–22 academic year and are renting out our <b>one-bedroom flat</b> in Lewisham. The address is <b>17C Blythe Hill, SE6 4UL</b> and it’ll be <b>available from Summer 2021</b> for at least a year – rent negotiable, and substantially below market rate for friends and family.
       </p>
       <p>
-        The flat is on the top floor of a three-storey Victorian house. It’s in Zone 3, near a <a href="https://www.blythehillfields.org.uk/">nice park</a>, a <a href="http://www.blythehilltavern.org.uk/">nice pub</a> and stations with <b>direct trains to London Bridge</b> (11 mins) and connections to the <b>Jubilee Line</b> via the Overground.</p>
-      <p>
-        More info below – if you’re interested or have any questions, get in touch!
+        It’s in Zone 3, near a <a href="https://www.blythehillfields.org.uk/">nice park</a>, a <a href="http://www.blythehilltavern.org.uk/">nice pub</a> and stations with <b>direct trains to London Bridge</b> (11 mins) and connections to the <b>Jubilee line</b> via the Overground. More info below – if you’re interested or have any questions, get in touch!
       </p>
-      <p class="sign-off">
+      <p>
         — Louis (<a href="mailto:louisgoddard@gmail.com">louisgoddard@gmail.com</a>) and Kay (<a href="mailto:k1immiller@gmail.com">k1immiller@gmail.com</a>)
       </p>
-      <h2>What the flat looks like</h2>
+      <h2>What it’s like</h2>
+      <p>
+        The flat’s on the top floor of a three-storey Victorian house and is about 40 sq m (420 sq ft) in total. It has two large main rooms, a medium-size kitchen and a small shower room. It’s on a hill, so there are some nice(ish) views to the south. There’s no garden, but Blythe Hill Fields is two minutes’ walk away.
+      </p>
       <table class="gallery">
         <tr>
           <td>
@@ -95,18 +91,18 @@
         <tr>
           <td>
             <figure>
-              <a href="images/shower-room.jpg">
-                <img src="images/shower-room.jpg" alt="Shower room" />
+              <a href="images/kitchen-and-stairs.jpg">
+                <img src="images/kitchen-and-stairs.jpg" alt="Kitchen and stairs" />
               </a>
-              <figcaption>Shower room</figcaption>
+              <figcaption>Kitchen and stairs</figcaption>
             </figure>
           </td>
           <td>
             <figure>
-              <a href="images/stairs.jpg">
-                <img src="images/stairs.jpg" alt="Stairs" />
+              <a href="images/shower-room.jpg">
+                <img src="images/shower-room.jpg" alt="Shower room" />
               </a>
-              <figcaption>Stairs</figcaption>
+              <figcaption>Shower room</figcaption>
             </figure>
           </td>
         </tr>
@@ -130,13 +126,14 @@
         </tr>
       </table> 
       <h2>What’s nearby</h2>
+      <p>The map below shows some local highlights (circle = 15 mins walk – click an icon for info). As well as the big supermarkets, there’s a Co-op and a Sainsbury’s Local within easy walking distance.</p>
+      <p>For transport, there’s a choice of <b>Catford</b> and <b>Catford Bridge</b> stations (direct trains to London Bridge, Cannon Street, Waterloo East, Charing Cross and Blackfriars every 30 mins or less) and <b>Honor Oak Park</b> (London Overground trains every seven minutes, joining the Jubilee line at Canada Water).</p>
       <div id="locator-map"></div>
-      <p><em>Circle = 15 mins walk – click an icon for info</em></p>
-      <h2>What the street looks like</h2>
+      <h2>What the street’s like</h2>
+      <p>17 Blythe Hill is on the left – ignore the scaffolding...</p>
       <div class="street-view">
         <iframe src="https://www.google.com/maps/embed?pb=!4v1610290441726!6m8!1m7!1sD6Nofmz6UPwqh7QReOXsiw!2m2!1d51.44420649086069!2d-0.03380212140712571!3f38.29652949142062!4f12.840609658347702!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-      <p><em>17 Blythe Hill on the left – ignore the scaffolding...</em></p>
       <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
       <script type="text/javascript">
         var locator_map = L.map('locator-map').setView([51.44533487677536, -0.04100583480577173], 14);
