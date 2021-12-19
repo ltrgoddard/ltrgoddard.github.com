@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Imposter syndrome
-date:   2021-12-19 09:00:00 +0000
+date:   2021-12-19 08:52:00 +0000
 ---
 
 *I wrote this story in a rush of enthusiasm last spring after an incredible Signal exchange with its protagonist, whose name I've changed. I was at [NICAR 2020](https://www.ire.org/training/conferences/nicar-2020/) in New Orleans at the time and remember being distracted from whatever talk I was in by the messages popping up on my phone.*
