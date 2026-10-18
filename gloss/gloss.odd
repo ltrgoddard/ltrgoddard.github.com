@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>gloss: TEI customisation for the dataset of sources quoted, adapted,
+echoed and alluded to in J. H. Prynne's Poems</title>
+<author>Louis Goddard</author>
+</titleStmt>
+<publicationStmt>
+<publisher>Louis Goddard</publisher>
+<availability status="free"><licence
+target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+</availability>
+</publicationStmt>
+<sourceDesc><p>Written for the gloss dataset (release/gloss.xml).</p>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<body>
+<head>The gloss dataset: a TEI customisation</head>
+
+<p>The dataset <ident>release/gloss.xml</ident> records the quotations,
+adaptations, echoes and allusions found in J. H. Prynne's <title>Poems</title>
+(second edition, Bloodaxe Books, 2005) and <title>Force of Circumstance and
+Other Poems</title> (1962). Each entry is one <gi>cit</gi>: the words of
+Prynne that the entry concerns, a reference to their page and to the lines of
+the poem (counted from its first line, a turned-over line counting once), and a
+nested <gi>cit</gi> type="source" with the source's words and a pointer to the
+edition in which they were seen. The editions are <gi>biblStruct</gi> records
+in the <gi>standOff</gi>, each with its identifiers as <gi>idno</gi>.</p>
+
+<p>Only the elements that the dataset uses are allowed, and the attributes
+that carry data have closed value lists: the kind of an entry
+(<att>type</att> on <gi>cit</gi>), its confidence (<att>cert</att>), the
+unit of a reference (<att>unit</att> on <gi>citedRange</gi>), and the kind of
+identifier (<att>type</att> on <gi>idno</gi>).</p>
+
+<div>
+<head>Structure</head>
+<list>
+<item><gi>teiHeader</gi>: title, authors and roles, licence (CC BY 4.0
+for the structure, identifiers and metadata; the quoted words are quoted
+under fair dealing for criticism and quotation), the source editions, the
+method in brief, the line-counting rule, and a <gi>taxonomy</gi> of the
+entry types.</item>
+<item><gi>standOff</gi>: a <gi>listBibl</gi> type="prynne" of Prynne's
+books (each collection with its first publication), and a
+<gi>listBibl</gi> type="sources" of the editions quoted.</item>
+<item><gi>text</gi>: one <gi>div</gi> type="collection" for each of
+Prynne's collections, holding its entries. (<gi>cit</gi> is not allowed in
+<gi>standOff</gi> by TEI P5, so the entries are the text of the
+dataset.)</item>
+</list>
+</div>
+
+<div>
+<head>An entry</head>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<cit type="quotation" cert="high" xml:id="g0001" ana="#quotation">
+ <quote corresp="poems-2005.xml#p568.9">Flitting under her<lb/>breath in
+ catches, bird on briar</quote>
+ <bibl><ptr target="#prynne-2005-blue-slides-at-rest"/>
+  <title>Partition blurred caloric engine his spiral transfusion</title>
+  <citedRange unit="page" from="568" to="568"/>
+  <citedRange unit="line" from="9" to="10"/></bibl>
+ <cit type="source">
+  <quote>Bryd one brere</quote>
+  <bibl><ptr target="#robbins-1955-secular-lyrics"/>
+   <citedRange unit="item">147</citedRange></bibl>
+ </cit>
+</cit>
+</egXML>
+</div>
+
+<div>
+<head>Schema</head>
+<schemaSpec ident="gloss" start="TEI" prefix="tei_">
+<moduleRef key="tei"/>
+<moduleRef key="core" include="p head list item title author editor
+ respStmt resp name note date publisher pubPlace bibl biblStruct listBibl
+ monogr analytic series imprint biblScope citedRange ptr lb gap
+ cit quote relatedItem"/>
+<moduleRef key="header" include="teiHeader fileDesc titleStmt
+ editionStmt edition publicationStmt sourceDesc availability licence idno
+ encodingDesc projectDesc editorialDecl samplingDecl classDecl taxonomy
+ category catDesc revisionDesc change"/>
+<moduleRef key="textstructure" include="TEI text body div"/>
+<moduleRef key="linking" include="standOff"/>
+<moduleRef key="tagdocs" include="gi att ident"/>
+<moduleRef key="analysis" include="interp"/>
+<elementSpec ident="interp" mode="delete" module="analysis"/>
+
+<elementSpec ident="cit" mode="change">
+ <attList>
+  <attDef ident="type" mode="change" usage="req">
+   <valList type="closed" mode="replace">
+    <valItem ident="quotation"><desc>Prynne's words reproduce the
+     source's words with little or no change.</desc></valItem>
+    <valItem ident="adaptation"><desc>The source's words are altered
+     (words changed, added, reordered or cut) but plainly
+     recognisable.</desc></valItem>
+    <valItem ident="echo"><desc>A shorter or looser verbal
+     resemblance.</desc></valItem>
+    <valItem ident="allusion"><desc>A reference to a specific source
+     with few shared words.</desc></valItem>
+    <valItem ident="source"><desc>The nested citation of the source
+     itself.</desc></valItem>
+   </valList>
+  </attDef>
+ </attList>
+</elementSpec>
+
+<classSpec ident="att.global.responsibility" type="atts" mode="change">
+ <attList>
+  <attDef ident="cert" mode="change">
+   <datatype><dataRef key="teidata.enumerated"/></datatype>
+   <valList type="closed" mode="replace">
+    <valItem ident="high"/><valItem ident="medium"/><valItem ident="low"/>
+   </valList>
+  </attDef>
+ </attList>
+</classSpec>
+
+<elementSpec ident="citedRange" mode="change">
+ <attList>
+  <attDef ident="unit" mode="change">
+   <valList type="closed" mode="replace">
+    <valItem ident="page"/><valItem ident="line"><desc>On Prynne's side,
+     the line of the poem, counted from its first line.</desc></valItem>
+    <valItem ident="title"><desc>Prynne's words are in the title of the
+     poem or collection.</desc></valItem>
+    <valItem ident="epigraph"/><valItem ident="dedication"/>
+    <valItem ident="chapter"/><valItem ident="verse"/>
+    <valItem ident="item"/><valItem ident="column"/>
+    <valItem ident="section"/><valItem ident="act-scene-line"/>
+    <valItem ident="folio"/><valItem ident="stanza"/>
+    <valItem ident="book"/><valItem ident="part"/>
+    <valItem ident="entry"/><valItem ident="paragraph"/>
+    <valItem ident="none"/>
+   </valList>
+  </attDef>
+ </attList>
+</elementSpec>
+
+<elementSpec ident="idno" mode="change">
+ <attList>
+  <attDef ident="type" mode="change" usage="req">
+   <valList type="closed" mode="replace">
+    <valItem ident="DOI"/><valItem ident="ISBN"/><valItem ident="OCLC"/>
+    <valItem ident="LCCN"/><valItem ident="LCC"/>
+    <valItem ident="IA"><desc>Internet Archive item.</desc></valItem>
+    <valItem ident="Gutenberg"><desc>Project Gutenberg ebook
+     number.</desc></valItem>
+    <valItem ident="Wikidata"/><valItem ident="VIAF"/>
+    <valItem ident="OSIS"/><valItem ident="CTS"/><valItem ident="URL"/>
+   </valList>
+  </attDef>
+ </attList>
+</elementSpec>
+</schemaSpec>
+</div>
+</body>
+</text>
+</TEI>
