@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000">
 <title>Gloss</title>
 <style>
 @font-face { font-family: Plex; src: url(fonts/plex-sans-latin-400-normal.woff2) }
@@ -9,70 +10,176 @@
   src: url(fonts/plex-sans-latin-400-italic.woff2) }
 @font-face { font-family: Plex; font-weight: 500;
   src: url(fonts/plex-sans-latin-500-normal.woff2) }
-@font-face { font-family: PlexMono;
+@font-face { font-family: Mono;
   src: url(fonts/plex-mono-latin-400-normal.woff2) }
-:root { --bg: #000; --fg: #f2f2f2; --mu: #7a7a7a; --dim: #3a3a3a;
-  --ln: #1c1c1c; color-scheme: dark }
+:root { --bg: #000; --fg: #f4f4f4; --mu: #8a8a8a; --dim: #4a4a4a;
+  --ln: #1d1d1d; --sf: #0b0b0b; --side: 18.5rem; color-scheme: dark }
 * { box-sizing: border-box }
-body { background: var(--bg); color: var(--fg); margin: 0 auto;
-  max-width: 64rem; padding: 4rem 1.5rem 6rem;
-  font: 300 15px/1.65 Plex, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased }
-.m, .h, .n, form, h2, header p { font-family: PlexMono, ui-monospace,
-  monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase }
-h1 { font-weight: 500; font-size: 1.6rem; line-height: 1.25; margin: 0;
-  max-width: 34rem; letter-spacing: -.01em }
-header p { color: var(--mu); margin: 1.2rem 0 0; max-width: 40rem;
-  line-height: 1.8 }
-form { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.4rem;
-  margin: 3rem 0 0; padding: 1rem 0; position: sticky; top: 0; z-index: 1;
-  background: var(--bg); border-bottom: 1px solid var(--fg) }
-input[type=search] { flex: 1 1 14rem; font: inherit; letter-spacing: inherit;
-  text-transform: none; color: var(--fg); background: transparent;
-  border: 0; outline: 0; padding: .3rem 0 }
-input[type=search]::placeholder { color: var(--mu); text-transform: uppercase }
-label { cursor: pointer; color: var(--mu) }
-label:has(:checked) { color: var(--fg) }
-input[type=checkbox] { appearance: none; width: 7px; height: 7px; margin: 0
-  .45rem 1px 0; border: 1px solid currentColor; vertical-align: middle }
-input[type=checkbox]:checked { background: currentColor }
-select { font: inherit; letter-spacing: inherit; text-transform: inherit;
-  color: var(--fg); background: var(--bg); border: 1px solid var(--dim);
-  padding: .25rem .4rem; border-radius: 0 }
-.n { color: var(--mu); margin: 1rem 0 0 }
-h2 { font-weight: 400; color: var(--mu); margin: 4rem 0 0; padding-bottom:
-  .7rem; border-bottom: 1px solid var(--dim) }
-article { display: grid; grid-template-columns: 11rem 1fr; gap: 0 2rem;
-  padding: 1.6rem 0; border-bottom: 1px solid var(--ln) }
-article > * { grid-column: 2 } article > .h { grid-column: 1;
-  grid-row: 1 / span 9; color: var(--mu); line-height: 2 }
-.h a { color: var(--mu); text-decoration: none } .h a:hover { color: var(--fg) }
-.k { color: var(--fg) } .h > * { display: block }
-article:target { background: #0d0d0d; box-shadow: -1.5rem 0 0 #0d0d0d,
-  1.5rem 0 0 #0d0d0d }
-.w { color: var(--fg) } .w i { font-style: normal; font-weight: 500;
-  margin-right: .6rem }
-blockquote { margin: .9rem 0 0; font-size: 1.15rem; line-height: 1.5 }
-blockquote.s { color: var(--mu); font-size: 1rem; margin-top: .5rem }
-.b { margin-top: .9rem; font-size: 13px; color: var(--mu) }
-.b i { color: #bdbdbd } .b a { color: var(--fg); text-underline-offset: 3px;
-  text-decoration-color: var(--dim) }
+html { scroll-padding-top: 4rem }
+body { margin: 0; overflow-x: clip; background: var(--bg); color: var(--fg);
+  font: 15px/1.6 Plex, system-ui, sans-serif; -webkit-font-smoothing:
+  antialiased; text-rendering: optimizeLegibility }
+a { color: inherit }
+button, input { font: inherit; color: inherit }
 ::selection { background: var(--fg); color: var(--bg) }
-@media (max-width: 40rem) { body { padding: 2.5rem 1rem 4rem }
-  article { display: block } .h { display: flex; gap: 1rem } }
+.mono, .lab, .tag, aside h3, .sec, .bar, .meta, .count, kbd {
+  font-family: Mono, ui-monospace, monospace; font-size: 11px;
+  letter-spacing: .07em; text-transform: uppercase }
+
+/* sidebar */
+aside { position: fixed; inset: 0 auto 0 0; width: var(--side);
+  display: flex; flex-direction: column; border-right: 1px solid var(--ln);
+  background: var(--bg); z-index: 3; overflow: hidden }
+.scroll { overflow-y: auto; flex: 1; padding: 2rem 1.75rem 1.5rem;
+  scrollbar-width: thin; scrollbar-color: var(--dim) transparent }
+.mark { font-weight: 500; font-size: 1.35rem; letter-spacing: -.02em;
+  margin: 0; line-height: 1 }
+.sub { color: var(--mu); margin: .55rem 0 0; font-size: 13px;
+  line-height: 1.45 }
+.search { position: relative; margin: 2rem 0 0 }
+.search input { width: 100%; background: var(--sf); border: 1px solid
+  var(--ln); padding: .6rem 2.4rem .6rem .75rem; outline: 0; font-size: 14px;
+  transition: border-color .15s }
+.search input:focus { border-color: var(--dim) }
+.search input::placeholder { color: var(--mu) }
+kbd { position: absolute; right: .55rem; top: 50%; translate: 0 -50%;
+  color: var(--mu); border: 1px solid var(--ln); padding: 0 .35rem;
+  font-size: 10px; pointer-events: none }
+aside h3 { color: var(--mu); font-weight: 400; margin: 2.2rem 0 .7rem }
+.opt { display: flex; align-items: center; gap: .7rem; width: 100%;
+  background: none; border: 0; padding: .32rem 0; cursor: pointer;
+  text-align: left; color: var(--mu); font-size: 14px; transition: color .15s }
+.opt:hover, .opt[aria-pressed=true] { color: var(--fg) }
+.opt .g { width: 1rem; text-align: center; font-size: 12px }
+.opt .count { margin-left: auto; color: var(--dim) }
+.opt[aria-pressed=true] .count { color: var(--mu) }
+.seg { display: grid; grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--ln) }
+.seg button { background: none; border: 0; padding: .45rem 0; font-size: 10px; cursor: pointer;
+  color: var(--mu); font: 10px Mono, monospace; letter-spacing: .04em;
+  text-transform: uppercase; transition: .15s }
+.seg button + button { border-left: 1px solid var(--ln) }
+.seg button[aria-pressed=true] { background: var(--fg); color: var(--bg) }
+nav a { display: flex; gap: .7rem; text-decoration: none; color: var(--mu);
+  font-size: 13px; padding: .22rem 0; transition: color .15s }
+nav a:hover, nav a.on { color: var(--fg) }
+nav a .count { margin-left: auto; color: var(--dim) }
+nav a.on::before { content: ''; width: 3px; margin-left: -1.75rem;
+  margin-right: calc(1.75rem - 3px - .7rem); background: var(--fg) }
+.foot { border-top: 1px solid var(--ln); padding: 1rem 1.75rem;
+  color: var(--mu); display: flex; gap: 1rem; flex-wrap: wrap }
+.foot a { text-decoration: none } .foot a:hover { color: var(--fg) }
+.reset { background: none; border: 0; padding: 0; margin-left: auto;
+  cursor: pointer; color: var(--mu) } .reset:hover { color: var(--fg) }
+
+/* main */
+main { overflow-wrap: anywhere; margin-left: var(--side); padding: 0 clamp(1.5rem, 5vw, 4.5rem) 8rem;
+  max-width: calc(var(--side) + 62rem) }
+.lede { padding: 4.5rem 0 1rem; max-width: 40rem }
+.lede h1 { font-weight: 500; font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  line-height: 1.12; letter-spacing: -.025em; margin: 0 }
+.lede p { color: var(--mu); margin: 1.2rem 0 0; max-width: 34rem }
+.stat { display: flex; gap: 2.5rem; margin: 2.2rem 0 0; flex-wrap: wrap }
+.stat b { display: block; font-weight: 400; font-size: 1.6rem;
+  letter-spacing: -.02em; font-family: Plex }
+.stat span { color: var(--mu) }
+.sec { position: sticky; top: 0; z-index: 1; background: var(--bg);
+  color: var(--mu); padding: 2.4rem 0 .8rem; margin: 0;
+  border-bottom: 1px solid var(--fg); display: flex; font-weight: 400 }
+.sec span { color: var(--fg) } .sec em { margin-left: auto; font-style: normal }
+article { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 0 2.2rem; padding: 1.8rem 0 1.9rem; border-bottom: 1px solid var(--ln) }
+article:target { background: var(--sf); box-shadow: 0 0 0 1rem var(--sf);
+  clip-path: inset(0 -1rem) }
+.meta { color: var(--mu); display: flex; flex-direction: column;
+  gap: .35rem; padding-top: .2rem }
+.meta .tag { color: var(--fg) }
+.dots { letter-spacing: .25em }
+.meta a { text-decoration: none; color: var(--dim) }
+.meta a:hover { color: var(--fg) }
+.where { color: var(--mu); font-size: 13px }
+.where i { font-style: normal; color: var(--fg); font-weight: 500 }
+.lab { display: block; color: var(--dim); margin: 1.1rem 0 .3rem;
+  font-size: 10px }
+blockquote { margin: 0; font-size: 1.22rem; line-height: 1.45;
+  letter-spacing: -.01em }
+blockquote.s { font-size: 1.02rem; color: #b8b8b8; letter-spacing: 0 }
+.src { margin-top: 1.1rem; font-size: 13px; color: var(--mu);
+  line-height: 1.55 }
+.src i { color: #cfcfcf }
+.src a { text-decoration: underline; text-decoration-color: var(--dim);
+  text-underline-offset: 3px } .src a:hover { color: var(--fg) }
+mark { background: var(--fg); color: var(--bg); padding: 0 .1em }
+.none { color: var(--mu); padding: 5rem 0; font-size: 1.1rem }
+
+/* mobile: a bar that hides on scroll, the sidebar as a drawer */
+.bar, .scrim, .x { display: none }
+@media (max-width: 56rem) {
+  html { scroll-padding-top: 6.5rem }
+  aside { width: min(22rem, 88vw); translate: -100% 0;
+    transition: translate .32s cubic-bezier(.2, .8, .2, 1);
+    box-shadow: 0 0 0 100vmax transparent }
+  body.open aside { translate: 0 }
+  .scrim { display: block; position: fixed; inset: 0; z-index: 2;
+    background: rgb(0 0 0 / .6); backdrop-filter: blur(3px);
+    opacity: 0; pointer-events: none; transition: opacity .3s }
+  body.open .scrim { opacity: 1; pointer-events: auto }
+  body.open { overflow: hidden }
+  .bar { display: flex; align-items: center; gap: 1rem; position: fixed;
+    inset: 0 0 auto; z-index: 2; height: 3.25rem; padding: 0 1rem;
+    background: rgb(0 0 0 / .82); backdrop-filter: blur(14px) saturate(1.4);
+    border-bottom: 1px solid var(--ln); transition: translate .3s }
+  body.up .bar { translate: 0 -100% }
+  .bar b { font: 500 15px Plex; letter-spacing: -.01em; text-transform: none }
+  .bar span { color: var(--mu); margin-left: auto }
+  .bar button { background: var(--fg); color: var(--bg); border: 0;
+    padding: .45rem .8rem; cursor: pointer; font: inherit;
+    letter-spacing: inherit }
+  main { margin: 0; padding: 3.25rem 1.1rem 6rem }
+  .lede { padding-top: 2.5rem }
+  .sec { top: 3.25rem; transition: top .3s } body.up .sec { top: 0 }
+  article { display: block; padding: 1.4rem 0 }
+  .meta { flex-direction: row; gap: 1rem; margin-bottom: .5rem }
+  .meta a { margin-left: auto }
+  blockquote { font-size: 1.1rem }
+  kbd { display: none }
+  .x { display: block; float: right; background: none; border: 0;
+    padding: 0; cursor: pointer; color: var(--mu) }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } }
 </style>
-<header>
-  <h1 id="t">Gloss</h1>
-  <p id="d"></p>
-</header>
-<form id="f">
-  <input type="search" id="q" placeholder="search words, poems, sources">
-  <span id="ks"></span>
-  <select id="c"><option value="">any certainty</option>
-    <option>high</option><option>medium</option><option>low</option></select>
-</form>
-<p class="n" id="n"></p>
-<main id="m"></main>
+
+<div class="bar"><b>Gloss</b><span id="bn"></span>
+  <button id="open" aria-controls="side" aria-expanded="false">Filter</button>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside id="side">
+  <div class="scroll">
+    <button class="x mono" id="close" aria-label="Close">Close</button>
+    <p class="mark">Gloss</p>
+    <p class="sub">Sources quoted, adapted, echoed and alluded to in
+      J. H. Prynne’s <i>Poems</i></p>
+    <div class="search"><input type="search" id="q" placeholder="Search"
+      aria-label="Search entries" autocomplete="off"><kbd>/</kbd></div>
+    <h3>Type</h3><div id="ks"></div>
+    <h3>Confidence</h3><div class="seg" id="cs"></div>
+    <h3>Collections</h3><nav id="nv"></nav>
+  </div>
+  <div class="foot mono"><a href="gloss.xml" download>TEI</a>
+    <a href="gloss.odd" download>ODD</a>
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    <button class="reset mono" id="reset" hidden>Reset</button></div>
+</aside>
+
+<main>
+  <header class="lede">
+    <h1 id="t"></h1>
+    <p id="d"></p>
+    <div class="stat mono" id="st"></div>
+  </header>
+  <div id="m"></div>
+</main>
+
 <script type="module">
 const $ = s => document.querySelector(s)
 const T = 'http://www.tei-c.org/ns/1.0'
@@ -86,10 +193,6 @@ const txt = e => e ? e.textContent.replace(/\s+/g, ' ').trim() : ''
 const esc = s => s.replace(/[&<>"]/g, c => `&#${c.charCodeAt(0)};`)
 const id = e => e.getAttributeNS(XML, 'id')
 const B = Object.fromEntries(all(x, 'biblStruct').map(b => [id(b), b]))
-
-$('#t').textContent = txt(one(one(x, 'titleStmt'), 'title'))
-$('#d').textContent = txt(one(x, 'edition')) + ' ' +
-  txt(one(x, 'licence')).split('.')[0] + '.'
 
 const quote = q => q ? [...q.childNodes].map(n => n.nodeType === 3 ?
   esc(n.data) : n.localName === 'lb' ? ' / ' : n.localName === 'gap' ?
@@ -112,7 +215,7 @@ function cite(w) {
   const b = B[w]; if (!b) return w
   const an = one(b, 'analytic'), mo = one(b, 'monogr'), im = one(mo, 'imprint')
   const au = all(an || mo, 'author').map(txt).join(', ')
-  const ti = an ? `‘${txt(one(an, 'title'))}’, in <i>${esc(txt(one(mo,
+  const ti = an ? `‘${esc(txt(one(an, 'title')))}’, in <i>${esc(txt(one(mo,
     'title')))}</i>` : `<i>${esc(txt(one(mo, 'title')))}</i>`
   const ed = kids(mo, 'editor').map(txt).join(', ')
   const pub = [kids(im, 'pubPlace').map(txt).join(', '),
@@ -121,14 +224,14 @@ function cite(w) {
   const ids = all(b, 'idno').map(i => { const t = i.getAttribute('type'),
     v = txt(i); return LINK[t] ? `<a href="${LINK[t]}${encodeURI(v)}">${t}</a>`
     : `${t} ${esc(v)}` })
-  const im_ = [pub, dt].filter(Boolean).map(esc).join(', ')
+  const imp = [pub, dt].filter(Boolean).map(esc).join(', ')
   return [au && esc(au), ti + (ed ? ', ed. ' + esc(ed) : '') +
-    (im_ ? ` (${im_})` : ''), ids.join(' · ')].filter(Boolean).join(', ')
+    (imp ? ` (${imp})` : ''), ids.join(' · ')].filter(Boolean).join(', ')
 }
 
-const E = []
+const E = [], C = []
 for (const dv of all(x, 'div')) {
-  const coll = txt(one(dv, 'head'))
+  const coll = txt(one(dv, 'head')); C.push(coll)
   for (const c of kids(dv, 'cit')) {
     const pb = kids(c, 'bibl')[0], s = kids(c, 'cit')[0]
     const sb = kids(s, 'bibl')[0], seen = kids(sb, 'ptr')
@@ -141,38 +244,108 @@ for (const dv of all(x, 'div')) {
       s: quote(kids(s, 'quote')[0]), src: cite(work), loc: range(sb),
       seen: seen && seen.getAttribute('target'),
       via: via && cite(one(via, 'ptr').getAttribute('target').slice(1)) }
-    e.hay = [e.poem, e.p, e.s, e.src, e.kind].join(' ').toLowerCase()
+    e.hay = [e.poem, e.p, e.s, e.src, e.kind, e.coll].join(' ').toLowerCase()
+      .replace(/<[^>]+>/g, '')
     E.push(e)
   }
 }
 
-const K = [...new Set(E.map(e => e.kind))]
-$('#ks').innerHTML = K.map(k => `<label><input type="checkbox" value="${k}"
-  checked> ${k}</label>`).join(' ')
-const card = e => `<article id="${e.id}"><div class="h"><span class="k">
-  ${e.kind}</span><span>${e.cert}</span> <a href="#${e.id}">${e.id}</a></div>
-  <div class="w"><i>${esc(e.poem)}</i> <span class="m">${e.where}</span></div>
-  ${e.p ? `<blockquote>${e.p}</blockquote>` : ''}
-  ${e.s ? `<blockquote class="s">${e.s}</blockquote>` : ''}
-  <div class="b">${e.src}${e.loc ? ', ' + e.loc : ''}${e.seen ?
+// header
+$('#t').textContent = 'Sources quoted, adapted, echoed and alluded to in ' +
+  'J. H. Prynne’s Poems'
+$('#d').textContent = 'Each entry pairs the words that Prynne and a source ' +
+  'share, with the page and line of the poem and the edition in which the ' +
+  'source was seen.'
+const by = (k, v) => E.filter(e => e[k] === v).length
+$('#st').innerHTML = [[E.length, 'entries'], [C.length, 'collections'],
+  [new Set(E.map(e => e.src)).size, 'sources']]
+  .map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join('')
+
+// controls
+const KIND = { quotation: '■', adaptation: '◧', echo: '□', allusion: '○' }
+const CERT = { high: '●●●', medium: '●●○', low: '●○○' }
+const S = { q: '', k: new Set(Object.keys(KIND)), c: '' }
+$('#ks').innerHTML = Object.keys(KIND).map(k => `<button class="opt"
+  data-k="${k}" aria-pressed="true"><span class="g">${KIND[k]}</span>
+  ${k[0].toUpperCase() + k.slice(1)}<span class="count">${by('kind', k)}
+  </span></button>`).join('')
+$('#cs').innerHTML = ['', 'high', 'medium', 'low'].map(c => `<button
+  data-c="${c}" aria-pressed="${!c}">${c || 'All'}</button>`)
+  .join('')
+const slug = s => 'c-' + s.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+
+const hi = (h, ws) => ws.length ? h.replace(/(<[^>]+>)|([^<]+)/g, (m, tag, t) =>
+  tag || t.replace(new RegExp(ws.map(w => w.replace(/[.*+?^${}()|[\]\\]/g,
+    '\\$&')).join('|'), 'gi'), '<mark>$&</mark>')) : h
+const card = (e, ws) => `<article id="${e.id}">
+  <div class="meta"><span class="tag">${KIND[e.kind]} ${e.kind}</span>
+  <span class="dots" title="${e.cert} confidence">${CERT[e.cert]}</span>
+  <a href="#${e.id}">${e.id}</a></div><div>
+  <div class="where"><i>${hi(esc(e.poem), ws)}</i> · ${e.where}</div>
+  ${e.p ? `<span class="lab">Prynne</span><blockquote>${hi(e.p, ws)}
+  </blockquote><span class="lab">Source</span><blockquote class="s">
+  ${hi(e.s, ws)}</blockquote>` : ''}
+  <div class="src">${hi(e.src, ws)}${e.loc ? ', ' + e.loc : ''}${e.seen ?
   ` · <a href="${esc(e.seen)}">seen</a>` : ''}${e.via ? `<br>via ${e.via}`
-  : ''}</div></article>`
+  : ''}</div></div></article>`
+
 function draw() {
-  const q = $('#q').value.toLowerCase().trim(), c = $('#c').value
-  const ks = new Set([...$('#ks').querySelectorAll(':checked')]
-    .map(i => i.value))
-  const r = E.filter(e => ks.has(e.kind) && (!c || e.cert === c) &&
-    q.split(/\s+/).every(w => e.hay.includes(w)))
-  let h = '', last
-  for (const e of r) {
-    if (e.coll !== last) h += `<h2>${esc(last = e.coll)}</h2>`
-    h += card(e)
-  }
-  $('#m').innerHTML = h
-  $('#n').textContent = `${r.length} of ${E.length} entries`
+  const ws = S.q.toLowerCase().split(/\s+/).filter(Boolean)
+  const r = E.filter(e => S.k.has(e.kind) && (!S.c || e.cert === S.c) &&
+    ws.every(w => e.hay.includes(w)))
+  const g = Map.groupBy ? Map.groupBy(r, e => e.coll) :
+    r.reduce((m, e) => m.set(e.coll, [...(m.get(e.coll) || []), e]), new Map)
+  $('#m').innerHTML = [...g].map(([c, es]) => `<section id="${slug(c)}">
+    <h2 class="sec"><span>${esc(c)}</span><em>${es.length}</em></h2>
+    ${es.map(e => card(e, ws)).join('')}</section>`).join('') ||
+    '<p class="none">No entries match.</p>'
+  $('#nv').innerHTML = C.filter(c => g.has(c)).map(c => `<a href="#${slug(c)}"
+    data-c="${esc(c)}">${esc(c)}<span class="count">${g.get(c).length}
+    </span></a>`).join('')
+  const n = r.length, f = n < E.length
+  $('#bn').textContent = f ? `${n} / ${E.length}` : `${n} entries`
+  $('#open').textContent = f ? 'Filter •' : 'Filter'
+  $('#reset').hidden = !f
+  spy()
 }
-$('#f').addEventListener('input', draw)
-$('#f').addEventListener('submit', e => e.preventDefault())
+
+// scroll: hide the mobile bar going down; mark the collection in view
+let y0 = 0
+function spy() {
+  const s = [...document.querySelectorAll('section')]
+    .filter(s => s.getBoundingClientRect().top < innerHeight * .3).pop()
+  for (const a of document.querySelectorAll('nav a'))
+    a.classList.toggle('on', !!s && a.getAttribute('href') === '#' + s.id)
+}
+addEventListener('scroll', () => {
+  const y = scrollY
+  document.body.classList.toggle('up', y > y0 && y > 80); y0 = y; spy()
+}, { passive: true })
+
+const open = v => { document.body.classList.toggle('open', v)
+  $('#open').setAttribute('aria-expanded', v) }
+$('#open').onclick = () => open(true)
+$('#scrim').onclick = $('#close').onclick = () => open(false)
+$('#nv').onclick = e => e.target.closest('a') && open(false)
+$('#ks').onclick = e => { const b = e.target.closest('button'); if (!b) return
+  const k = b.dataset.k, on = S.k.has(k)
+  if (on && S.k.size === 1) return
+  on ? S.k.delete(k) : S.k.add(k); b.setAttribute('aria-pressed', !on); draw() }
+$('#cs').onclick = e => { const b = e.target.closest('button'); if (!b) return
+  S.c = b.dataset.c; for (const o of $('#cs').children)
+    o.setAttribute('aria-pressed', o === b); draw() }
+let tm; $('#q').oninput = e => { clearTimeout(tm)
+  tm = setTimeout(() => { S.q = e.target.value; draw() }, 120) }
+$('#reset').onclick = () => { S.q = $('#q').value = ''; S.c = ''
+  S.k = new Set(Object.keys(KIND))
+  document.querySelectorAll('[aria-pressed]').forEach(b =>
+    b.setAttribute('aria-pressed', !!b.dataset.k || b.dataset.c === ''))
+  draw() }
+addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== $('#q')) {
+    e.preventDefault(); open(true); $('#q').focus() }
+  if (e.key === 'Escape') { open(false); $('#q').blur() } })
+
 draw()
 if (location.hash) document.getElementById(location.hash.slice(1))
   ?.scrollIntoView()
