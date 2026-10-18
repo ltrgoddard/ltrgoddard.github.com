@@ -4,31 +4,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>gloss release</title>
 <style>
-:root { --bg: #fdfcf8; --fg: #1d1d1b; --mu: #77746c; --ln: #e4e1d8;
-  --ac: #8a3b12 }
-@media (prefers-color-scheme: dark) { :root { --bg: #161614; --fg: #e8e5dc;
-  --mu: #96928a; --ln: #2e2d29; --ac: #e09a6c } }
+@font-face { font-family: Plex; src: url(fonts/plex-sans-latin-400-normal.woff2) }
+@font-face { font-family: Plex; font-style: italic;
+  src: url(fonts/plex-sans-latin-400-italic.woff2) }
+@font-face { font-family: Plex; font-weight: 500;
+  src: url(fonts/plex-sans-latin-500-normal.woff2) }
+@font-face { font-family: PlexMono;
+  src: url(fonts/plex-mono-latin-400-normal.woff2) }
+:root { --bg: #000; --fg: #f2f2f2; --mu: #7a7a7a; --dim: #3a3a3a;
+  --ln: #1c1c1c; color-scheme: dark }
+* { box-sizing: border-box }
 body { background: var(--bg); color: var(--fg); margin: 0 auto;
-  max-width: 46rem; padding: 1.5rem 1rem 4rem;
-  font: 17px/1.5 Georgia, 'Iowan Old Style', serif }
-h1 { font-size: 1.3rem; margin: 0 } h2 { font-size: 1.05rem;
-  margin: 2.2rem 0 .3rem; font-style: italic; font-weight: normal }
-header p, .n { color: var(--mu); font-size: .85rem; margin: .3rem 0 }
-form { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin: 1rem 0;
-  font: .85rem system-ui, sans-serif; position: sticky; top: 0;
-  background: var(--bg); padding: .5rem 0; border-bottom: 1px solid var(--ln) }
-input[type=search] { flex: 1 1 12rem; font: inherit; padding: .3rem .5rem;
-  background: var(--bg); color: var(--fg); border: 1px solid var(--ln) }
-select { font: inherit; background: var(--bg); color: var(--fg) }
-article { border-top: 1px solid var(--ln); padding: .8rem 0 }
-article:target { background: color-mix(in srgb, var(--ac) 8%, transparent) }
-.h { font: .8rem system-ui, sans-serif; color: var(--mu) }
-.h a { color: inherit } .k { color: var(--ac); text-transform: uppercase;
-  letter-spacing: .05em }
-blockquote { margin: .4rem 0; padding-left: .7rem;
-  border-left: 2px solid var(--ac) }
-blockquote.s { border-color: var(--ln) }
-.b { font-size: .9rem } .b a { color: var(--ac) }
+  max-width: 64rem; padding: 4rem 1.5rem 6rem;
+  font: 300 15px/1.65 Plex, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased }
+.m, .h, .n, form, h2, header p { font-family: PlexMono, ui-monospace,
+  monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase }
+h1 { font-weight: 500; font-size: 1.6rem; line-height: 1.25; margin: 0;
+  max-width: 34rem; letter-spacing: -.01em }
+header p { color: var(--mu); margin: 1.2rem 0 0; max-width: 40rem;
+  line-height: 1.8 }
+form { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.4rem;
+  margin: 3rem 0 0; padding: 1rem 0; position: sticky; top: 0; z-index: 1;
+  background: var(--bg); border-bottom: 1px solid var(--fg) }
+input[type=search] { flex: 1 1 14rem; font: inherit; letter-spacing: inherit;
+  text-transform: none; color: var(--fg); background: transparent;
+  border: 0; outline: 0; padding: .3rem 0 }
+input[type=search]::placeholder { color: var(--mu); text-transform: uppercase }
+label { cursor: pointer; color: var(--mu) }
+label:has(:checked) { color: var(--fg) }
+input[type=checkbox] { appearance: none; width: 7px; height: 7px; margin: 0
+  .45rem 1px 0; border: 1px solid currentColor; vertical-align: middle }
+input[type=checkbox]:checked { background: currentColor }
+select { font: inherit; letter-spacing: inherit; text-transform: inherit;
+  color: var(--fg); background: var(--bg); border: 1px solid var(--dim);
+  padding: .25rem .4rem; border-radius: 0 }
+.n { color: var(--mu); margin: 1rem 0 0 }
+h2 { font-weight: 400; color: var(--mu); margin: 4rem 0 0; padding-bottom:
+  .7rem; border-bottom: 1px solid var(--dim) }
+article { display: grid; grid-template-columns: 11rem 1fr; gap: 0 2rem;
+  padding: 1.6rem 0; border-bottom: 1px solid var(--ln) }
+article > * { grid-column: 2 } article > .h { grid-column: 1;
+  grid-row: 1 / span 9; color: var(--mu); line-height: 2 }
+.h a { color: var(--mu); text-decoration: none } .h a:hover { color: var(--fg) }
+.k { color: var(--fg) } .h > * { display: block }
+article:target { background: #0d0d0d; box-shadow: -1.5rem 0 0 #0d0d0d,
+  1.5rem 0 0 #0d0d0d }
+.w { color: var(--fg) } .w i { font-style: normal; font-weight: 500;
+  margin-right: .6rem }
+blockquote { margin: .9rem 0 0; font-size: 1.15rem; line-height: 1.5 }
+blockquote.s { color: var(--mu); font-size: 1rem; margin-top: .5rem }
+.b { margin-top: .9rem; font-size: 13px; color: var(--mu) }
+.b i { color: #bdbdbd } .b a { color: var(--fg); text-underline-offset: 3px;
+  text-decoration-color: var(--dim) }
+::selection { background: var(--fg); color: var(--bg) }
+@media (max-width: 40rem) { body { padding: 2.5rem 1rem 4rem }
+  article { display: block } .h { display: flex; gap: 1rem } }
 </style>
 <header>
   <h1 id="t">gloss</h1>
@@ -37,7 +68,7 @@ blockquote.s { border-color: var(--ln) }
 <form id="f">
   <input type="search" id="q" placeholder="search words, poems, sources">
   <span id="ks"></span>
-  <select id="c"><option value="">all certainty</option>
+  <select id="c"><option value="">any certainty</option>
     <option>high</option><option>medium</option><option>low</option></select>
 </form>
 <p class="n" id="n"></p>
@@ -119,8 +150,8 @@ const K = [...new Set(E.map(e => e.kind))]
 $('#ks').innerHTML = K.map(k => `<label><input type="checkbox" value="${k}"
   checked> ${k}</label>`).join(' ')
 const card = e => `<article id="${e.id}"><div class="h"><span class="k">
-  ${e.kind}</span> · ${e.cert} · <a href="#${e.id}">${e.id}</a></div>
-  <div><i>${esc(e.poem)}</i>, ${e.where}</div>
+  ${e.kind}</span><span>${e.cert}</span> <a href="#${e.id}">${e.id}</a></div>
+  <div class="w"><i>${esc(e.poem)}</i> <span class="m">${e.where}</span></div>
   ${e.p ? `<blockquote>${e.p}</blockquote>` : ''}
   ${e.s ? `<blockquote class="s">${e.s}</blockquote>` : ''}
   <div class="b">${e.src}${e.loc ? ', ' + e.loc : ''}${e.seen ?
