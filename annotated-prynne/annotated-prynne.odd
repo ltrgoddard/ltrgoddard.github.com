@@ -13,7 +13,7 @@ echoed and alluded to in J. H. Prynne's Poems</title>
 target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
 </availability>
 </publicationStmt>
-<sourceDesc><p>Written for the gloss dataset (release/gloss.xml).</p>
+<sourceDesc><p>Written for the gloss dataset (release/annotated-prynne.xml).</p>
 </sourceDesc>
 </fileDesc>
 </teiHeader>
@@ -21,7 +21,7 @@ target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
 <body>
 <head>The Gloss dataset: a TEI customisation</head>
 
-<p>The dataset <ident>release/gloss.xml</ident> records the quotations,
+<p>The dataset <ident>release/annotated-prynne.xml</ident> records the quotations,
 adaptations, echoes and allusions found in J. H. Prynne's <title>Poems</title>
 (second edition, Bloodaxe Books, 2005) and <title>Force of Circumstance and
 Other Poems</title> (1962). Each entry is one <gi>cit</gi>: the words of
