@@ -3,7 +3,7 @@
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>gloss: TEI customisation for the dataset of sources quoted, adapted,
+<title>Gloss: TEI customisation for the dataset of sources quoted, adapted,
 echoed and alluded to in J. H. Prynne's Poems</title>
 <author>Louis Goddard</author>
 </titleStmt>
@@ -19,7 +19,7 @@ target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
 </teiHeader>
 <text>
 <body>
-<head>The gloss dataset: a TEI customisation</head>
+<head>The Gloss dataset: a TEI customisation</head>
 
 <p>The dataset <ident>release/gloss.xml</ident> records the quotations,
 adaptations, echoes and allusions found in J. H. Prynne's <title>Poems</title>
